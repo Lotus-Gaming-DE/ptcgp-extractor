@@ -1,0 +1,19 @@
+{
+    "name": "ptcgp-data-extraction",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/export.ts",
+    "scripts": {
+      "export": "ts-node src/export.ts"
+    },
+    "dependencies": {
+      "fs-extra": "^11.2.0",
+      "glob": "^10.3.10"
+    },
+    "devDependencies": {
+      "typescript": "^5.4.5",
+      "ts-node": "^10.9.2",
+      "@types/node": "^20.11.30"
+    }
+  }
+  
