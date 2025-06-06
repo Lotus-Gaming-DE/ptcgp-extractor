@@ -78,10 +78,14 @@ async function main() {
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
 
-  // >>> Debug-Block: Inhalt der geschriebenen Datei ausgeben
-  const outRaw = await fs.readFile(outPath, "utf-8");
-  console.log("Erste 500 Zeichen aus cards.json:\n", outRaw.slice(0, 500));
-  // <<< Debug-Block-Ende
+  // Optionaler Debug-Block: Inhalt der geschriebenen Datei ausgeben
+  if (process.env.DEBUG) {
+    const outRaw = await fs.readFile(outPath, "utf-8");
+    console.log(
+      "Erste 500 Zeichen aus cards.json:\n",
+      outRaw.slice(0, 500)
+    );
+  }
 
   console.log(`Exported ${cards.length} cards to data/cards.json`);
 }
