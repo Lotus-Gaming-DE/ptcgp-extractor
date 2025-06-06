@@ -1,0 +1,39 @@
+name: Extract PTCGP Cards
+
+on:
+  workflow_dispatch:   # Manuell auslösbar
+  schedule:
+    - cron: '0 3 * * 1'   # Jeden Montag um 3 Uhr nachts (UTC) automatisch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ptcgp-data-extraction repo
+        uses: actions/checkout@v4
+
+      - name: Clone tcgdex/cards-database
+        uses: actions/checkout@v4
+        with:
+          repository: tcgdex/cards-database
+          path: tcgdex
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile TypeScript
+        run: npx tsc
+
+      - name: Run export script
+        run: npx ts-node src/export.ts
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated data extraction"
+          file_pattern: data/cards.json
