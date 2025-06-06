@@ -1,13 +1,13 @@
 name: Extract PTCGP Cards
 
 on:
-  workflow_dispatch:     # Manuell auslösbar ("Run workflow"-Button)
-  push:                  # Bei jedem Commit auf main/master
+  workflow_dispatch:
+  push:
     branches:
       - main
       - master
   schedule:
-    - cron: '0 3 * * 1'  # Jeden Montag um 3 Uhr UTC
+    - cron: '0 3 * * 1'
 
 jobs:
   build:
@@ -29,15 +29,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ${{ github.workspace }}
+        # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
       - name: Run export script
         run: npx ts-node src/export.ts
-        working-directory: ${{ github.workspace }}
+        # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Automated data extraction"
           file_pattern: data/cards.json
-        working-directory: ${{ github.workspace }}
+        # Hier KEIN working-directory möglich!
