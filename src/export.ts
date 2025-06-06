@@ -4,12 +4,12 @@ import { glob } from 'glob';
 
 interface SetInfo {
   id: string;
-  name: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any;
 }
 
 interface Card {
   set_id?: string;
-  set_name?: string;
   // additional card information
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
@@ -43,19 +43,19 @@ async function importTSFile(file: string) {
 
 async function getAllSets() {
   const setFiles = await glob(SETS_GLOB);
-  const sets: Record<string, SetInfo> = {};
+  const sets: SetInfo[] = [];
 
   for (const file of setFiles) {
     const set = (await importTSFile(file)).default;
-    sets[set.id] = {
-      id: set.id,
-      name: set.name && set.name.en ? set.name.en : path.basename(file, '.ts'),
-    };
+    if (!set.name) {
+      set.name = { en: path.basename(file, '.ts') };
+    }
+    sets.push(set);
   }
   return sets;
 }
 
-async function getAllCards(sets: Record<string, SetInfo>) {
+async function getAllCards() {
   const files = await glob(CARDS_GLOB);
   console.log('Files found:', files.length);
 
@@ -66,18 +66,15 @@ async function getAllCards(sets: Record<string, SetInfo>) {
     const card = mod.default || mod;
 
     let setId: string | undefined = undefined;
-    let setName: string | undefined = undefined;
 
     if (card.set && card.set.id) {
       setId = card.set.id;
-      setName = setId && sets[setId] ? sets[setId].name : '';
     } else {
-      // Backup: Überordner als Set-Name
-      setName = path.basename(path.dirname(file));
+      // Backup: Überordner als Set-ID
+      setId = path.basename(path.dirname(file));
     }
 
     card.set_id = setId;
-    card.set_name = setName;
 
     cards.push(card);
   }
@@ -90,12 +87,12 @@ async function main() {
   const sets = await getAllSets();
 
   // Schritt 2: Karten einlesen und um Set-Daten ergänzen
-  const cards = await getAllCards(sets);
+  const cards = await getAllCards();
 
   // Schritt 3: Karten als JSON exportieren
   const outPath = path.join(__dirname, '..', 'data', 'cards.json');
   await fs.ensureDir(path.dirname(outPath));
-  await fs.writeJson(outPath, cards, { spaces: 2 });
+  await fs.writeJson(outPath, { sets, cards }, { spaces: 2 });
 
   // Optionaler Debug-Block: Inhalt der geschriebenen Datei ausgeben
   if (process.env.DEBUG) {
@@ -103,7 +100,9 @@ async function main() {
     console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
   }
 
-  console.log(`Exported ${cards.length} cards to data/cards.json`);
+  console.log(
+    `Exported ${cards.length} cards and ${sets.length} sets to data/cards.json`,
+  );
 }
 
 main().catch((e) => {

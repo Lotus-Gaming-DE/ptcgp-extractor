@@ -34,9 +34,10 @@ describe('export script', () => {
   });
 
   it('writes cards.json with expected content', async () => {
-    const cards = await fs.readJson(outPath);
-    expect(Array.isArray(cards)).toBe(true);
-    expect(cards[0].set_id).toBe('SET1');
-    expect(cards[0].set_name).toBe('Set 1');
+    const result = await fs.readJson(outPath);
+    expect(Array.isArray(result.cards)).toBe(true);
+    expect(Array.isArray(result.sets)).toBe(true);
+    expect(result.cards[0].set_id).toBe('SET1');
+    expect(result.sets[0].id).toBe('SET1');
   });
 });

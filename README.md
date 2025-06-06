@@ -11,7 +11,7 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Projektüberblick
 
 - **Quelle**: Unter `tcgdex/data/Pokémon TCG Pocket/` befinden sich Set-Dateien und Karten-Dateien (.ts)
-- **Skript**: `src/export.ts` liest die Dateien, ergänzt Set-Informationen und speichert alles in `data/cards.json`.
+- **Skript**: `src/export.ts` liest die Dateien und erzeugt `data/cards.json` im Format `{ sets: [...], cards: [...] }`.
 - **Automatisierung**: 
   - Mit GitHub Actions wird bei jedem Push, per Button und wöchentlich ein Workflow ausgeführt.
   - Der Workflow klont `tcgdex/cards-database`, führt das Skript aus und committet das aktualisierte JSON zurück.
@@ -32,7 +32,7 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    npm run build
    npm run export
    ```
-4. Das Ergebnis liegt in `data/cards.json`.
+4. Das Ergebnis liegt in `data/cards.json` und enthält sowohl Sets als auch Karten.
 
 ## Codequalität prüfen
 
