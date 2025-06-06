@@ -6,9 +6,10 @@ import { glob } from "glob";
 const SETS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*.ts";
 const CARDS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*/*.ts";
 
-// Hilfsfunktion, um dynamisch zu importieren (require)
-function importTSFile(file: string) {
-  return require(path.resolve(file));
+// Hilfsfunktion, um dynamisch zu importieren
+async function importTSFile(file: string) {
+  const pathToFile = path.resolve(file);
+  return await import(pathToFile);
 }
 
 async function getAllSets() {
@@ -16,7 +17,7 @@ async function getAllSets() {
   const sets: Record<string, any> = {};
 
   for (const file of setFiles) {
-    const set = importTSFile(file).default;
+    const set = (await importTSFile(file)).default;
     sets[set.id] = {
       id: set.id,
       name: (set.name && set.name.en) ? set.name.en : path.basename(file, ".ts")
@@ -32,7 +33,7 @@ async function getAllCards(sets: Record<string, any>) {
   const cards: any[] = [];
 
   for (const file of files) {
-    const mod = importTSFile(file);
+    const mod = await importTSFile(file);
     const card = mod.default || mod;
 
     let setId: string | undefined = undefined;
