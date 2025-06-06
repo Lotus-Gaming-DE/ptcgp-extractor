@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "export": "node dist/export.js",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint src test",
     "pretest": "npm run build",
     "test": "jest"
   },
@@ -20,6 +20,7 @@
     "@types/node": "^20.11.30",
     "@types/fs-extra": "^11.0.4",
     "eslint": "^8.56.0",
+    "@eslint/js": "^9.28.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "prettier": "^3.2.5",
