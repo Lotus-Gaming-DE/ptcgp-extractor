@@ -1,30 +1,56 @@
-// src/export.ts
-
 import fs from "fs-extra";
-import { glob } from "glob";
 import path from "path";
+import { glob } from "glob";
 
-// Wo liegen die Karten?
-const CARDS_GLOB = path.join(
-  __dirname,
-  "..",
-  "..",
-  "tcgdex",
-  "data",
-  "Pokémon TCG Pocket",
-  "**",
-  "*.ts"
-);
+// 1. Alle Set-Dateien einlesen
+const SETS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*.ts";
+const CARDS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*/*.ts";
 
-async function getAllCards() {
+// Hilfsfunktion, um dynamisch zu importieren (require)
+function importTSFile(file: string) {
+  return require(path.resolve(file));
+}
+
+async function getAllSets() {
+  const setFiles = await glob(SETS_GLOB);
+  const sets: Record<string, any> = {};
+
+  for (const file of setFiles) {
+    const set = importTSFile(file).default;
+    // Manche Set-Dateien haben vielleicht keinen Namen in "en"
+    sets[set.id] = {
+      id: set.id,
+      name: (set.name && set.name.en) ? set.name.en : path.basename(file, ".ts")
+    };
+  }
+  return sets;
+}
+
+async function getAllCards(sets: Record<string, any>) {
   const files = await glob(CARDS_GLOB);
+  console.log("Files found:", files.length);
+
   const cards: any[] = [];
 
   for (const file of files) {
-    // Dynamisch importieren (CJS require, weil die .ts Dateien als JS transpiliert werden)
-    // Wir nehmen an, dass der "default export" das Card-Objekt ist
-    const mod = require(file);
+    const mod = importTSFile(file);
     const card = mod.default || mod;
+
+    let setId: string | undefined = undefined;
+    let setName: string | undefined = undefined;
+
+    if (card.set && card.set.id) {
+      setId = card.set.id;
+      setName = sets[setId]?.name || "";
+    } else {
+      // Fallback: Überordner-Name
+      setName = path.basename(path.dirname(file));
+    }
+
+    // Set-Daten als eigene Felder zur Karte
+    card.set_id = setId;
+    card.set_name = setName;
+
     cards.push(card);
   }
 
@@ -32,9 +58,13 @@ async function getAllCards() {
 }
 
 async function main() {
-  const cards = await getAllCards();
+  // Schritt 1: Sets einlesen
+  const sets = await getAllSets();
 
-  // Erzeuge data/cards.json
+  // Schritt 2: Karten einlesen und um Set-Daten ergänzen
+  const cards = await getAllCards(sets);
+
+  // Schritt 3: Karten als JSON exportieren
   const outPath = path.join(__dirname, "..", "..", "data", "cards.json");
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
