@@ -12,14 +12,25 @@ interface Card {
   set_name?: string;
   [key: string]: any;
 }
+// Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
+function getArg(flag: string): string | undefined {
+  const index = process.argv.indexOf(flag);
+  if (index !== -1 && process.argv[index + 1]) {
+    return process.argv[index + 1];
+  }
+  return undefined;
+}
+
+const repoDir = getArg("--tcgdex") || process.env.TCGDEX_DIR || "tcgdex";
 
 // 1. Alle Set-Dateien einlesen
-const SETS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*.ts";
-const CARDS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*/*.ts";
+const SETS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*.ts");
+const CARDS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*", "*.ts");
 
-// Hilfsfunktion, um dynamisch zu importieren (require)
-function importTSFile(file: string) {
-  return require(path.resolve(file));
+// Hilfsfunktion, um dynamisch zu importieren
+async function importTSFile(file: string) {
+  const pathToFile = path.resolve(file);
+  return await import(pathToFile);
 }
 
 async function getAllSets() {
@@ -27,7 +38,7 @@ async function getAllSets() {
   const sets: Record<string, SetInfo> = {};
 
   for (const file of setFiles) {
-    const set = importTSFile(file).default;
+    const set = (await importTSFile(file)).default;
     sets[set.id] = {
       id: set.id,
       name: (set.name && set.name.en) ? set.name.en : path.basename(file, ".ts")
@@ -43,7 +54,7 @@ async function getAllCards(sets: Record<string, SetInfo>) {
   const cards: Card[] = [];
 
   for (const file of files) {
-    const mod = importTSFile(file);
+    const mod = await importTSFile(file);
     const card = mod.default || mod;
 
     let setId: string | undefined = undefined;
@@ -78,10 +89,14 @@ async function main() {
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
 
-  // >>> Debug-Block: Inhalt der geschriebenen Datei ausgeben
-  const outRaw = await fs.readFile(outPath, "utf-8");
-  console.log("Erste 500 Zeichen aus cards.json:\n", outRaw.slice(0, 500));
-  // <<< Debug-Block-Ende
+  // Optionaler Debug-Block: Inhalt der geschriebenen Datei ausgeben
+  if (process.env.DEBUG) {
+    const outRaw = await fs.readFile(outPath, "utf-8");
+    console.log(
+      "Erste 500 Zeichen aus cards.json:\n",
+      outRaw.slice(0, 500)
+    );
+  }
 
   console.log(`Exported ${cards.length} cards to data/cards.json`);
 }
