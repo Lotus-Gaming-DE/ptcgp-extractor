@@ -19,3 +19,9 @@ pnpm-debug.log*
 *.swp
 *.swo
 .DS_Store
+
+# Personal data should not be committed
+data/pers/
+
+# Jest coverage output
+coverage/
