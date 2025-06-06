@@ -1,9 +1,13 @@
 name: Extract PTCGP Cards
 
 on:
-  workflow_dispatch:   # Manuell auslösbar
+  workflow_dispatch:     # Manuell auslösbar ("Run workflow"-Button)
+  push:                  # Bei jedem Commit auf main/master
+    branches:
+      - main
+      - master
   schedule:
-    - cron: '0 3 * * 1'   # Jeden Montag um 3 Uhr nachts (UTC) automatisch
+    - cron: '0 3 * * 1'  # Jeden Montag um 3 Uhr UTC
 
 jobs:
   build:
