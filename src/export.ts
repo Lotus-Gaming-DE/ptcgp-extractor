@@ -17,7 +17,6 @@ async function getAllSets() {
 
   for (const file of setFiles) {
     const set = importTSFile(file).default;
-    // Manche Set-Dateien haben vielleicht keinen Namen in "en"
     sets[set.id] = {
       id: set.id,
       name: (set.name && set.name.en) ? set.name.en : path.basename(file, ".ts")
@@ -35,10 +34,10 @@ async function getAllCards(sets: Record<string, any>) {
   for (const file of files) {
     const mod = importTSFile(file);
     const card = mod.default || mod;
-  
+
     let setId: string | undefined = undefined;
     let setName: string | undefined = undefined;
-  
+
     if (card.set && card.set.id) {
       setId = card.set.id;
       setName = setId && sets[setId] ? sets[setId].name : "";
@@ -46,10 +45,10 @@ async function getAllCards(sets: Record<string, any>) {
       // Backup: Überordner als Set-Name
       setName = path.basename(path.dirname(file));
     }
-  
+
     card.set_id = setId;
     card.set_name = setName;
-  
+
     cards.push(card);
   }
 
@@ -67,6 +66,11 @@ async function main() {
   const outPath = path.join(__dirname, "..", "..", "data", "cards.json");
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
+
+  // >>> Debug-Block: Inhalt der geschriebenen Datei ausgeben
+  const outRaw = await fs.readFile(outPath, "utf-8");
+  console.log("Erste 500 Zeichen aus cards.json:\n", outRaw.slice(0, 500));
+  // <<< Debug-Block-Ende
 
   console.log(`Exported ${cards.length} cards to data/cards.json`);
 }
