@@ -34,8 +34,11 @@ jobs:
         run: npm install
         # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
+      - name: Build
+        run: npm run build
+
       - name: Run export script
-        run: npx ts-node src/export.ts
+        run: npm run export
         # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
       - name: Commit and push changes
