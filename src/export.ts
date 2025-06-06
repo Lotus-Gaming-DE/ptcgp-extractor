@@ -1,6 +1,6 @@
-import fs from "fs-extra";
-import path from "path";
-import { glob } from "glob";
+import fs from 'fs-extra';
+import path from 'path';
+import { glob } from 'glob';
 
 interface SetInfo {
   id: string;
@@ -10,6 +10,8 @@ interface SetInfo {
 interface Card {
   set_id?: string;
   set_name?: string;
+  // additional card information
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 // Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
@@ -21,11 +23,17 @@ function getArg(flag: string): string | undefined {
   return undefined;
 }
 
-const repoDir = getArg("--tcgdex") || process.env.TCGDEX_DIR || "tcgdex";
+const repoDir = getArg('--tcgdex') || process.env.TCGDEX_DIR || 'tcgdex';
 
 // 1. Alle Set-Dateien einlesen
-const SETS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*.ts");
-const CARDS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*", "*.ts");
+const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
+const CARDS_GLOB = path.join(
+  repoDir,
+  'data',
+  'Pokémon TCG Pocket',
+  '*',
+  '*.ts',
+);
 
 // Hilfsfunktion, um dynamisch zu importieren
 async function importTSFile(file: string) {
@@ -41,7 +49,7 @@ async function getAllSets() {
     const set = (await importTSFile(file)).default;
     sets[set.id] = {
       id: set.id,
-      name: (set.name && set.name.en) ? set.name.en : path.basename(file, ".ts")
+      name: set.name && set.name.en ? set.name.en : path.basename(file, '.ts'),
     };
   }
   return sets;
@@ -49,7 +57,7 @@ async function getAllSets() {
 
 async function getAllCards(sets: Record<string, SetInfo>) {
   const files = await glob(CARDS_GLOB);
-  console.log("Files found:", files.length);
+  console.log('Files found:', files.length);
 
   const cards: Card[] = [];
 
@@ -62,7 +70,7 @@ async function getAllCards(sets: Record<string, SetInfo>) {
 
     if (card.set && card.set.id) {
       setId = card.set.id;
-      setName = setId && sets[setId] ? sets[setId].name : "";
+      setName = setId && sets[setId] ? sets[setId].name : '';
     } else {
       // Backup: Überordner als Set-Name
       setName = path.basename(path.dirname(file));
@@ -85,17 +93,14 @@ async function main() {
   const cards = await getAllCards(sets);
 
   // Schritt 3: Karten als JSON exportieren
-  const outPath = path.join(__dirname, "..", "data", "cards.json");
+  const outPath = path.join(__dirname, '..', 'data', 'cards.json');
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
 
   // Optionaler Debug-Block: Inhalt der geschriebenen Datei ausgeben
   if (process.env.DEBUG) {
-    const outRaw = await fs.readFile(outPath, "utf-8");
-    console.log(
-      "Erste 500 Zeichen aus cards.json:\n",
-      outRaw.slice(0, 500)
-    );
+    const outRaw = await fs.readFile(outPath, 'utf-8');
+    console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
   }
 
   console.log(`Exported ${cards.length} cards to data/cards.json`);
