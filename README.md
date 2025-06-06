@@ -5,6 +5,8 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Voraussetzungen
 
 - Benötigt wird **Node.js 20** (siehe GitHub Action)
+- Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten 
+  ändern.
 
 ## Projektüberblick
 
