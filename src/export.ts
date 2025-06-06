@@ -63,7 +63,7 @@ async function main() {
   const cards = await getAllCards(sets);
 
   // Schritt 3: Karten als JSON exportieren
-  const outPath = path.join(__dirname, "..", "..", "data", "cards.json");
+  const outPath = path.join(__dirname, "..", "data", "cards.json");
   await fs.ensureDir(path.dirname(outPath));
   await fs.writeJson(outPath, cards, { spaces: 2 });
 
