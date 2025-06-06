@@ -1,7 +1,7 @@
 // src/export.ts
 
 import fs from "fs-extra";
-import glob from "glob";
+import { glob } from "glob";
 import path from "path";
 
 // Wo liegen die Karten?
@@ -17,7 +17,7 @@ const CARDS_GLOB = path.join(
 );
 
 async function getAllCards() {
-  const files = glob.sync(CARDS_GLOB);
+  const files = await glob(CARDS_GLOB);
   const cards: any[] = [];
 
   for (const file of files) {
