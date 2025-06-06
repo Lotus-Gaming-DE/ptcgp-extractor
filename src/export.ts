@@ -2,6 +2,16 @@ import fs from "fs-extra";
 import path from "path";
 import { glob } from "glob";
 
+interface SetInfo {
+  id: string;
+  name: string;
+}
+
+interface Card {
+  set_id?: string;
+  set_name?: string;
+  [key: string]: any;
+}
 // Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
 function getArg(flag: string): string | undefined {
   const index = process.argv.indexOf(flag);
@@ -25,7 +35,7 @@ async function importTSFile(file: string) {
 
 async function getAllSets() {
   const setFiles = await glob(SETS_GLOB);
-  const sets: Record<string, any> = {};
+  const sets: Record<string, SetInfo> = {};
 
   for (const file of setFiles) {
     const set = (await importTSFile(file)).default;
@@ -37,11 +47,11 @@ async function getAllSets() {
   return sets;
 }
 
-async function getAllCards(sets: Record<string, any>) {
+async function getAllCards(sets: Record<string, SetInfo>) {
   const files = await glob(CARDS_GLOB);
   console.log("Files found:", files.length);
 
-  const cards: any[] = [];
+  const cards: Card[] = [];
 
   for (const file of files) {
     const mod = await importTSFile(file);
