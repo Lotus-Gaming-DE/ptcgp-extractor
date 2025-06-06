@@ -41,3 +41,10 @@ Siehe `.github/workflows/export.yml` für den vollständigen Ablauf. Der Workflo
 - Bereitstellung einer API für Bots oder Apps
 - Automatischer Abgleich neuer Sets
 
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE). Es nutzt Daten aus
+[tcgdex/cards-database](https://github.com/tcgdex/cards-database), das ebenfalls
+unter der [MIT-Lizenz](https://github.com/tcgdex/cards-database/blob/master/LICENSE)
+veröffentlicht wird.
+
