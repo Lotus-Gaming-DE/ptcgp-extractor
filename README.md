@@ -2,6 +2,10 @@
 
 Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Open-Source-Repositories [tcgdex/cards-database](https://github.com/tcgdex/cards-database) und stellt sie als JSON bereit. Das JSON wird für weitere Projekte wie Discord-Bots oder mobile Apps genutzt.
 
+## Voraussetzungen
+
+- Benötigt wird **Node.js 20** (siehe GitHub Action)
+
 ## Projektüberblick
 
 - **Quelle**: Unter `tcgdex/data/Pokémon TCG Pocket/` befinden sich Set-Dateien und Karten-Dateien (.ts)
@@ -17,6 +21,9 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    ```bash
    git clone https://github.com/tcgdex/cards-database tcgdex
    ```
+   Das Skript erwartet standardmäßig einen Ordner `tcgdex` im Projektverzeichnis. 
+   Falls du einen anderen Pfad verwendest, kannst du ihn über die Umgebungsvariable 
+   `TCGDEX_DIR` oder beim Aufruf mit `--tcgdex <pfad>` angeben.
 3. Abhängigkeiten installieren und Export starten:
    ```bash
    npm install

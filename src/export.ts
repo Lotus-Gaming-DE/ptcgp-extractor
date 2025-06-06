@@ -2,9 +2,20 @@ import fs from "fs-extra";
 import path from "path";
 import { glob } from "glob";
 
+// Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
+function getArg(flag: string): string | undefined {
+  const index = process.argv.indexOf(flag);
+  if (index !== -1 && process.argv[index + 1]) {
+    return process.argv[index + 1];
+  }
+  return undefined;
+}
+
+const repoDir = getArg("--tcgdex") || process.env.TCGDEX_DIR || "tcgdex";
+
 // 1. Alle Set-Dateien einlesen
-const SETS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*.ts";
-const CARDS_GLOB = "tcgdex/data/Pokémon TCG Pocket/*/*.ts";
+const SETS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*.ts");
+const CARDS_GLOB = path.join(repoDir, "data", "Pokémon TCG Pocket", "*", "*.ts");
 
 // Hilfsfunktion, um dynamisch zu importieren (require)
 function importTSFile(file: string) {
