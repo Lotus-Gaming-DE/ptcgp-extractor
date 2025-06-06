@@ -35,22 +35,21 @@ async function getAllCards(sets: Record<string, any>) {
   for (const file of files) {
     const mod = importTSFile(file);
     const card = mod.default || mod;
-
+  
     let setId: string | undefined = undefined;
     let setName: string | undefined = undefined;
-
+  
     if (card.set && card.set.id) {
       setId = card.set.id;
-      setName = sets[setId]?.name || "";
+      setName = setId && sets[setId] ? sets[setId].name : "";
     } else {
-      // Fallback: Überordner-Name
+      // Backup: Überordner als Set-Name
       setName = path.basename(path.dirname(file));
     }
-
-    // Set-Daten als eigene Felder zur Karte
+  
     card.set_id = setId;
     card.set_name = setName;
-
+  
     cards.push(card);
   }
 
