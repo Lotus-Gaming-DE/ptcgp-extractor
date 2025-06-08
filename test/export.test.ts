@@ -11,30 +11,9 @@ interface SetInfo {
 
 interface Card {
   set_id?: string;
-  images?: { [lang: string]: { [quality: string]: string } };
   // additional card information
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
-}
-
-interface DatasJson {
-  [lang: string]: {
-    [serieId: string]: {
-      [setId: string]: {
-        [cardId: string]: string[];
-      };
-    };
-  };
-}
-
-// Hilfsfunktion, um datas.json von tcgdex zu laden
-async function fetchDatasJson(): Promise<DatasJson> {
-  const url = 'https://assets.tcgdex.net/datas.json';
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error('Failed to fetch datas.json');
-  }
-  return (await res.json()) as DatasJson;
 }
 
 // Standard-Ordner für das tcgdex-Repo
@@ -82,11 +61,7 @@ async function main() {
   if (!(await ensureRepoDir())) {
     return;
   }
-  // Schritt 1: Bilddaten laden
-  console.log('Lade datas.json von tcgdex...');
-  const datas = await fetchDatasJson();
-
-  // Schritt 2: Sets einlesen
+  // Sets einlesen
   const sets = await getAllSets();
   // Map zur schnellen Suche nach Set nach ID (derzeit nicht genutzt)
 
@@ -107,32 +82,6 @@ async function main() {
       setId = path.basename(path.dirname(file));
     }
     card.set_id = setId;
-
-    // --- Image-URLs hinzufügen ---
-    const serieId = card.set?.serie?.id;
-    const cardId = file.match(/(\d+)\.ts$/)?.[1] || ''; // z.B. "003"
-    card.images = {};
-
-    // Finde alle Sprachen aus dem cards-Objekt (z.B. ["de", "en", ...])
-    const langs = Object.keys(card.name ?? {});
-
-    for (const lang of langs) {
-      // Überprüfe, ob die Bilddaten für die Karte in datas.json verfügbar sind
-      if (
-        datas[lang] &&
-        datas[lang][serieId] &&
-        datas[lang][serieId][setId] &&
-        datas[lang][serieId][setId][cardId]
-      ) {
-        card.images[lang] = {};
-        const qualities = Object.keys(datas[lang][serieId][setId][cardId]); // z.B. ["high", "medium", ...]
-        for (const quality of qualities) {
-          card.images[lang][quality] =
-            `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${quality}.webp`;
-        }
-      }
-    }
-
     cards.push(card);
   }
 
