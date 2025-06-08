@@ -2,6 +2,7 @@ import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
 import { glob } from 'glob';
+import fetch from 'node-fetch';
 
 interface SetInfo {
   id: string;
@@ -11,10 +12,22 @@ interface SetInfo {
 
 interface Card {
   set_id?: string;
+  images?: { [lang: string]: { [quality: string]: string } };
   // additional card information
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
+
+// Hilfsfunktion, um datas.json von tcgdex zu laden
+async function fetchDatasJson() {
+  const url = 'https://assets.tcgdex.net/datas.json';
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error('Failed to fetch datas.json');
+  }
+  return await res.json();
+}
+
 // Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
 function getArg(flag: string): string | undefined {
   const index = process.argv.indexOf(flag);
@@ -26,7 +39,6 @@ function getArg(flag: string): string | undefined {
 
 const repoDir = getArg('--tcgdex') || process.env.TCGDEX_DIR || 'tcgdex';
 
-// 1. Alle Set-Dateien einlesen
 const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
 const CARDS_GLOB = path.join(
   repoDir,
@@ -48,6 +60,10 @@ async function getAllSets() {
 
   for (const file of setFiles) {
     const set = (await importTSFile(file)).default;
+    // Entferne das "serie"-Feld!
+    if (set.serie) {
+      delete set.serie;
+    }
     if (!set.name) {
       set.name = { en: path.basename(file, '.ts') };
     }
@@ -56,7 +72,17 @@ async function getAllSets() {
   return sets;
 }
 
-async function getAllCards() {
+async function main() {
+  // Schritt 1: Bilddaten laden
+  console.log('Lade datas.json von tcgdex...');
+  const datas = await fetchDatasJson();
+
+  // Schritt 2: Sets einlesen
+  const sets = await getAllSets();
+  // Map zur schnellen Suche nach Set nach ID
+  const setMap = new Map(sets.map(s => [s.id, s]));
+
+  // Schritt 3: Karten einlesen und um Set-ID ergänzen
   const files = await glob(CARDS_GLOB);
   console.log('Files found:', files.length);
 
@@ -67,42 +93,63 @@ async function getAllCards() {
     const card = mod.default || mod;
 
     let setId: string | undefined = undefined;
-
     if (card.set && card.set.id) {
       setId = card.set.id;
     } else {
-      // Backup: Überordner als Set-ID
       setId = path.basename(path.dirname(file));
     }
-
     card.set_id = setId;
+
+    // Entferne das Set-Objekt komplett aus der Karte!
+    delete card.set;
+
+    // --- Image-URLs hinzufügen ---
+    // Serie ist immer tcgp!
+    const serieId = 'tcgp';
+    // Die ID aus Dateinamen (z.B. 003.ts -> 003)
+    const cardId = path.basename(file, '.ts');
+    card.images = {};
+
+    // Finde alle Sprachen aus dem cards-Objekt (z.B. ["de", "en", ...])
+    const langs = Object.keys(card.name ?? {});
+
+    for (const lang of langs) {
+      if (
+        datas[lang] &&
+        datas[lang][serieId] &&
+        datas[lang][serieId][setId] &&
+        datas[lang][serieId][setId][cardId]
+      ) {
+        card.images[lang] = {};
+        // Verfügbare Qualitäten holen (["high", "medium", ...])
+        const qualities = datas[lang][serieId][setId][cardId];
+        for (const quality of qualities) {
+          card.images[lang][quality] = `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${quality}.webp`;
+        }
+      }
+    }
 
     cards.push(card);
   }
 
-  return cards;
-}
+  // Schritt 4: Schreibe Karten und Sets in getrennte Dateien
+  const dataDir = path.join(__dirname, '..', 'data');
+  await fs.ensureDir(dataDir);
 
-async function main() {
-  // Schritt 1: Sets einlesen
-  const sets = await getAllSets();
+  const cardsOutPath = path.join(dataDir, 'cards.json');
+  const setsOutPath = path.join(dataDir, 'sets.json');
 
-  // Schritt 2: Karten einlesen und um Set-Daten ergänzen
-  const cards = await getAllCards();
+  await fs.writeJson(cardsOutPath, cards, { spaces: 2 });
+  await fs.writeJson(setsOutPath, sets, { spaces: 2 });
 
-  // Schritt 3: Karten als JSON exportieren
-  const outPath = path.join(__dirname, '..', 'data', 'cards.json');
-  await fs.ensureDir(path.dirname(outPath));
-  await fs.writeJson(outPath, { sets, cards }, { spaces: 2 });
-
-  // Optionaler Debug-Block: Inhalt der geschriebenen Datei ausgeben
+  // Debug-Ausgabe
   if (process.env.DEBUG) {
-    const outRaw = await fs.readFile(outPath, 'utf-8');
+    const outRaw = await fs.readFile(cardsOutPath, 'utf-8');
     console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
   }
 
   console.log(
-    `Exported ${cards.length} cards and ${sets.length} sets to data/cards.json`,
+    `Exported ${cards.length} cards to data/cards.json and ${sets.length} sets to data/sets.json`,
   );
 }
 
