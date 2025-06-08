@@ -2,7 +2,6 @@ import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
 import { glob } from 'glob';
-import fetch from 'node-fetch';
 
 interface SetInfo {
   id: string;
@@ -18,14 +17,24 @@ interface Card {
   [key: string]: any;
 }
 
+interface DatasJson {
+  [lang: string]: {
+    [serieId: string]: {
+      [setId: string]: {
+        [cardId: string]: string[];
+      };
+    };
+  };
+}
+
 // Hilfsfunktion, um datas.json von tcgdex zu laden
-async function fetchDatasJson() {
+async function fetchDatasJson(): Promise<DatasJson> {
   const url = 'https://assets.tcgdex.net/datas.json';
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error('Failed to fetch datas.json');
   }
-  return await res.json();
+  return (await res.json()) as DatasJson;
 }
 
 // Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
@@ -76,8 +85,7 @@ async function main() {
 
   // Schritt 2: Sets einlesen
   const sets = await getAllSets();
-  // Map zur schnellen Suche nach Set nach ID
-  const setMap = new Map(sets.map(s => [s.id, s]));
+  // Map zur schnellen Suche nach Set nach ID (derzeit nicht genutzt)
 
   // Schritt 3: Karten einlesen und um Set-ID ergänzen
   const files = await glob(CARDS_GLOB);
@@ -89,7 +97,7 @@ async function main() {
     const mod = await importTSFile(file);
     const card = mod.default || mod;
 
-    let setId: string | undefined = undefined;
+    let setId: string;
     if (card.set && card.set.id) {
       setId = card.set.id;
     } else {
@@ -116,7 +124,8 @@ async function main() {
         card.images[lang] = {};
         const qualities = Object.keys(datas[lang][serieId][setId][cardId]); // z.B. ["high", "medium", ...]
         for (const quality of qualities) {
-          card.images[lang][quality] = `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${quality}.webp`;
+          card.images[lang][quality] =
+            `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${quality}.webp`;
         }
       }
     }
