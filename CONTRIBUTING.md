@@ -5,7 +5,7 @@ Vielen Dank für dein Interesse an diesem Projekt. Bitte beachte beim Arbeiten d
 ## Voraussetzungen
 
 - Installiere **Node.js 20**.
-- Klone das Fremd-Repository [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) in einen Ordner `tcgdex` im Projektverzeichnis **oder** lege den Pfad über die Umgebungsvariable `TCGDEX_DIR` fest.
+- Klone das Fremd-Repository [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) in einen Ordner `tcgdex` im Projektverzeichnis.
 
 ## Abläufe
 

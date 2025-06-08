@@ -6,24 +6,16 @@ import { glob } from 'glob';
 // Typdefinitionen
 interface SetInfo {
   id: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface Card {
   set_id?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
-// Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
-function getArg(flag: string): string | undefined {
-  const index = process.argv.indexOf(flag);
-  if (index !== -1 && process.argv[index + 1]) {
-    return process.argv[index + 1];
-  }
-  return undefined;
-}
-
-const repoDir = getArg('--tcgdex') || process.env.TCGDEX_DIR || 'tcgdex';
+// Standard-Ordner für das tcgdex-Repo
+const repoDir = path.resolve('tcgdex');
 
 const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
 const CARDS_GLOB = path.join(
