@@ -63,7 +63,6 @@ async function main() {
   }
   // Sets einlesen
   const sets = await getAllSets();
-  // Map zur schnellen Suche nach Set nach ID (derzeit nicht genutzt)
 
   // Schritt 3: Karten einlesen und um Set-ID ergänzen
   const files = await glob(CARDS_GLOB);
