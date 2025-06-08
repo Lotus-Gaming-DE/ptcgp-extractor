@@ -40,6 +40,14 @@ async function fetchDatasJson(): Promise<DatasJson> {
 // Standard-Ordner für das tcgdex-Repo
 const repoDir = path.resolve('tcgdex');
 
+async function ensureRepoDir(): Promise<boolean> {
+  if (!(await fs.pathExists(repoDir))) {
+    console.log('Skipping export test: repo directory not found');
+    return false;
+  }
+  return true;
+}
+
 const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
 const CARDS_GLOB = path.join(
   repoDir,
@@ -71,6 +79,9 @@ async function getAllSets() {
 
 // Main-Funktion
 async function main() {
+  if (!(await ensureRepoDir())) {
+    return;
+  }
   // Schritt 1: Bilddaten laden
   console.log('Lade datas.json von tcgdex...');
   const datas = await fetchDatasJson();
@@ -146,7 +157,9 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
+test('run export script', async () => {
+  if (!(await ensureRepoDir())) {
+    return;
+  }
+  await main();
 });

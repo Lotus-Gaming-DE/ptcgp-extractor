@@ -5,14 +5,17 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Voraussetzungen
 
 - Benötigt wird **Node.js 20** (siehe GitHub Action)
-- Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten 
+- Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten
   ändern.
+- Vor dem Export muss ein Klon von `tcgdex/cards-database` im Unterordner
+  `tcgdex` vorhanden sein. Fehlt das Verzeichnis, beendet das Skript den Vorgang
+  mit einer Fehlermeldung.
 
 ## Projektüberblick
 
 - **Quelle**: Unter `tcgdex/data/Pokémon TCG Pocket/` befinden sich Set-Dateien und Karten-Dateien (.ts)
 - **Skript**: `src/export.ts` liest die Dateien und erzeugt zwei Dateien: `data/cards.json` und `data/sets.json`.
-- **Automatisierung**: 
+- **Automatisierung**:
   - Mit GitHub Actions wird bei jedem Push, per Button und wöchentlich ein Workflow ausgeführt.
   - Der Workflow klont `tcgdex/cards-database`, führt das Skript aus und committet das aktualisierte JSON zurück.
 
@@ -23,7 +26,8 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    ```bash
    git clone https://github.com/tcgdex/cards-database tcgdex
    ```
-   Das Skript erwartet einen Ordner `tcgdex` im Projektverzeichnis.
+   Das Skript erwartet einen Ordner `tcgdex` im Projektverzeichnis. Fehlt er,
+   schlägt `npm run export` mit einer Fehlermeldung fehl.
 3. Abhängigkeiten installieren, Build erzeugen und Export starten:
    ```bash
    npm install
@@ -59,4 +63,3 @@ Dieses Projekt steht unter der [MIT-Lizenz](LICENSE). Es nutzt Daten aus
 [tcgdex/cards-database](https://github.com/tcgdex/cards-database), das ebenfalls
 unter der [MIT-Lizenz](https://github.com/tcgdex/cards-database/blob/master/LICENSE)
 veröffentlicht wird.
-
