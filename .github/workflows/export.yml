@@ -45,7 +45,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Automated data extraction"
-          file_pattern: |
-            data/cards.json
-            data/sets.json
+          file_pattern: 'data/cards.json data/sets.json'
         # Hier KEIN working-directory möglich!
