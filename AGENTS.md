@@ -5,7 +5,9 @@
 - Optional können einfache Tests wie `npm test` ausgeführt werden.
 - Aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten 
   ändern.
-- Wenn möglich sollen `npm run build`, `npm run lint` und `npm test` ausgeführt werden.
+- Führe nach Möglichkeit `npm run build`, `npm run lint` und `npm test` aus.
 
-- Bei Funktionsänderungen sind die relevanten `.md`-Dateien zu aktualisieren.
+- Bei Funktionsänderungen sind alle `.md`-Dateien zu aktualisieren.
+- Halte auch `.github/workflows/export.yml` aktuell, wenn sich Code oder
+  Abhängigkeiten ändern.
 
