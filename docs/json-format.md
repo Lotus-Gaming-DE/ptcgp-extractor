@@ -1,16 +1,12 @@
 
-# Format von `data/cards.json`
+# Format der JSON-Dateien
 
-Das JSON wird durch das Skript `src/export.ts` erzeugt. Seit der Umstellung enthält die Datei ein Objekt mit zwei Bereichen:
+Das Skript `src/export.ts` erzeugt zwei Dateien im Verzeichnis `data/`:
 
-```json
-{
-  "sets": [...],
-  "cards": [...]
-}
-```
+- **`cards.json`** – enthält eine Liste aller Karten.
+- **`sets.json`** – enthält Informationen zu allen Sets bzw. Boostern.
 
-`sets` beschreibt die Boosterpacks beziehungsweise Set-Informationen. `cards` ist eine Liste aller Karten. Die beiden Bereiche sind voneinander getrennt, sodass Anwendungen bei Bedarf nur einen Teil einlesen können.
+Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingelesen werden können.
 
 ## Karten
 
