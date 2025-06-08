@@ -17,6 +17,15 @@ interface Card {
 // Standard-Ordner für das tcgdex-Repo
 const repoDir = path.resolve('tcgdex');
 
+async function ensureRepoDir() {
+  if (!(await fs.pathExists(repoDir))) {
+    console.error(
+      `Repo directory '${repoDir}' not found. Clone tcgdex/cards-database into this folder.`,
+    );
+    process.exit(1);
+  }
+}
+
 const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
 const CARDS_GLOB = path.join(
   repoDir,
@@ -74,6 +83,7 @@ async function getAllCards(): Promise<Card[]> {
 }
 
 async function main() {
+  await ensureRepoDir();
   // Schritt 1: Sets einlesen
   const sets = await getAllSets();
 
