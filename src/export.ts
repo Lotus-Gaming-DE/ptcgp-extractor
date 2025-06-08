@@ -11,28 +11,7 @@ interface SetInfo {
 
 interface Card {
   set_id?: string;
-  images?: { [lang: string]: string };
   [key: string]: any;
-}
-
-export interface DatasJson {
-  [lang: string]: {
-    [serieId: string]: {
-      [setId: string]: {
-        [cardId: string]: string[];
-      };
-    };
-  };
-}
-
-// Hilfsfunktion, um datas.json von tcgdex zu laden
-async function fetchDatasJson(): Promise<DatasJson> {
-  const url = 'https://assets.tcgdex.net/datas.json';
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error('Failed to fetch datas.json');
-  }
-  return (await res.json()) as DatasJson;
 }
 
 // Standard-Ordner für das tcgdex-Repo kann über Env oder CLI angepasst werden
@@ -60,7 +39,7 @@ async function importTSFile(file: string) {
   return await import(pathToFile);
 }
 
-async function getAllSets() {
+async function getAllSets(): Promise<SetInfo[]> {
   const setFiles = await glob(SETS_GLOB);
   const sets: SetInfo[] = [];
 
@@ -78,18 +57,8 @@ async function getAllSets() {
   return sets;
 }
 
-async function main() {
-  // Schritt 1: Bilddaten laden
-  console.log('Lade datas.json von tcgdex...');
-  const datas = await fetchDatasJson();
-
-  // Schritt 2: Sets einlesen
-  const sets = await getAllSets();
-
-  // Schritt 3: Karten einlesen und um Set-ID ergänzen
+async function getAllCards(): Promise<Card[]> {
   const files = await glob(CARDS_GLOB);
-  console.log('Files found:', files.length);
-
   const cards: Card[] = [];
 
   for (const file of files) {
@@ -107,34 +76,19 @@ async function main() {
     // Entferne das Set-Objekt komplett aus der Karte!
     delete card.set;
 
-    // Serie ist immer tcgp!
-    const serieId = 'tcgp';
-    // Die ID aus Dateinamen (z.B. 003.ts -> 003)
-    const cardId = path.basename(file, '.ts');
-    card.images = {};
-
-    // Finde alle Sprachen aus dem cards-Objekt (z.B. ["de", "en", ...])
-    const langs = Object.keys(card.name ?? {});
-
-    for (const lang of langs) {
-      if (
-        datas[lang] &&
-        datas[lang][serieId] &&
-        datas[lang][serieId][setId] &&
-        datas[lang][serieId][setId][cardId] &&
-        datas[lang][serieId][setId][cardId].length > 0
-      ) {
-        // Nutze NUR das erste Bild (Standard-Artwork)
-        const variant = datas[lang][serieId][setId][cardId][0];
-        card.images[lang] =
-          `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${variant}.webp`;
-      }
-    }
-
     cards.push(card);
   }
+  return cards;
+}
 
-  // Schritt 4: Schreibe Karten und Sets in getrennte Dateien
+async function main() {
+  // Schritt 1: Sets einlesen
+  const sets = await getAllSets();
+
+  // Schritt 2: Karten einlesen
+  const cards = await getAllCards();
+
+  // Schritt 3: Schreibe Karten und Sets in getrennte Dateien
   const dataDir = path.join(__dirname, '..', 'data');
   await fs.ensureDir(dataDir);
 
@@ -148,6 +102,8 @@ async function main() {
   if (process.env.DEBUG) {
     const outRaw = await fs.readFile(cardsOutPath, 'utf-8');
     console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
+    const setsRaw = await fs.readFile(setsOutPath, 'utf-8');
+    console.log('Erste 500 Zeichen aus sets.json:\n', setsRaw.slice(0, 500));
   }
 
   console.log(
