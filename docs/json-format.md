@@ -10,13 +10,12 @@ Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingeles
 
 ## Karten
 
-`cards` enthält die eigentlichen Karteneinträge. Sie besitzen im Wesentlichen die gleichen Felder wie die Originaldaten aus [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) und zusätzlich einige Hilfsfelder. Das zugehörige Set steht wie bisher unter `set`. Zur schnelleren Filterung sind `set_id` und `set_name` nochmals auf Kartenebene abgelegt.
+`cards` enthält die eigentlichen Karteneinträge. Sie besitzen im Wesentlichen die gleichen Felder wie die Originaldaten aus [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) und zusätzlich einige Hilfsfelder. Zur schnellen Zuordnung sind `set_id` und `set_name` direkt auf Kartenebene abgelegt. Ein vollständiges `set`-Objekt wird nicht mehr gespeichert.
 
 Wichtige Felder eines Karteneintrags:
 
-- `set`: Vollständiges Objekt mit Informationen zum Set (ID, Name in mehreren Sprachen, Serie, Release-Datum usw.)
-- `set_id`: Die Set-ID als String (identisch zu `set.id`)
-- `set_name`: Der englische Name des Sets (identisch zu `set.name.en`)
+- `set_id`: Die Set-ID als String (entspricht der ID im zugehörigen Set)
+- `set_name`: Der englische Name des Sets
 - `name`: Kartennamen in verschiedenen Sprachen
 - `illustrator`, `rarity`, `category`, `hp`, `types`, `stage`, `suffix` usw.
 - `boosters`: Liste der Booster-IDs, in denen die Karte erscheint
@@ -43,16 +42,6 @@ Ein minimales Pack-Objekt sieht so aus:
 ## Beispiel
 ```json
 {
-  "set": {
-    "id": "A2a",
-    "name": {
-      "de": "Licht des Triumphs",
-      "en": "Triumphant Light"
-    },
-    "serie": { "id": "tcgp", "name": { "en": "Pokémon TCG Pocket" } },
-    "cardCount": { "official": 75 },
-    "releaseDate": "2025-02-28"
-  },
   "name": { "en": "Arceus ex", "de": "Arceus-ex" },
   "illustrator": "PLANETA CG Works",
   "rarity": "Crown",
@@ -65,7 +54,7 @@ Ein minimales Pack-Objekt sieht so aus:
 
 ## Hinweise für Verbraucher
 
-- Die Datei kann sehr groß werden. Wer nur einige Felder benötigt, kann beim Einlesen nicht relevante Eigenschaften ignorieren oder das `set`-Objekt entfernen.
-- Die Felder `set_id` und `set_name` sind rein zur Bequemlichkeit vorhanden und entsprechen exakt den Angaben im `set`-Objekt.
+- Die Datei kann sehr groß werden. Wer nur einige Felder benötigt, kann beim Einlesen nicht relevante Eigenschaften ignorieren.
+- Die Felder `set_id` und `set_name` sind rein zur Bequemlichkeit vorhanden und entsprechen exakt den Angaben im zugehörigen Set.
 - Über das Feld `boosters` lässt sich ermitteln, in welchem Pack eine Karte erscheint. Die tatsächlichen Namen der Boosterpacks stehen im `sets`-Abschnitt.
 - Bei zukünftigen Änderungen des Skripts kann sich die Struktur anpassen. Anwendungen sollten daher möglichst fehlertolerant parsen.
