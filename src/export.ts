@@ -3,21 +3,18 @@ import fs from 'fs-extra';
 import path from 'path';
 import { glob } from 'glob';
 
+// Typdefinitionen
 interface SetInfo {
   id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
 interface Card {
   set_id?: string;
-  images?: { [lang: string]: { [quality: string]: string } };
-  // additional card information
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  images?: { [lang: string]: string };
   [key: string]: any;
 }
 
-// Struktur der datas.json Datei
 export interface DatasJson {
   [lang: string]: {
     [serieId: string]: {
@@ -58,7 +55,6 @@ const CARDS_GLOB = path.join(
   '*.ts',
 );
 
-// Hilfsfunktion, um dynamisch zu importieren
 async function importTSFile(file: string) {
   const pathToFile = path.resolve(file);
   return await import(pathToFile);
@@ -111,7 +107,6 @@ async function main() {
     // Entferne das Set-Objekt komplett aus der Karte!
     delete card.set;
 
-    // --- Image-URLs hinzufügen ---
     // Serie ist immer tcgp!
     const serieId = 'tcgp';
     // Die ID aus Dateinamen (z.B. 003.ts -> 003)
@@ -126,15 +121,13 @@ async function main() {
         datas[lang] &&
         datas[lang][serieId] &&
         datas[lang][serieId][setId] &&
-        datas[lang][serieId][setId][cardId]
+        datas[lang][serieId][setId][cardId] &&
+        datas[lang][serieId][setId][cardId].length > 0
       ) {
-        card.images[lang] = {};
-        // Verfügbare Qualitäten holen (["high", "medium", ...])
-        const qualities = datas[lang][serieId][setId][cardId];
-        for (const quality of qualities) {
-          card.images[lang][quality] =
-            `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${quality}.webp`;
-        }
+        // Nutze NUR das erste Bild (Standard-Artwork)
+        const variant = datas[lang][serieId][setId][cardId][0];
+        card.images[lang] =
+          `https://assets.tcgdex.net/${lang}/${serieId}/${setId}/${cardId}/${variant}.webp`;
       }
     }
 
