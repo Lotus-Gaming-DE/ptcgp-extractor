@@ -34627,6 +34627,3951 @@
   },
   {
     "name": {
+      "en": "Nihilego"
+    },
+    "illustrator": "PLANETA Yamashita",
+    "rarity": "Crown",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "A life-form from another world, it was dubbed\na UB and is thought to produce a\nstrong neurotoxin."
+    },
+    "stage": "Basic",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "More Poison"
+        },
+        "effect": {
+          "en": "Your opponent's Active Pokémon takes +10 damage from being Poisoned."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "New Wave"
+        },
+        "damage": 30,
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pidgeot ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "category": "Pokemon",
+    "hp": 170,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Pidgeotto"
+    },
+    "stage": "Stage2",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Scattering Cyclone"
+        },
+        "damage": 80,
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This attack does 20 more damage for each of your opponent's Benched Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "Two Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Aerodactyl ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Old Amber"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Primeval Law"
+        },
+        "effect": {
+          "en": "Your opponent can't play any Pokémon from their hand to evolve their Active Pokémon."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Land Crush"
+        },
+        "damage": 80,
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "Two Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Arcanine ex"
+    },
+    "illustrator": "PLANETA Saito",
+    "category": "Pokemon",
+    "hp": 150,
+    "types": [
+      "Fire"
+    ],
+    "evolveFrom": {
+      "en": "Growlithe"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Inferno Onrush"
+        },
+        "damage": 120,
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This Pokémon also does 20 damage to itself."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "rarity": "Two Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Celebi ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Grass"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Powerful Bloom"
+        },
+        "damage": 50,
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin for each Energy attached to this Pokémon. This attack does 50 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "Two Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Aerodactyl"
+    },
+    "illustrator": "Masakazu Fukuda",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Old Amber"
+    },
+    "description": {
+      "en": "This is a ferocious Pokémon from ancient times.\nApparently even modern technology is incapable\nof producing a perfectly restored specimen."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Primal Wingbeat"
+        },
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If heads, your opponent shuffles their Active Pokémon into their deck."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pidgeot"
+    },
+    "illustrator": "Misa Tsutsui",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Pidgeotto"
+    },
+    "description": {
+      "en": "When hunting, it skims the surface of water\nat high speed to pick off unwary prey such\nas Magikarp."
+    },
+    "stage": "Stage2",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Drive Off"
+        },
+        "effect": {
+          "en": "Once during your turn, you may switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Wing Attack"
+        },
+        "damage": 70,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pidgeotto"
+    },
+    "illustrator": "Misa Tsutsui",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Pidgey"
+    },
+    "description": {
+      "en": "The claws on its feet are well developed.\nIt can carry prey such as an Exeggcute\nto its nest over 60 miles away."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Gust"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pidgey"
+    },
+    "illustrator": "Misa Tsutsui",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "A common sight in forests and woods. It flaps\nits wings at ground level to kick up blinding sand."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Gust"
+        },
+        "damage": 10,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Jynx"
+    },
+    "illustrator": "MAHOU",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Psychic"
+    ],
+    "description": {
+      "en": "Its strange cries sound like human language.\nThere are some musicians who compose songs\nfor Jynx to sing."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Psychic"
+        },
+        "damage": 30,
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Greninja"
+    },
+    "illustrator": "Souichirou Gunjima",
+    "category": "Pokemon",
+    "hp": 120,
+    "types": [
+      "Water"
+    ],
+    "evolveFrom": {
+      "en": "Frogadier"
+    },
+    "description": {
+      "en": "It creates throwing stars out of compressed water.\nWhen it spins them and throws them at high speed,\nthese stars can split metal in two."
+    },
+    "stage": "Stage2",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Water Shuriken"
+        },
+        "effect": {
+          "en": "Once during your turn, you may do 20 damage to 1 of your opponent's Pokémon."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Mist Slash"
+        },
+        "damage": 60,
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Frogadier"
+    },
+    "illustrator": "Souichirou Gunjima",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Water"
+    ],
+    "evolveFrom": {
+      "en": "Froakie"
+    },
+    "description": {
+      "en": "It can throw bubble-covered pebbles with precise\ncontrol, hitting empty cans up to a hundred feet away."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Water Drip"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Froakie"
+    },
+    "illustrator": "Souichirou Gunjima",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Water"
+    ],
+    "description": {
+      "en": "It secretes flexible bubbles from its chest and back.\nThe bubbles reduce the damage it would otherwise\ntake when attacked."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Flop"
+        },
+        "damage": 10,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Arcanine"
+    },
+    "illustrator": "Saya Tsuruta",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Fire"
+    ],
+    "evolveFrom": {
+      "en": "Growlithe"
+    },
+    "description": {
+      "en": "An ancient picture scroll shows that people\nwere captivated by its movement as it ran\nthrough prairies."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Heat Tackle"
+        },
+        "damage": 100,
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This Pokémon also does 20 damage to itself."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Growlithe"
+    },
+    "illustrator": "Saya Tsuruta",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Fire"
+    ],
+    "description": {
+      "en": "It has a brave and trustworthy nature. It fearlessly\nstands up to bigger and stronger foes."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Bite"
+        },
+        "damage": 20,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "rarity": "One Shiny",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Buzzwole ex"
+    },
+    "illustrator": "akagi",
+    "rarity": "Three Star",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Grass"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Punch"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      },
+      {
+        "name": {
+          "en": "Big Beat"
+        },
+        "damage": 120,
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your next turn, this Pokémon can't use Big Beat."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Dugtrio ex"
+    },
+    "illustrator": "KEIICHIRO ITO",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Alolan Diglett"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Triplet Headbutt"
+        },
+        "damage": 60,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. This attack does 60 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Guzzlord ex"
+    },
+    "illustrator": "Nurikabe",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 170,
+    "types": [
+      "Darkness"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Grindcore"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Tyrannical Hole"
+        },
+        "damage": 120,
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lycanroc ex"
+    },
+    "illustrator": "Jiro Sasumo",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 150,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Rockruff"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Lycanfang"
+        },
+        "damage": 130,
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Discard a {F} Energy from this Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Tapu Koko ex"
+    },
+    "illustrator": "Dsuke",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Lightning"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Plasma Hurricane"
+        },
+        "damage": 20,
+        "cost": [
+          "Lightning"
+        ],
+        "effect": {
+          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Mach Bolt"
+        },
+        "damage": 90,
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lusamine"
+    },
+    "illustrator": "Taira Akitsu",
+    "rarity": "Two Star",
+    "category": "Trainer",
+    "effect": {
+      "en": "You can use this card only if your opponent has gotten at least 1 point.\n\nChoose 1 of your Ultra Beasts. Attach 2 random Energy from your discard pile to that Pokémon."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Looker"
+    },
+    "illustrator": "Hideki Ishikawa",
+    "rarity": "Two Star",
+    "category": "Trainer",
+    "effect": {
+      "en": "Your opponent reveals all of the Supporter cards in their deck."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Gladion"
+    },
+    "illustrator": "hncl",
+    "rarity": "Two Star",
+    "category": "Trainer",
+    "effect": {
+      "en": "Put 1 random Type: Null or Silvally from your deck into your hand."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Dugtrio ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Alolan Diglett"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Triplet Headbutt"
+        },
+        "damage": 60,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. This attack does 60 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Guzzlord ex"
+    },
+    "illustrator": "PLANETA Yamashita",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 170,
+    "types": [
+      "Darkness"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Grindcore"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Tyrannical Hole"
+        },
+        "damage": 120,
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lycanroc ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 150,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Rockruff"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Lycanfang"
+        },
+        "damage": 130,
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Discard a {F} Energy from this Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Tapu Koko ex"
+    },
+    "illustrator": "PLANETA Igarashi",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Lightning"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Plasma Hurricane"
+        },
+        "damage": 20,
+        "cost": [
+          "Lightning"
+        ],
+        "effect": {
+          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Mach Bolt"
+        },
+        "damage": 90,
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Buzzwole ex"
+    },
+    "illustrator": "PLANETA Mochizuki",
+    "rarity": "Two Star",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Grass"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Punch"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      },
+      {
+        "name": {
+          "en": "Big Beat"
+        },
+        "damage": 120,
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your next turn, this Pokémon can't use Big Beat."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Celesteela"
+    },
+    "illustrator": "REND",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 120,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "One of the dangerous UBs, high energy readings\ncan be detected coming from both of its\nhuge arms."
+    },
+    "stage": "Basic",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Ultra Thrusters"
+        },
+        "effect": {
+          "en": "Once during your turn, you may switch your Active Ultra Beast with 1 of your Benched Ultra Beasts."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Moombahton"
+        },
+        "damage": 100,
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If tails, this attack does nothing."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Silvally"
+    },
+    "illustrator": "hncl",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 110,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Type: Null"
+    },
+    "description": {
+      "en": "This is its form once it has awakened and\nevolved. Freed from its heavy mask, its speed is\ngreatly increased."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Brave Buddies"
+        },
+        "damage": 50,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "If you played a Supporter card from your hand during this turn, this attack does 50 more damage."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Meowth"
+    },
+    "illustrator": "Mina Nakai",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "It's accustomed to luxury because it\nused to live with Alolan royalty. As a\nresult, it's very picky about food."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Meddle"
+        },
+        "cost": [
+          "Darkness"
+        ],
+        "effect": {
+          "en": "Discard a random Pokémon Tool card from your opponent's hand."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Blacephalon"
+    },
+    "illustrator": "akagi",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Fire"
+    ],
+    "description": {
+      "en": "It slithers toward people. Then, without warning, it triggers the\nexplosion of its own head. It's apparently one kind of Ultra Beast."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Beat Punk"
+        },
+        "damage": 130,
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This Pokémon also does 70 damage to itself."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pheromosa"
+    },
+    "illustrator": "matazo",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "A life-form that lives in another world, its body\nis thin and supple, but it also possesses\ngreat power."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Jump Blues"
+        },
+        "damage": 20,
+        "cost": [
+          "Grass"
+        ],
+        "effect": {
+          "en": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Rowlet"
+    },
+    "illustrator": "OKACHEKE",
+    "rarity": "One Star",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "It sends its feathers, which are as sharp\nas blades, flying in attack. Its legs are strong,\nso its kicks are also formidable."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Fury Attack"
+        },
+        "damage": 10,
+        "cost": [
+          "Grass"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. This attack does 10 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lusamine"
+    },
+    "illustrator": "Taira Akitsu",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "You can use this card only if your opponent has gotten at least 1 point.\n\nChoose 1 of your Ultra Beasts. Attach 2 random Energy from your discard pile to that Pokémon."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Looker"
+    },
+    "illustrator": "Hideki Ishikawa",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "Your opponent reveals all of the Supporter cards in their deck."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Gladion"
+    },
+    "illustrator": "hncl",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "Put 1 random Type: Null or Silvally from your deck into your hand."
+    },
+    "trainerType": "Supporter",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Beastite"
+    },
+    "illustrator": "inose yukie",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "Attacks used by the Ultra Beast this card is attached to do +10 damage to your opponent's Active Pokémon for each point you have gotten."
+    },
+    "trainerType": "Tool",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Electrical Cord"
+    },
+    "illustrator": "Toyste Beach",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "If the {L} Pokémon this card is attached to is in the Active Spot and is Knocked Out by damage from an attack from your opponent's Pokémon, move 2 {L} Energy from that Pokémon and attach 1 Energy each to 2 of your Benched Pokémon."
+    },
+    "trainerType": "Tool",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Repel"
+    },
+    "illustrator": "Yoshinobu Saito",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "Switch out your opponent's Active Basic Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+    },
+    "trainerType": "Item",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Beast Wall"
+    },
+    "illustrator": "Toyste Beach",
+    "rarity": "Two Diamond",
+    "category": "Trainer",
+    "effect": {
+      "en": "You can use this card only if your opponent hasn't gotten any points.\n\nDuring your opponent's next turn, all of your Ultra Beasts take −20 damage from attacks from your opponent's Pokémon."
+    },
+    "trainerType": "Item",
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Celesteela"
+    },
+    "illustrator": "kawayoo",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 120,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "One of the dangerous UBs, high energy readings\ncan be detected coming from both of its\nhuge arms."
+    },
+    "stage": "Basic",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Ultra Thrusters"
+        },
+        "effect": {
+          "en": "Once during your turn, you may switch your Active Ultra Beast with 1 of your Benched Ultra Beasts."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Moombahton"
+        },
+        "damage": 100,
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If tails, this attack does nothing."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Silvally"
+    },
+    "illustrator": "Eske Yoshinob",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 110,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Type: Null"
+    },
+    "description": {
+      "en": "This is its form once it has awakened and\nevolved. Freed from its heavy mask, its speed is\ngreatly increased."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Brave Buddies"
+        },
+        "damage": 50,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "If you played a Supporter card from your hand during this turn, this attack does 50 more damage."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Type: Null"
+    },
+    "illustrator": "match",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "A Pokémon weapon developed for a specific\nmission, it went berserk during an experiment,\nso it was cryogenically frozen."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Quick Blow"
+        },
+        "damage": 20,
+        "cost": [
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Oranguru"
+    },
+    "illustrator": "Kouki Saitou",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "It normally spends its time meditating in the\ntreetops. It throws Poké Balls and gives other\nPokémon orders as it pleases."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Hammer In"
+        },
+        "damage": 70,
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Bewear"
+    },
+    "illustrator": "Ryuta Fuse",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 120,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Stufful"
+    },
+    "description": {
+      "en": "Once it accepts you as a friend, it tries to show\nits affection with a hug. Letting it do that is\ndangerous—it could easily shatter your bones."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Superpowered Hug"
+        },
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip 2 coins. If both of them are heads, your opponent's Active Pokémon is Knocked Out."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Stufful"
+    },
+    "illustrator": "Sekio",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "Its fluffy fur is a delight to pet, but carelessly reaching out\nto touch this Pokémon could result in painful retaliation."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Ram"
+        },
+        "damage": 40,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Stoutland"
+    },
+    "illustrator": "Atsuko Nishida",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Herdier"
+    },
+    "description": {
+      "en": "These Pokémon seem to enjoy living with humans.\nEven a Stoutland caught in the wild will warm up\nto people in about three days."
+    },
+    "stage": "Stage2",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Guard Dog Visage"
+        },
+        "effect": {
+          "en": "As long as this Pokémon is in the Active Spot, attacks used by your opponent's Active Pokémon cost 1 {C} more."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Sharp Fang"
+        },
+        "damage": 70,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Herdier"
+    },
+    "illustrator": "Midori Harada",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Colorless"
+    ],
+    "evolveFrom": {
+      "en": "Lillipup"
+    },
+    "description": {
+      "en": "Herdier is a very smart and friendly Pokémon.\nSo much so that there's a theory that Herdier was\nthe first Pokémon to partner with people."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Bite"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lillipup"
+    },
+    "illustrator": "Mizue",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Colorless"
+    ],
+    "description": {
+      "en": "This Pokémon is courageous but also cautious.\nIt uses the soft fur covering its face to collect\ninformation about its surroundings."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Tackle"
+        },
+        "damage": 20,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Stakataka"
+    },
+    "illustrator": "Anesaki Dynamic",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 110,
+    "types": [
+      "Metal"
+    ],
+    "description": {
+      "en": "It appeared from an Ultra Wormhole. Each one\nappears to be made up of many life-forms\nstacked one on top of each other."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Brass Rock"
+        },
+        "damage": 40,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your opponent's next turn, this Pokémon takes −20 damage from attacks."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Ferrothorn"
+    },
+    "illustrator": "Masakazu Fukuda",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 110,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Ferroseed"
+    },
+    "description": {
+      "en": "This Pokémon scrapes its spikes across rocks,\nand then uses the tips of its feelers to absorb\nthe nutrients it finds within the stone."
+    },
+    "stage": "Stage1",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Steel Spikes"
+        },
+        "effect": {
+          "en": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Spinning Attack"
+        },
+        "damage": 70,
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Ferroseed"
+    },
+    "illustrator": "Midori Harada",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Metal"
+    ],
+    "description": {
+      "en": "It absorbs the iron it finds in the rock while clinging\nto the ceiling. It shoots spikes when in danger."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Spike Sting"
+        },
+        "damage": 40,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Aggron"
+    },
+    "illustrator": "Satoshi Shirai",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 160,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Lairon"
+    },
+    "description": {
+      "en": "Aggron has a horn sharp enough to perforate\nthick iron sheets. It brings down its opponents by\nramming into them horn first."
+    },
+    "stage": "Stage2",
+    "attacks": [
+      {
+        "name": {
+          "en": "Giga Impact"
+        },
+        "damage": 150,
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your next turn, this Pokémon can't attack."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lairon"
+    },
+    "illustrator": "Mizue",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Aron"
+    },
+    "description": {
+      "en": "It loves iron ore. Groups of them fight for territory\nby bashing one another with their steel bodies."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Lunge Out"
+        },
+        "damage": 60,
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Aron"
+    },
+    "illustrator": "Shigenori Negishi",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Metal"
+    ],
+    "description": {
+      "en": "It eats iron ore—and sometimes railroad tracks—\nto build up the steel armor that protects its body."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Headbutt"
+        },
+        "damage": 40,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Dugtrio ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "rarity": "Four Diamond",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Metal"
+    ],
+    "evolveFrom": {
+      "en": "Alolan Diglett"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Triplet Headbutt"
+        },
+        "damage": 60,
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. This attack does 60 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Diglett"
+    },
+    "illustrator": "Megumi Mizutani",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Metal"
+    ],
+    "description": {
+      "en": "The metal-rich geology of this Pokémon's habitat\ncaused it to develop steel whiskers on its head."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Happened to Headbutt"
+        },
+        "damage": 40,
+        "cost": [
+          "Metal"
+        ],
+        "effect": {
+          "en": "Flip a coin. If tails, this attack does nothing."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Naganadel"
+    },
+    "illustrator": "Shin Nagasawa",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Darkness"
+    ],
+    "evolveFrom": {
+      "en": "Poipole"
+    },
+    "description": {
+      "en": "It stores hundreds of liters of poisonous liquid\ninside its body. It is one of the organisms known\nas UBs."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Electro House"
+        },
+        "damage": 40,
+        "cost": [
+          "Darkness"
+        ],
+        "effect": {
+          "en": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Poipole"
+    },
+    "illustrator": "Shin Nagasawa",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "This Ultra Beast is well enough liked to be\nchosen as a first partner in its own world."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "2-Step"
+        },
+        "damage": 20,
+        "cost": [
+          "Darkness"
+        ],
+        "effect": {
+          "en": "Flip 2 coins. This attack does 20 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Guzzlord ex"
+    },
+    "illustrator": "PLANETA Yamashita",
+    "rarity": "Four Diamond",
+    "category": "Pokemon",
+    "hp": 170,
+    "types": [
+      "Darkness"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Grindcore"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Tyrannical Hole"
+        },
+        "damage": 120,
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 4,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Nihilego"
+    },
+    "illustrator": "nagimiso",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "A life-form from another world, it was dubbed\na UB and is thought to produce a\nstrong neurotoxin."
+    },
+    "stage": "Basic",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "More Poison"
+        },
+        "effect": {
+          "en": "Your opponent's Active Pokémon takes +10 damage from being Poisoned."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "New Wave"
+        },
+        "damage": 30,
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Krookodile"
+    },
+    "illustrator": "Naoki Saito",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Darkness"
+    ],
+    "evolveFrom": {
+      "en": "Krokorok"
+    },
+    "description": {
+      "en": "After clamping down with its powerful jaws, it\ntwists its body around to rip its prey in half."
+    },
+    "stage": "Stage2",
+    "attacks": [
+      {
+        "name": {
+          "en": "Poaching Fangs"
+        },
+        "damage": 90,
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. For each heads, a card is chosen at random from your opponent's hand. Your opponent reveals that card and shuffles it into their deck."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Krokorok"
+    },
+    "illustrator": "Akira Komayama",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Darkness"
+    ],
+    "evolveFrom": {
+      "en": "Sandile"
+    },
+    "description": {
+      "en": "Protected by thin membranes, their eyes can see\neven in the dead of night. They live in groups of\na few individuals."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Light Punch"
+        },
+        "damage": 40,
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Sandile"
+    },
+    "illustrator": "Naoyo Kimura",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "It submerges itself in sand and moves as if\nswimming. This wise behavior keeps its enemies\nfrom finding it and maintains its temperature."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Bite"
+        },
+        "damage": 20,
+        "cost": [
+          "Darkness"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Persian"
+    },
+    "illustrator": "ryoma uratsuka",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Darkness"
+    ],
+    "evolveFrom": {
+      "en": "Alolan Meowth"
+    },
+    "description": {
+      "en": "The round face of Alolan Persian is considered\nto be a symbol of prosperity in the Alola region,\nso these Pokémon are very well cared for."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Fake Out"
+        },
+        "damage": 50,
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Alolan Meowth"
+    },
+    "illustrator": "Sekio",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Darkness"
+    ],
+    "description": {
+      "en": "It's accustomed to luxury because it\nused to live with Alolan royalty. As a\nresult, it's very picky about food."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Meddle"
+        },
+        "cost": [
+          "Darkness"
+        ],
+        "effect": {
+          "en": "Discard a random Pokémon Tool card from your opponent's hand."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Palossand"
+    },
+    "illustrator": "Hasuno",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Sandygast"
+    },
+    "description": {
+      "en": "The terrifying Palossand drags smaller Pokémon\ninto its sandy body. Once its victims are trapped,\nit drains them of their vitality whenever it pleases."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Sand Tomb"
+        },
+        "damage": 90,
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 3,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Sandygast"
+    },
+    "illustrator": "Yuka Morii",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Fighting"
+    ],
+    "description": {
+      "en": "If it loses its shovel, it will stick something\nelse—like a branch—in its head to make\ndo until it finds another shovel."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Sandy Shot"
+        },
+        "damage": 30,
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Passimian"
+    },
+    "illustrator": "Naoki Saito",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Fighting"
+    ],
+    "description": {
+      "en": "This Pokémon battles by throwing hard berries.\nIt won't obey a Trainer who throws Poké Balls\nwithout skill."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Let's Throw"
+        },
+        "damage": 40,
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+        "effect": {
+          "en": "If Passimian is on your Bench, this attack does 40 more damage."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lycanroc ex"
+    },
+    "illustrator": "PLANETA CG Works",
+    "rarity": "Four Diamond",
+    "category": "Pokemon",
+    "hp": 150,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Rockruff"
+    },
+    "stage": "Stage1",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Lycanfang"
+        },
+        "damage": 130,
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Discard a {F} Energy from this Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Rockruff"
+    },
+    "illustrator": "match",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Fighting"
+    ],
+    "description": {
+      "en": "This Pokémon is very friendly when it's young.\nIts disposition becomes vicious once it matures,\nbut it never forgets the kindness of its master."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Rock Throw"
+        },
+        "damage": 40,
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Claydol"
+    },
+    "illustrator": "Satoshi Shirai",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Baltoy"
+    },
+    "description": {
+      "en": "This mysterious Pokémon started life as an ancient\nclay figurine made over 20,000 years ago."
+    },
+    "stage": "Stage1",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Heal Block"
+        },
+        "effect": {
+          "en": "Pokémon (both yours and your opponent's) can't be healed."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Power Beam"
+        },
+        "damage": 50,
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Baltoy"
+    },
+    "illustrator": "Uta",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Fighting"
+    ],
+    "description": {
+      "en": "It moves while spinning around on its single foot.\nSome Baltoy have been seen spinning on\ntheir heads."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Spinning Attack"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Medicham"
+    },
+    "illustrator": "Misa Tsutsui",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Fighting"
+    ],
+    "evolveFrom": {
+      "en": "Meditite"
+    },
+    "description": {
+      "en": "Through yoga training, it gained the psychic\npower to predict its foe's next move."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "High Jump Kick"
+        },
+        "damage": 50,
+        "cost": [
+          "Fighting"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Meditite"
+    },
+    "illustrator": "Yukiko Baba",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Fighting"
+    ],
+    "description": {
+      "en": "It never skips its daily yoga training. It heightens\nits inner strength through meditation."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Trip Over"
+        },
+        "damage": 10,
+        "cost": [
+          "Fighting"
+        ],
+        "effect": {
+          "en": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Shiinotic"
+    },
+    "illustrator": "kawayoo",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Psychic"
+    ],
+    "evolveFrom": {
+      "en": "Morelull"
+    },
+    "description": {
+      "en": "Its flickering spores lure in prey and put them to\nsleep. Once this Pokémon has its prey snoozing,\nit drains their vitality with its fingertips."
+    },
+    "stage": "Stage1",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Illuminate"
+        },
+        "effect": {
+          "en": "Once during your turn, you may put a random Pokémon from your deck into your hand."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Gentle Slap"
+        },
+        "damage": 40,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Morelull"
+    },
+    "illustrator": "Midori Harada",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 50,
+    "types": [
+      "Psychic"
+    ],
+    "description": {
+      "en": "It scatters spores that flicker and glow. Anyone\nseeing these lights falls into a deep slumber."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Hook"
+        },
+        "damage": 20,
+        "cost": [
+          "Psychic"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Trevenant"
+    },
+    "illustrator": "Kouki Saitou",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 120,
+    "types": [
+      "Psychic"
+    ],
+    "evolveFrom": {
+      "en": "Phantump"
+    },
+    "description": {
+      "en": "People fear it due to a belief that it devours any\nwho try to cut down trees in its forest, but to the\nPokémon it shares its woods with, it's kind."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Wrack Down"
+        },
+        "damage": 70,
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Phantump"
+    },
+    "illustrator": "sui",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Psychic"
+    ],
+    "description": {
+      "en": "With a voice like a human child's, it cries out to\nlure adults deep into the forest, getting them lost\namong the trees."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Spooky Shot"
+        },
+        "damage": 30,
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Clefable"
+    },
+    "illustrator": "miki kudo",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Psychic"
+    ],
+    "evolveFrom": {
+      "en": "Clefairy"
+    },
+    "description": {
+      "en": "A timid fairy Pokémon that is rarely seen, it will\nrun and hide the moment it senses people."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Moon Kick"
+        },
+        "damage": 60,
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Clefairy"
+    },
+    "illustrator": "Sumiyoshi Kizuki",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Psychic"
+    ],
+    "description": {
+      "en": "It is said that happiness will come to those who\nsee a gathering of Clefairy dancing under a\nfull moon."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Pound"
+        },
+        "damage": 10,
+        "cost": [
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Zeraora"
+    },
+    "illustrator": "kawayoo",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Lightning"
+    ],
+    "description": {
+      "en": "It electrifies its claws and tears its opponents\napart with them. Even if they dodge its attack,\nthey'll be electrocuted by the flying sparks."
+    },
+    "stage": "Basic",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Thunderclap Flash"
+        },
+        "effect": {
+          "en": "At the end of your first turn, take a {L} Energy from your Energy Zone and attach it to this Pokémon."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Lightning Claw"
+        },
+        "damage": 50,
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Xurkitree"
+    },
+    "illustrator": "Satoshi Shirai",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Lightning"
+    ],
+    "description": {
+      "en": "Although it's alien to this world and a danger here, it's apparently\na common organism in the world where it normally lives."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Electronica"
+        },
+        "damage": 60,
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Your opponent's Active Pokémon is now Confused."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Tapu Koko ex"
+    },
+    "illustrator": "PLANETA Igarashi",
+    "rarity": "Four Diamond",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Lightning"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Plasma Hurricane"
+        },
+        "damage": 20,
+        "cost": [
+          "Lightning"
+        ],
+        "effect": {
+          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
+        }
+      },
+      {
+        "name": {
+          "en": "Mach Bolt"
+        },
+        "damage": 90,
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Emolga"
+    },
+    "illustrator": "Naoki Saito",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Lightning"
+    ],
+    "description": {
+      "en": "As Emolga flutters through the air, it crackles\nwith electricity. This Pokémon is cute, but it can\ncause a lot of trouble."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Static Shock"
+        },
+        "damage": 30,
+        "cost": [
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Zebstrika"
+    },
+    "illustrator": "Hajime Kusajima",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Lightning"
+    ],
+    "evolveFrom": {
+      "en": "Blitzle"
+    },
+    "description": {
+      "en": "When this ill-tempered Pokémon runs wild, it\nshoots lightning from its mane in all directions."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Head Bolt"
+        },
+        "damage": 70,
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Blitzle"
+    },
+    "illustrator": "Miki Tanaka",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Lightning"
+    ],
+    "description": {
+      "en": "When thunderclouds cover the sky, it will appear.\nIt can catch lightning with its mane and store\nthe electricity."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Rear Kick"
+        },
+        "damage": 40,
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Luxray"
+    },
+    "illustrator": "Masakazu Fukuda",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Lightning"
+    ],
+    "evolveFrom": {
+      "en": "Luxio"
+    },
+    "description": {
+      "en": "It can see clearly through walls to track down its\nprey and seek its lost young."
+    },
+    "stage": "Stage2",
+    "abilities": [
+      {
+        "type": "Ability",
+        "name": {
+          "en": "Intimidating Fang"
+        },
+        "effect": {
+          "en": "As long as this Pokémon is in the Active Spot, attacks used by your opponent's Active Pokémon do −20 damage."
+        }
+      }
+    ],
+    "attacks": [
+      {
+        "name": {
+          "en": "Electric Ball"
+        },
+        "damage": 90,
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Luxio"
+    },
+    "illustrator": "Kouki Saitou",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Lightning"
+    ],
+    "evolveFrom": {
+      "en": "Shinx"
+    },
+    "description": {
+      "en": "Strong electricity courses through the tips of\nits sharp claws. A light scratch causes fainting\nin foes."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Head Bolt"
+        },
+        "damage": 50,
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Shinx"
+    },
+    "illustrator": "Sanosuke Sakuma",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Lightning"
+    ],
+    "description": {
+      "en": "The extension and contraction of its muscles\ngenerates electricity. It glows when in trouble."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Bite"
+        },
+        "damage": 20,
+        "cost": [
+          "Lightning"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Sharpedo"
+    },
+    "illustrator": "Yumi",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Water"
+    ],
+    "evolveFrom": {
+      "en": "Carvanha"
+    },
+    "description": {
+      "en": "As soon as it catches the scent of prey, Sharpedo\nwill jet seawater from its backside, hurtling\ntoward the target to attack at 75 mph."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Crunch"
+        },
+        "damage": 50,
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "Flip a coin. If heads, discard a random Energy from your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Carvanha"
+    },
+    "illustrator": "Hideki Ishikawa",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Water"
+    ],
+    "description": {
+      "en": "It won't attack while it's alone—not even if it\nspots prey. Instead, it waits for other Carvanha to\njoin it, and then the Pokémon attack as a group."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Bite"
+        },
+        "damage": 20,
+        "cost": [
+          "Water"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Mantine"
+    },
+    "illustrator": "Sanosuke Sakuma",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 90,
+    "types": [
+      "Water"
+    ],
+    "description": {
+      "en": "If it builds up enough speed swimming, it\ncan jump out above the waves and glide\nfor over 300 feet."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Surf"
+        },
+        "damage": 50,
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Blacephalon"
+    },
+    "illustrator": "Anesaki Dynamic",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 100,
+    "types": [
+      "Fire"
+    ],
+    "description": {
+      "en": "It slithers toward people. Then, without warning, it triggers the\nexplosion of its own head. It's apparently one kind of Ultra Beast."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Beat Punk"
+        },
+        "damage": 130,
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "This Pokémon also does 70 damage to itself."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Kartana"
+    },
+    "illustrator": "nagimiso",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "This Ultra Beast's body, which is as thin\nas paper, is like a sharpened sword."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Thrash Metal"
+        },
+        "damage": 40,
+        "cost": [
+          "Grass"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Pheromosa"
+    },
+    "illustrator": "Shin Nagasawa",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 70,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "A life-form that lives in another world, its body\nis thin and supple, but it also possesses\ngreat power."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Jump Blues"
+        },
+        "damage": 20,
+        "cost": [
+          "Grass"
+        ],
+        "effect": {
+          "en": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Buzzwole ex"
+    },
+    "illustrator": "PLANETA Mochizuki",
+    "rarity": "Four Diamond",
+    "category": "Pokemon",
+    "hp": 140,
+    "types": [
+      "Grass"
+    ],
+    "stage": "Basic",
+    "suffix": "EX",
+    "attacks": [
+      {
+        "name": {
+          "en": "Punch"
+        },
+        "damage": 30,
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+      },
+      {
+        "name": {
+          "en": "Big Beat"
+        },
+        "damage": 120,
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+        "effect": {
+          "en": "During your next turn, this Pokémon can't use Big Beat."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Decidueye"
+    },
+    "illustrator": "Souichirou Gunjima",
+    "rarity": "Three Diamond",
+    "category": "Pokemon",
+    "hp": 130,
+    "types": [
+      "Grass"
+    ],
+    "evolveFrom": {
+      "en": "Dartrix"
+    },
+    "description": {
+      "en": "It nocks its arrow quills and shoots them at\nopponents. When it simply can't afford to miss,\nit tugs the vine on its head to improve its focus."
+    },
+    "stage": "Stage2",
+    "attacks": [
+      {
+        "name": {
+          "en": "Sniping Arrow"
+        },
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+        "effect": {
+          "en": "This attack does 70 damage to 1 of your opponent's Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Dartrix"
+    },
+    "illustrator": "AKIRA EGAWA",
+    "rarity": "Two Diamond",
+    "category": "Pokemon",
+    "hp": 80,
+    "types": [
+      "Grass"
+    ],
+    "evolveFrom": {
+      "en": "Rowlet"
+    },
+    "description": {
+      "en": "This narcissistic Pokémon is a clean freak. If you\ndon't groom it diligently, it may stop listening to you."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Skill Dive"
+        },
+        "cost": [
+          "Grass"
+        ],
+        "effect": {
+          "en": "This attack does 20 damage to 1 of your opponent's Pokémon."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Rowlet"
+    },
+    "illustrator": "Masakazu Fukuda",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "It sends its feathers, which are as sharp\nas blades, flying in attack. Its legs are strong,\nso its kicks are also formidable."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Fury Attack"
+        },
+        "damage": 10,
+        "cost": [
+          "Grass"
+        ],
+        "effect": {
+          "en": "Flip 3 coins. This attack does 10 damage for each heads."
+        }
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Lilligant"
+    },
+    "illustrator": "Kagemaru Himeno",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 110,
+    "types": [
+      "Grass"
+    ],
+    "evolveFrom": {
+      "en": "Petilil"
+    },
+    "description": {
+      "en": "The fragrance of the garland on its head has\na relaxing effect, but taking care of it is very\ndifficult."
+    },
+    "stage": "Stage1",
+    "attacks": [
+      {
+        "name": {
+          "en": "Cut"
+        },
+        "damage": 60,
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 2,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
+      "en": "Petilil"
+    },
+    "illustrator": "sui",
+    "rarity": "One Diamond",
+    "category": "Pokemon",
+    "hp": 60,
+    "types": [
+      "Grass"
+    ],
+    "description": {
+      "en": "The leaves on its head grow right back even if\nthey fall out. These bitter leaves refresh those\nwho eat them."
+    },
+    "stage": "Basic",
+    "attacks": [
+      {
+        "name": {
+          "en": "Seed Bomb"
+        },
+        "damage": 20,
+        "cost": [
+          "Grass"
+        ]
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "+20"
+      }
+    ],
+    "retreat": 1,
+    "set_id": "A3a"
+  },
+  {
+    "name": {
       "en": "Mewtwo ex",
       "fr": "Mewtwo-ex",
       "es": "Mewtwo ex",
@@ -52262,3951 +56207,6 @@
       "mewtwo"
     ],
     "set_id": "A1"
-  },
-  {
-    "name": {
-      "en": "Nihilego"
-    },
-    "illustrator": "PLANETA Yamashita",
-    "rarity": "Crown",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "A life-form from another world, it was dubbed\na UB and is thought to produce a\nstrong neurotoxin."
-    },
-    "stage": "Basic",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "More Poison"
-        },
-        "effect": {
-          "en": "Your opponent's Active Pokémon takes +10 damage from being Poisoned."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "New Wave"
-        },
-        "damage": 30,
-        "cost": [
-          "Darkness",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Your opponent's Active Pokémon is now Poisoned."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pidgeot ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "category": "Pokemon",
-    "hp": 170,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Pidgeotto"
-    },
-    "stage": "Stage2",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Scattering Cyclone"
-        },
-        "damage": 80,
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This attack does 20 more damage for each of your opponent's Benched Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "Two Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Aerodactyl ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Old Amber"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Primeval Law"
-        },
-        "effect": {
-          "en": "Your opponent can't play any Pokémon from their hand to evolve their Active Pokémon."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Land Crush"
-        },
-        "damage": 80,
-        "cost": [
-          "Fighting",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "Two Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Arcanine ex"
-    },
-    "illustrator": "PLANETA Saito",
-    "category": "Pokemon",
-    "hp": 150,
-    "types": [
-      "Fire"
-    ],
-    "evolveFrom": {
-      "en": "Growlithe"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Inferno Onrush"
-        },
-        "damage": 120,
-        "cost": [
-          "Fire",
-          "Fire",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This Pokémon also does 20 damage to itself."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Water",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "rarity": "Two Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Celebi ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Grass"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Powerful Bloom"
-        },
-        "damage": 50,
-        "cost": [
-          "Grass",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin for each Energy attached to this Pokémon. This attack does 50 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "Two Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Aerodactyl"
-    },
-    "illustrator": "Masakazu Fukuda",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Old Amber"
-    },
-    "description": {
-      "en": "This is a ferocious Pokémon from ancient times.\nApparently even modern technology is incapable\nof producing a perfectly restored specimen."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Primal Wingbeat"
-        },
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If heads, your opponent shuffles their Active Pokémon into their deck."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pidgeot"
-    },
-    "illustrator": "Misa Tsutsui",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Pidgeotto"
-    },
-    "description": {
-      "en": "When hunting, it skims the surface of water\nat high speed to pick off unwary prey such\nas Magikarp."
-    },
-    "stage": "Stage2",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Drive Off"
-        },
-        "effect": {
-          "en": "Once during your turn, you may switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Wing Attack"
-        },
-        "damage": 70,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pidgeotto"
-    },
-    "illustrator": "Misa Tsutsui",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Pidgey"
-    },
-    "description": {
-      "en": "The claws on its feet are well developed.\nIt can carry prey such as an Exeggcute\nto its nest over 60 miles away."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Gust"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pidgey"
-    },
-    "illustrator": "Misa Tsutsui",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "A common sight in forests and woods. It flaps\nits wings at ground level to kick up blinding sand."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Gust"
-        },
-        "damage": 10,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Jynx"
-    },
-    "illustrator": "MAHOU",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Psychic"
-    ],
-    "description": {
-      "en": "Its strange cries sound like human language.\nThere are some musicians who compose songs\nfor Jynx to sing."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Psychic"
-        },
-        "damage": 30,
-        "cost": [
-          "Psychic",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Darkness",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Greninja"
-    },
-    "illustrator": "Souichirou Gunjima",
-    "category": "Pokemon",
-    "hp": 120,
-    "types": [
-      "Water"
-    ],
-    "evolveFrom": {
-      "en": "Frogadier"
-    },
-    "description": {
-      "en": "It creates throwing stars out of compressed water.\nWhen it spins them and throws them at high speed,\nthese stars can split metal in two."
-    },
-    "stage": "Stage2",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Water Shuriken"
-        },
-        "effect": {
-          "en": "Once during your turn, you may do 20 damage to 1 of your opponent's Pokémon."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Mist Slash"
-        },
-        "damage": 60,
-        "cost": [
-          "Water",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Frogadier"
-    },
-    "illustrator": "Souichirou Gunjima",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Water"
-    ],
-    "evolveFrom": {
-      "en": "Froakie"
-    },
-    "description": {
-      "en": "It can throw bubble-covered pebbles with precise\ncontrol, hitting empty cans up to a hundred feet away."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Water Drip"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Froakie"
-    },
-    "illustrator": "Souichirou Gunjima",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Water"
-    ],
-    "description": {
-      "en": "It secretes flexible bubbles from its chest and back.\nThe bubbles reduce the damage it would otherwise\ntake when attacked."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Flop"
-        },
-        "damage": 10,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Arcanine"
-    },
-    "illustrator": "Saya Tsuruta",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Fire"
-    ],
-    "evolveFrom": {
-      "en": "Growlithe"
-    },
-    "description": {
-      "en": "An ancient picture scroll shows that people\nwere captivated by its movement as it ran\nthrough prairies."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Heat Tackle"
-        },
-        "damage": 100,
-        "cost": [
-          "Fire",
-          "Fire",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This Pokémon also does 20 damage to itself."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Water",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Growlithe"
-    },
-    "illustrator": "Saya Tsuruta",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Fire"
-    ],
-    "description": {
-      "en": "It has a brave and trustworthy nature. It fearlessly\nstands up to bigger and stronger foes."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Bite"
-        },
-        "damage": 20,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Water",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "rarity": "One Shiny",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Buzzwole ex"
-    },
-    "illustrator": "akagi",
-    "rarity": "Three Star",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Grass"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Punch"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      },
-      {
-        "name": {
-          "en": "Big Beat"
-        },
-        "damage": 120,
-        "cost": [
-          "Grass",
-          "Grass",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your next turn, this Pokémon can't use Big Beat."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Dugtrio ex"
-    },
-    "illustrator": "KEIICHIRO ITO",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Alolan Diglett"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Triplet Headbutt"
-        },
-        "damage": 60,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. This attack does 60 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Guzzlord ex"
-    },
-    "illustrator": "Nurikabe",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 170,
-    "types": [
-      "Darkness"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Grindcore"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Tyrannical Hole"
-        },
-        "damage": 120,
-        "cost": [
-          "Darkness",
-          "Darkness",
-          "Darkness",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lycanroc ex"
-    },
-    "illustrator": "Jiro Sasumo",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 150,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Rockruff"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Lycanfang"
-        },
-        "damage": 130,
-        "cost": [
-          "Fighting",
-          "Fighting",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Discard a {F} Energy from this Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Tapu Koko ex"
-    },
-    "illustrator": "Dsuke",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Lightning"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Plasma Hurricane"
-        },
-        "damage": 20,
-        "cost": [
-          "Lightning"
-        ],
-        "effect": {
-          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Mach Bolt"
-        },
-        "damage": 90,
-        "cost": [
-          "Lightning",
-          "Lightning",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lusamine"
-    },
-    "illustrator": "Taira Akitsu",
-    "rarity": "Two Star",
-    "category": "Trainer",
-    "effect": {
-      "en": "You can use this card only if your opponent has gotten at least 1 point.\n\nChoose 1 of your Ultra Beasts. Attach 2 random Energy from your discard pile to that Pokémon."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Looker"
-    },
-    "illustrator": "Hideki Ishikawa",
-    "rarity": "Two Star",
-    "category": "Trainer",
-    "effect": {
-      "en": "Your opponent reveals all of the Supporter cards in their deck."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Gladion"
-    },
-    "illustrator": "hncl",
-    "rarity": "Two Star",
-    "category": "Trainer",
-    "effect": {
-      "en": "Put 1 random Type: Null or Silvally from your deck into your hand."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Dugtrio ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Alolan Diglett"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Triplet Headbutt"
-        },
-        "damage": 60,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. This attack does 60 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Guzzlord ex"
-    },
-    "illustrator": "PLANETA Yamashita",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 170,
-    "types": [
-      "Darkness"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Grindcore"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Tyrannical Hole"
-        },
-        "damage": 120,
-        "cost": [
-          "Darkness",
-          "Darkness",
-          "Darkness",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lycanroc ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 150,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Rockruff"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Lycanfang"
-        },
-        "damage": 130,
-        "cost": [
-          "Fighting",
-          "Fighting",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Discard a {F} Energy from this Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Tapu Koko ex"
-    },
-    "illustrator": "PLANETA Igarashi",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Lightning"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Plasma Hurricane"
-        },
-        "damage": 20,
-        "cost": [
-          "Lightning"
-        ],
-        "effect": {
-          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Mach Bolt"
-        },
-        "damage": 90,
-        "cost": [
-          "Lightning",
-          "Lightning",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Buzzwole ex"
-    },
-    "illustrator": "PLANETA Mochizuki",
-    "rarity": "Two Star",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Grass"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Punch"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      },
-      {
-        "name": {
-          "en": "Big Beat"
-        },
-        "damage": 120,
-        "cost": [
-          "Grass",
-          "Grass",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your next turn, this Pokémon can't use Big Beat."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Celesteela"
-    },
-    "illustrator": "REND",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 120,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "One of the dangerous UBs, high energy readings\ncan be detected coming from both of its\nhuge arms."
-    },
-    "stage": "Basic",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Ultra Thrusters"
-        },
-        "effect": {
-          "en": "Once during your turn, you may switch your Active Ultra Beast with 1 of your Benched Ultra Beasts."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Moombahton"
-        },
-        "damage": 100,
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If tails, this attack does nothing."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Silvally"
-    },
-    "illustrator": "hncl",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 110,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Type: Null"
-    },
-    "description": {
-      "en": "This is its form once it has awakened and\nevolved. Freed from its heavy mask, its speed is\ngreatly increased."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Brave Buddies"
-        },
-        "damage": 50,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "If you played a Supporter card from your hand during this turn, this attack does 50 more damage."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Meowth"
-    },
-    "illustrator": "Mina Nakai",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "It's accustomed to luxury because it\nused to live with Alolan royalty. As a\nresult, it's very picky about food."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Meddle"
-        },
-        "cost": [
-          "Darkness"
-        ],
-        "effect": {
-          "en": "Discard a random Pokémon Tool card from your opponent's hand."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Blacephalon"
-    },
-    "illustrator": "akagi",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Fire"
-    ],
-    "description": {
-      "en": "It slithers toward people. Then, without warning, it triggers the\nexplosion of its own head. It's apparently one kind of Ultra Beast."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Beat Punk"
-        },
-        "damage": 130,
-        "cost": [
-          "Fire",
-          "Fire",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This Pokémon also does 70 damage to itself."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Water",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pheromosa"
-    },
-    "illustrator": "matazo",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "A life-form that lives in another world, its body\nis thin and supple, but it also possesses\ngreat power."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Jump Blues"
-        },
-        "damage": 20,
-        "cost": [
-          "Grass"
-        ],
-        "effect": {
-          "en": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Rowlet"
-    },
-    "illustrator": "OKACHEKE",
-    "rarity": "One Star",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "It sends its feathers, which are as sharp\nas blades, flying in attack. Its legs are strong,\nso its kicks are also formidable."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Fury Attack"
-        },
-        "damage": 10,
-        "cost": [
-          "Grass"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. This attack does 10 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lusamine"
-    },
-    "illustrator": "Taira Akitsu",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "You can use this card only if your opponent has gotten at least 1 point.\n\nChoose 1 of your Ultra Beasts. Attach 2 random Energy from your discard pile to that Pokémon."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Looker"
-    },
-    "illustrator": "Hideki Ishikawa",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "Your opponent reveals all of the Supporter cards in their deck."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Gladion"
-    },
-    "illustrator": "hncl",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "Put 1 random Type: Null or Silvally from your deck into your hand."
-    },
-    "trainerType": "Supporter",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Beastite"
-    },
-    "illustrator": "inose yukie",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "Attacks used by the Ultra Beast this card is attached to do +10 damage to your opponent's Active Pokémon for each point you have gotten."
-    },
-    "trainerType": "Tool",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Electrical Cord"
-    },
-    "illustrator": "Toyste Beach",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "If the {L} Pokémon this card is attached to is in the Active Spot and is Knocked Out by damage from an attack from your opponent's Pokémon, move 2 {L} Energy from that Pokémon and attach 1 Energy each to 2 of your Benched Pokémon."
-    },
-    "trainerType": "Tool",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Repel"
-    },
-    "illustrator": "Yoshinobu Saito",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "Switch out your opponent's Active Basic Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
-    },
-    "trainerType": "Item",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Beast Wall"
-    },
-    "illustrator": "Toyste Beach",
-    "rarity": "Two Diamond",
-    "category": "Trainer",
-    "effect": {
-      "en": "You can use this card only if your opponent hasn't gotten any points.\n\nDuring your opponent's next turn, all of your Ultra Beasts take −20 damage from attacks from your opponent's Pokémon."
-    },
-    "trainerType": "Item",
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Celesteela"
-    },
-    "illustrator": "kawayoo",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 120,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "One of the dangerous UBs, high energy readings\ncan be detected coming from both of its\nhuge arms."
-    },
-    "stage": "Basic",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Ultra Thrusters"
-        },
-        "effect": {
-          "en": "Once during your turn, you may switch your Active Ultra Beast with 1 of your Benched Ultra Beasts."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Moombahton"
-        },
-        "damage": 100,
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If tails, this attack does nothing."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Silvally"
-    },
-    "illustrator": "Eske Yoshinob",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 110,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Type: Null"
-    },
-    "description": {
-      "en": "This is its form once it has awakened and\nevolved. Freed from its heavy mask, its speed is\ngreatly increased."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Brave Buddies"
-        },
-        "damage": 50,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "If you played a Supporter card from your hand during this turn, this attack does 50 more damage."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Type: Null"
-    },
-    "illustrator": "match",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "A Pokémon weapon developed for a specific\nmission, it went berserk during an experiment,\nso it was cryogenically frozen."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Quick Blow"
-        },
-        "damage": 20,
-        "cost": [
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If heads, this attack does 20 more damage."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Oranguru"
-    },
-    "illustrator": "Kouki Saitou",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "It normally spends its time meditating in the\ntreetops. It throws Poké Balls and gives other\nPokémon orders as it pleases."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Hammer In"
-        },
-        "damage": 70,
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Bewear"
-    },
-    "illustrator": "Ryuta Fuse",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 120,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Stufful"
-    },
-    "description": {
-      "en": "Once it accepts you as a friend, it tries to show\nits affection with a hug. Letting it do that is\ndangerous—it could easily shatter your bones."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Superpowered Hug"
-        },
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip 2 coins. If both of them are heads, your opponent's Active Pokémon is Knocked Out."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Stufful"
-    },
-    "illustrator": "Sekio",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "Its fluffy fur is a delight to pet, but carelessly reaching out\nto touch this Pokémon could result in painful retaliation."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Ram"
-        },
-        "damage": 40,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Stoutland"
-    },
-    "illustrator": "Atsuko Nishida",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Herdier"
-    },
-    "description": {
-      "en": "These Pokémon seem to enjoy living with humans.\nEven a Stoutland caught in the wild will warm up\nto people in about three days."
-    },
-    "stage": "Stage2",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Guard Dog Visage"
-        },
-        "effect": {
-          "en": "As long as this Pokémon is in the Active Spot, attacks used by your opponent's Active Pokémon cost 1 {C} more."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Sharp Fang"
-        },
-        "damage": 70,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Herdier"
-    },
-    "illustrator": "Midori Harada",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Colorless"
-    ],
-    "evolveFrom": {
-      "en": "Lillipup"
-    },
-    "description": {
-      "en": "Herdier is a very smart and friendly Pokémon.\nSo much so that there's a theory that Herdier was\nthe first Pokémon to partner with people."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Bite"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lillipup"
-    },
-    "illustrator": "Mizue",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Colorless"
-    ],
-    "description": {
-      "en": "This Pokémon is courageous but also cautious.\nIt uses the soft fur covering its face to collect\ninformation about its surroundings."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Tackle"
-        },
-        "damage": 20,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Stakataka"
-    },
-    "illustrator": "Anesaki Dynamic",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 110,
-    "types": [
-      "Metal"
-    ],
-    "description": {
-      "en": "It appeared from an Ultra Wormhole. Each one\nappears to be made up of many life-forms\nstacked one on top of each other."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Brass Rock"
-        },
-        "damage": 40,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your opponent's next turn, this Pokémon takes −20 damage from attacks."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Ferrothorn"
-    },
-    "illustrator": "Masakazu Fukuda",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 110,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Ferroseed"
-    },
-    "description": {
-      "en": "This Pokémon scrapes its spikes across rocks,\nand then uses the tips of its feelers to absorb\nthe nutrients it finds within the stone."
-    },
-    "stage": "Stage1",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Steel Spikes"
-        },
-        "effect": {
-          "en": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Spinning Attack"
-        },
-        "damage": 70,
-        "cost": [
-          "Metal",
-          "Metal",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Ferroseed"
-    },
-    "illustrator": "Midori Harada",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Metal"
-    ],
-    "description": {
-      "en": "It absorbs the iron it finds in the rock while clinging\nto the ceiling. It shoots spikes when in danger."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Spike Sting"
-        },
-        "damage": 40,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Aggron"
-    },
-    "illustrator": "Satoshi Shirai",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 160,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Lairon"
-    },
-    "description": {
-      "en": "Aggron has a horn sharp enough to perforate\nthick iron sheets. It brings down its opponents by\nramming into them horn first."
-    },
-    "stage": "Stage2",
-    "attacks": [
-      {
-        "name": {
-          "en": "Giga Impact"
-        },
-        "damage": 150,
-        "cost": [
-          "Metal",
-          "Metal",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your next turn, this Pokémon can't attack."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lairon"
-    },
-    "illustrator": "Mizue",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Aron"
-    },
-    "description": {
-      "en": "It loves iron ore. Groups of them fight for territory\nby bashing one another with their steel bodies."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Lunge Out"
-        },
-        "damage": 60,
-        "cost": [
-          "Metal",
-          "Metal",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Aron"
-    },
-    "illustrator": "Shigenori Negishi",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Metal"
-    ],
-    "description": {
-      "en": "It eats iron ore—and sometimes railroad tracks—\nto build up the steel armor that protects its body."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Headbutt"
-        },
-        "damage": 40,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Dugtrio ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "rarity": "Four Diamond",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Metal"
-    ],
-    "evolveFrom": {
-      "en": "Alolan Diglett"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Triplet Headbutt"
-        },
-        "damage": 60,
-        "cost": [
-          "Metal",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. This attack does 60 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Diglett"
-    },
-    "illustrator": "Megumi Mizutani",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Metal"
-    ],
-    "description": {
-      "en": "The metal-rich geology of this Pokémon's habitat\ncaused it to develop steel whiskers on its head."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Happened to Headbutt"
-        },
-        "damage": 40,
-        "cost": [
-          "Metal"
-        ],
-        "effect": {
-          "en": "Flip a coin. If tails, this attack does nothing."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Naganadel"
-    },
-    "illustrator": "Shin Nagasawa",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Darkness"
-    ],
-    "evolveFrom": {
-      "en": "Poipole"
-    },
-    "description": {
-      "en": "It stores hundreds of liters of poisonous liquid\ninside its body. It is one of the organisms known\nas UBs."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Electro House"
-        },
-        "damage": 40,
-        "cost": [
-          "Darkness"
-        ],
-        "effect": {
-          "en": "Your opponent's Active Pokémon is now Poisoned."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Poipole"
-    },
-    "illustrator": "Shin Nagasawa",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "This Ultra Beast is well enough liked to be\nchosen as a first partner in its own world."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "2-Step"
-        },
-        "damage": 20,
-        "cost": [
-          "Darkness"
-        ],
-        "effect": {
-          "en": "Flip 2 coins. This attack does 20 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Guzzlord ex"
-    },
-    "illustrator": "PLANETA Yamashita",
-    "rarity": "Four Diamond",
-    "category": "Pokemon",
-    "hp": 170,
-    "types": [
-      "Darkness"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Grindcore"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent's Active Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Tyrannical Hole"
-        },
-        "damage": 120,
-        "cost": [
-          "Darkness",
-          "Darkness",
-          "Darkness",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 4,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Nihilego"
-    },
-    "illustrator": "nagimiso",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "A life-form from another world, it was dubbed\na UB and is thought to produce a\nstrong neurotoxin."
-    },
-    "stage": "Basic",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "More Poison"
-        },
-        "effect": {
-          "en": "Your opponent's Active Pokémon takes +10 damage from being Poisoned."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "New Wave"
-        },
-        "damage": 30,
-        "cost": [
-          "Darkness",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Your opponent's Active Pokémon is now Poisoned."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Krookodile"
-    },
-    "illustrator": "Naoki Saito",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Darkness"
-    ],
-    "evolveFrom": {
-      "en": "Krokorok"
-    },
-    "description": {
-      "en": "After clamping down with its powerful jaws, it\ntwists its body around to rip its prey in half."
-    },
-    "stage": "Stage2",
-    "attacks": [
-      {
-        "name": {
-          "en": "Poaching Fangs"
-        },
-        "damage": 90,
-        "cost": [
-          "Darkness",
-          "Darkness",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. For each heads, a card is chosen at random from your opponent's hand. Your opponent reveals that card and shuffles it into their deck."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Krokorok"
-    },
-    "illustrator": "Akira Komayama",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Darkness"
-    ],
-    "evolveFrom": {
-      "en": "Sandile"
-    },
-    "description": {
-      "en": "Protected by thin membranes, their eyes can see\neven in the dead of night. They live in groups of\na few individuals."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Light Punch"
-        },
-        "damage": 40,
-        "cost": [
-          "Darkness",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Sandile"
-    },
-    "illustrator": "Naoyo Kimura",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "It submerges itself in sand and moves as if\nswimming. This wise behavior keeps its enemies\nfrom finding it and maintains its temperature."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Bite"
-        },
-        "damage": 20,
-        "cost": [
-          "Darkness"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Persian"
-    },
-    "illustrator": "ryoma uratsuka",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Darkness"
-    ],
-    "evolveFrom": {
-      "en": "Alolan Meowth"
-    },
-    "description": {
-      "en": "The round face of Alolan Persian is considered\nto be a symbol of prosperity in the Alola region,\nso these Pokémon are very well cared for."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Fake Out"
-        },
-        "damage": 50,
-        "cost": [
-          "Darkness",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Alolan Meowth"
-    },
-    "illustrator": "Sekio",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Darkness"
-    ],
-    "description": {
-      "en": "It's accustomed to luxury because it\nused to live with Alolan royalty. As a\nresult, it's very picky about food."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Meddle"
-        },
-        "cost": [
-          "Darkness"
-        ],
-        "effect": {
-          "en": "Discard a random Pokémon Tool card from your opponent's hand."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Palossand"
-    },
-    "illustrator": "Hasuno",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Sandygast"
-    },
-    "description": {
-      "en": "The terrifying Palossand drags smaller Pokémon\ninto its sandy body. Once its victims are trapped,\nit drains them of their vitality whenever it pleases."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Sand Tomb"
-        },
-        "damage": 90,
-        "cost": [
-          "Fighting",
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your opponent's next turn, the Defending Pokémon can't retreat."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 3,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Sandygast"
-    },
-    "illustrator": "Yuka Morii",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Fighting"
-    ],
-    "description": {
-      "en": "If it loses its shovel, it will stick something\nelse—like a branch—in its head to make\ndo until it finds another shovel."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Sandy Shot"
-        },
-        "damage": 30,
-        "cost": [
-          "Fighting",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Passimian"
-    },
-    "illustrator": "Naoki Saito",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Fighting"
-    ],
-    "description": {
-      "en": "This Pokémon battles by throwing hard berries.\nIt won't obey a Trainer who throws Poké Balls\nwithout skill."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Let's Throw"
-        },
-        "damage": 40,
-        "cost": [
-          "Fighting",
-          "Fighting"
-        ],
-        "effect": {
-          "en": "If Passimian is on your Bench, this attack does 40 more damage."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Psychic",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lycanroc ex"
-    },
-    "illustrator": "PLANETA CG Works",
-    "rarity": "Four Diamond",
-    "category": "Pokemon",
-    "hp": 150,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Rockruff"
-    },
-    "stage": "Stage1",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Lycanfang"
-        },
-        "damage": 130,
-        "cost": [
-          "Fighting",
-          "Fighting",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Discard a {F} Energy from this Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Rockruff"
-    },
-    "illustrator": "match",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Fighting"
-    ],
-    "description": {
-      "en": "This Pokémon is very friendly when it's young.\nIts disposition becomes vicious once it matures,\nbut it never forgets the kindness of its master."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Rock Throw"
-        },
-        "damage": 40,
-        "cost": [
-          "Fighting",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Claydol"
-    },
-    "illustrator": "Satoshi Shirai",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Baltoy"
-    },
-    "description": {
-      "en": "This mysterious Pokémon started life as an ancient\nclay figurine made over 20,000 years ago."
-    },
-    "stage": "Stage1",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Heal Block"
-        },
-        "effect": {
-          "en": "Pokémon (both yours and your opponent's) can't be healed."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Power Beam"
-        },
-        "damage": 50,
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Baltoy"
-    },
-    "illustrator": "Uta",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Fighting"
-    ],
-    "description": {
-      "en": "It moves while spinning around on its single foot.\nSome Baltoy have been seen spinning on\ntheir heads."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Spinning Attack"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Grass",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Medicham"
-    },
-    "illustrator": "Misa Tsutsui",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Fighting"
-    ],
-    "evolveFrom": {
-      "en": "Meditite"
-    },
-    "description": {
-      "en": "Through yoga training, it gained the psychic\npower to predict its foe's next move."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "High Jump Kick"
-        },
-        "damage": 50,
-        "cost": [
-          "Fighting"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Psychic",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Meditite"
-    },
-    "illustrator": "Yukiko Baba",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Fighting"
-    ],
-    "description": {
-      "en": "It never skips its daily yoga training. It heightens\nits inner strength through meditation."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Trip Over"
-        },
-        "damage": 10,
-        "cost": [
-          "Fighting"
-        ],
-        "effect": {
-          "en": "Flip a coin. If heads, this attack does 20 more damage."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Psychic",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Shiinotic"
-    },
-    "illustrator": "kawayoo",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Psychic"
-    ],
-    "evolveFrom": {
-      "en": "Morelull"
-    },
-    "description": {
-      "en": "Its flickering spores lure in prey and put them to\nsleep. Once this Pokémon has its prey snoozing,\nit drains their vitality with its fingertips."
-    },
-    "stage": "Stage1",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Illuminate"
-        },
-        "effect": {
-          "en": "Once during your turn, you may put a random Pokémon from your deck into your hand."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Gentle Slap"
-        },
-        "damage": 40,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Metal",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Morelull"
-    },
-    "illustrator": "Midori Harada",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 50,
-    "types": [
-      "Psychic"
-    ],
-    "description": {
-      "en": "It scatters spores that flicker and glow. Anyone\nseeing these lights falls into a deep slumber."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Hook"
-        },
-        "damage": 20,
-        "cost": [
-          "Psychic"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Metal",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Trevenant"
-    },
-    "illustrator": "Kouki Saitou",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 120,
-    "types": [
-      "Psychic"
-    ],
-    "evolveFrom": {
-      "en": "Phantump"
-    },
-    "description": {
-      "en": "People fear it due to a belief that it devours any\nwho try to cut down trees in its forest, but to the\nPokémon it shares its woods with, it's kind."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Wrack Down"
-        },
-        "damage": 70,
-        "cost": [
-          "Psychic",
-          "Colorless",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Darkness",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Phantump"
-    },
-    "illustrator": "sui",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Psychic"
-    ],
-    "description": {
-      "en": "With a voice like a human child's, it cries out to\nlure adults deep into the forest, getting them lost\namong the trees."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Spooky Shot"
-        },
-        "damage": 30,
-        "cost": [
-          "Psychic",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Darkness",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Clefable"
-    },
-    "illustrator": "miki kudo",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Psychic"
-    ],
-    "evolveFrom": {
-      "en": "Clefairy"
-    },
-    "description": {
-      "en": "A timid fairy Pokémon that is rarely seen, it will\nrun and hide the moment it senses people."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Moon Kick"
-        },
-        "damage": 60,
-        "cost": [
-          "Psychic",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Metal",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Clefairy"
-    },
-    "illustrator": "Sumiyoshi Kizuki",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Psychic"
-    ],
-    "description": {
-      "en": "It is said that happiness will come to those who\nsee a gathering of Clefairy dancing under a\nfull moon."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Pound"
-        },
-        "damage": 10,
-        "cost": [
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Metal",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Zeraora"
-    },
-    "illustrator": "kawayoo",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Lightning"
-    ],
-    "description": {
-      "en": "It electrifies its claws and tears its opponents\napart with them. Even if they dodge its attack,\nthey'll be electrocuted by the flying sparks."
-    },
-    "stage": "Basic",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Thunderclap Flash"
-        },
-        "effect": {
-          "en": "At the end of your first turn, take a {L} Energy from your Energy Zone and attach it to this Pokémon."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Lightning Claw"
-        },
-        "damage": 50,
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Xurkitree"
-    },
-    "illustrator": "Satoshi Shirai",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Lightning"
-    ],
-    "description": {
-      "en": "Although it's alien to this world and a danger here, it's apparently\na common organism in the world where it normally lives."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Electronica"
-        },
-        "damage": 60,
-        "cost": [
-          "Lightning",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Your opponent's Active Pokémon is now Confused."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Tapu Koko ex"
-    },
-    "illustrator": "PLANETA Igarashi",
-    "rarity": "Four Diamond",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Lightning"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Plasma Hurricane"
-        },
-        "damage": 20,
-        "cost": [
-          "Lightning"
-        ],
-        "effect": {
-          "en": "Take a {L} Energy from your Energy Zone and attach it to this Pokémon."
-        }
-      },
-      {
-        "name": {
-          "en": "Mach Bolt"
-        },
-        "damage": 90,
-        "cost": [
-          "Lightning",
-          "Lightning",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Emolga"
-    },
-    "illustrator": "Naoki Saito",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Lightning"
-    ],
-    "description": {
-      "en": "As Emolga flutters through the air, it crackles\nwith electricity. This Pokémon is cute, but it can\ncause a lot of trouble."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Static Shock"
-        },
-        "damage": 30,
-        "cost": [
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Zebstrika"
-    },
-    "illustrator": "Hajime Kusajima",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Lightning"
-    ],
-    "evolveFrom": {
-      "en": "Blitzle"
-    },
-    "description": {
-      "en": "When this ill-tempered Pokémon runs wild, it\nshoots lightning from its mane in all directions."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Head Bolt"
-        },
-        "damage": 70,
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Blitzle"
-    },
-    "illustrator": "Miki Tanaka",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Lightning"
-    ],
-    "description": {
-      "en": "When thunderclouds cover the sky, it will appear.\nIt can catch lightning with its mane and store\nthe electricity."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Rear Kick"
-        },
-        "damage": 40,
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Luxray"
-    },
-    "illustrator": "Masakazu Fukuda",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Lightning"
-    ],
-    "evolveFrom": {
-      "en": "Luxio"
-    },
-    "description": {
-      "en": "It can see clearly through walls to track down its\nprey and seek its lost young."
-    },
-    "stage": "Stage2",
-    "abilities": [
-      {
-        "type": "Ability",
-        "name": {
-          "en": "Intimidating Fang"
-        },
-        "effect": {
-          "en": "As long as this Pokémon is in the Active Spot, attacks used by your opponent's Active Pokémon do −20 damage."
-        }
-      }
-    ],
-    "attacks": [
-      {
-        "name": {
-          "en": "Electric Ball"
-        },
-        "damage": 90,
-        "cost": [
-          "Lightning",
-          "Lightning",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Luxio"
-    },
-    "illustrator": "Kouki Saitou",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Lightning"
-    ],
-    "evolveFrom": {
-      "en": "Shinx"
-    },
-    "description": {
-      "en": "Strong electricity courses through the tips of\nits sharp claws. A light scratch causes fainting\nin foes."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Head Bolt"
-        },
-        "damage": 50,
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Shinx"
-    },
-    "illustrator": "Sanosuke Sakuma",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Lightning"
-    ],
-    "description": {
-      "en": "The extension and contraction of its muscles\ngenerates electricity. It glows when in trouble."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Bite"
-        },
-        "damage": 20,
-        "cost": [
-          "Lightning"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fighting",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Sharpedo"
-    },
-    "illustrator": "Yumi",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Water"
-    ],
-    "evolveFrom": {
-      "en": "Carvanha"
-    },
-    "description": {
-      "en": "As soon as it catches the scent of prey, Sharpedo\nwill jet seawater from its backside, hurtling\ntoward the target to attack at 75 mph."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Crunch"
-        },
-        "damage": 50,
-        "cost": [
-          "Water",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "Flip a coin. If heads, discard a random Energy from your opponent's Active Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Carvanha"
-    },
-    "illustrator": "Hideki Ishikawa",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Water"
-    ],
-    "description": {
-      "en": "It won't attack while it's alone—not even if it\nspots prey. Instead, it waits for other Carvanha to\njoin it, and then the Pokémon attack as a group."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Bite"
-        },
-        "damage": 20,
-        "cost": [
-          "Water"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Mantine"
-    },
-    "illustrator": "Sanosuke Sakuma",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 90,
-    "types": [
-      "Water"
-    ],
-    "description": {
-      "en": "If it builds up enough speed swimming, it\ncan jump out above the waves and glide\nfor over 300 feet."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Surf"
-        },
-        "damage": 50,
-        "cost": [
-          "Water",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Lightning",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Blacephalon"
-    },
-    "illustrator": "Anesaki Dynamic",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 100,
-    "types": [
-      "Fire"
-    ],
-    "description": {
-      "en": "It slithers toward people. Then, without warning, it triggers the\nexplosion of its own head. It's apparently one kind of Ultra Beast."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Beat Punk"
-        },
-        "damage": 130,
-        "cost": [
-          "Fire",
-          "Fire",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "This Pokémon also does 70 damage to itself."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Water",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Kartana"
-    },
-    "illustrator": "nagimiso",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "This Ultra Beast's body, which is as thin\nas paper, is like a sharpened sword."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Thrash Metal"
-        },
-        "damage": 40,
-        "cost": [
-          "Grass"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Pheromosa"
-    },
-    "illustrator": "Shin Nagasawa",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 70,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "A life-form that lives in another world, its body\nis thin and supple, but it also possesses\ngreat power."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Jump Blues"
-        },
-        "damage": 20,
-        "cost": [
-          "Grass"
-        ],
-        "effect": {
-          "en": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Buzzwole ex"
-    },
-    "illustrator": "PLANETA Mochizuki",
-    "rarity": "Four Diamond",
-    "category": "Pokemon",
-    "hp": 140,
-    "types": [
-      "Grass"
-    ],
-    "stage": "Basic",
-    "suffix": "EX",
-    "attacks": [
-      {
-        "name": {
-          "en": "Punch"
-        },
-        "damage": 30,
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ]
-      },
-      {
-        "name": {
-          "en": "Big Beat"
-        },
-        "damage": 120,
-        "cost": [
-          "Grass",
-          "Grass",
-          "Colorless"
-        ],
-        "effect": {
-          "en": "During your next turn, this Pokémon can't use Big Beat."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Decidueye"
-    },
-    "illustrator": "Souichirou Gunjima",
-    "rarity": "Three Diamond",
-    "category": "Pokemon",
-    "hp": 130,
-    "types": [
-      "Grass"
-    ],
-    "evolveFrom": {
-      "en": "Dartrix"
-    },
-    "description": {
-      "en": "It nocks its arrow quills and shoots them at\nopponents. When it simply can't afford to miss,\nit tugs the vine on its head to improve its focus."
-    },
-    "stage": "Stage2",
-    "attacks": [
-      {
-        "name": {
-          "en": "Sniping Arrow"
-        },
-        "cost": [
-          "Grass",
-          "Grass"
-        ],
-        "effect": {
-          "en": "This attack does 70 damage to 1 of your opponent's Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Dartrix"
-    },
-    "illustrator": "AKIRA EGAWA",
-    "rarity": "Two Diamond",
-    "category": "Pokemon",
-    "hp": 80,
-    "types": [
-      "Grass"
-    ],
-    "evolveFrom": {
-      "en": "Rowlet"
-    },
-    "description": {
-      "en": "This narcissistic Pokémon is a clean freak. If you\ndon't groom it diligently, it may stop listening to you."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Skill Dive"
-        },
-        "cost": [
-          "Grass"
-        ],
-        "effect": {
-          "en": "This attack does 20 damage to 1 of your opponent's Pokémon."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Rowlet"
-    },
-    "illustrator": "Masakazu Fukuda",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "It sends its feathers, which are as sharp\nas blades, flying in attack. Its legs are strong,\nso its kicks are also formidable."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Fury Attack"
-        },
-        "damage": 10,
-        "cost": [
-          "Grass"
-        ],
-        "effect": {
-          "en": "Flip 3 coins. This attack does 10 damage for each heads."
-        }
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Lilligant"
-    },
-    "illustrator": "Kagemaru Himeno",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 110,
-    "types": [
-      "Grass"
-    ],
-    "evolveFrom": {
-      "en": "Petilil"
-    },
-    "description": {
-      "en": "The fragrance of the garland on its head has\na relaxing effect, but taking care of it is very\ndifficult."
-    },
-    "stage": "Stage1",
-    "attacks": [
-      {
-        "name": {
-          "en": "Cut"
-        },
-        "damage": 60,
-        "cost": [
-          "Grass",
-          "Colorless"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 2,
-    "set_id": "A3a"
-  },
-  {
-    "name": {
-      "en": "Petilil"
-    },
-    "illustrator": "sui",
-    "rarity": "One Diamond",
-    "category": "Pokemon",
-    "hp": 60,
-    "types": [
-      "Grass"
-    ],
-    "description": {
-      "en": "The leaves on its head grow right back even if\nthey fall out. These bitter leaves refresh those\nwho eat them."
-    },
-    "stage": "Basic",
-    "attacks": [
-      {
-        "name": {
-          "en": "Seed Bomb"
-        },
-        "damage": 20,
-        "cost": [
-          "Grass"
-        ]
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "Fire",
-        "value": "+20"
-      }
-    ],
-    "retreat": 1,
-    "set_id": "A3a"
   },
   {
     "name": {
