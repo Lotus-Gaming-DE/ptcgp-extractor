@@ -42,17 +42,18 @@ async function importTSFile(file: string) {
   return await import(pathToFile);
 }
 
-async function getAllSets() {
+async function getAllSets(): Promise<SetInfo[]> {
   const setFiles = await glob(SETS_GLOB);
-  const sets: SetInfo[] = [];
 
-  for (const file of setFiles) {
-    const set = (await importTSFile(file)).default;
-    if (!set.name) {
-      set.name = { en: path.basename(file, '.ts') };
-    }
-    sets.push(set);
-  }
+  const sets = await Promise.all(
+    setFiles.map(async (file) => {
+      const set = (await importTSFile(file)).default;
+      if (!set.name) {
+        set.name = { en: path.basename(file, '.ts') };
+      }
+      return set;
+    }),
+  );
   return sets;
 }
 
@@ -68,21 +69,21 @@ async function main() {
   const files = await glob(CARDS_GLOB);
   console.log('Files found:', files.length);
 
-  const cards: Card[] = [];
+  const cards: Card[] = await Promise.all(
+    files.map(async (file) => {
+      const mod = await importTSFile(file);
+      const card = mod.default || mod;
 
-  for (const file of files) {
-    const mod = await importTSFile(file);
-    const card = mod.default || mod;
-
-    let setId: string;
-    if (card.set && card.set.id) {
-      setId = card.set.id;
-    } else {
-      setId = path.basename(path.dirname(file));
-    }
-    card.set_id = setId;
-    cards.push(card);
-  }
+      let setId: string;
+      if (card.set && card.set.id) {
+        setId = card.set.id;
+      } else {
+        setId = path.basename(path.dirname(file));
+      }
+      card.set_id = setId;
+      return card;
+    }),
+  );
 
   // Schritt 4: Schreibe Karten und Sets in getrennte Dateien
   const dataDir = path.join(__dirname, '..', 'data');

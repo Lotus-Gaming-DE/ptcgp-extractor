@@ -6,7 +6,7 @@ Das Skript `src/export.ts` erzeugt zwei Dateien im Verzeichnis `data/`:
 - **`cards.json`** – enthält eine Liste aller Karten.
 - **`sets.json`** – enthält Informationen zu allen Sets bzw. Boostern.
 
-Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingelesen werden können.
+Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingelesen werden können. Seit Version 1.1 werden die Quelldateien parallel eingelesen, was die Ausführung beschleunigt.
 
 ## Karten
 
