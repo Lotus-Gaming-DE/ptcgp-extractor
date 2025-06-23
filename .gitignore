@@ -25,3 +25,6 @@ data/pers/
 
 # Jest coverage output
 coverage/
+
+# Local clone of tcgdex/cards-database
+tcgdex/
