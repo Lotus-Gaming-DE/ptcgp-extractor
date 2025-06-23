@@ -17,6 +17,17 @@ interface Card {
 // Standard-Ordner für das tcgdex-Repo
 const repoDir = path.resolve('tcgdex');
 
+export function checkNodeVersion(
+  version: string = process.versions.node,
+  requiredMajor = 20,
+) {
+  const major = parseInt(version.split('.')[0], 10);
+  if (major !== requiredMajor) {
+    console.error(`Node.js ${requiredMajor} is required. Detected ${version}.`);
+    process.exit(1);
+  }
+}
+
 async function ensureRepoDir() {
   if (!(await fs.pathExists(repoDir))) {
     console.error(
@@ -83,6 +94,7 @@ async function getAllCards(): Promise<Card[]> {
 }
 
 async function main() {
+  checkNodeVersion();
   await ensureRepoDir();
   // Schritt 1: Sets einlesen
   const sets = await getAllSets();
@@ -113,7 +125,9 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}

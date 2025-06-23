@@ -5,6 +5,8 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Voraussetzungen
 
 - Benötigt wird **Node.js 20** (siehe GitHub Action)
+- Das Export-Skript prüft die Node.js-Version und bricht bei Abweichungen
+  mit einer Fehlermeldung ab.
 - Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten
   ändern.
 - Vor dem Export muss ein Klon von `tcgdex/cards-database` im Unterordner
