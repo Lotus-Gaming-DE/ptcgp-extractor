@@ -17,6 +17,7 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 
 - **Quelle**: Unter `tcgdex/data/Pokémon TCG Pocket/` befinden sich Set-Dateien und Karten-Dateien (.ts)
 - **Skript**: `src/export.ts` liest die Dateien und erzeugt zwei Dateien: `data/cards.json` und `data/sets.json`.
+  Seit Version 1.1 werden die Dateien parallel importiert, was den Export deutlich beschleunigt.
   Das `serie`-Feld aus den tcgdex-Set-Dateien wird dabei nicht in `sets.json` 
   übernommen.
 - **Automatisierung**:
