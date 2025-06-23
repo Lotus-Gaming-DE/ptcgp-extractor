@@ -5,6 +5,8 @@ Vielen Dank für dein Interesse an diesem Projekt. Bitte beachte beim Arbeiten d
 ## Voraussetzungen
 
 - Installiere **Node.js 20**.
+- Das Export-Skript prüft die Node-Version und beendet sich bei Abweichungen
+  mit einer Fehlermeldung.
 - Klone das Fremd-Repository [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) in einen Ordner `tcgdex` im Projektverzeichnis.
 
 ## Abläufe
