@@ -25,6 +25,7 @@ Die genaue Struktur kann je nach Karte variieren, da auch Attacken, Fähigkeiten
 ## Packs
 
 Im Abschnitt `sets` finden sich Informationen zu jedem Boosterpack beziehungsweise Kartenset. Die Objekte werden über ihre ID angesprochen und enthalten Namen in mehreren Sprachen sowie Zusatzinformationen wie `releaseDate` oder `cardCount`. Innerhalb eines Sets gibt es zudem die Auflistung `boosters`, die die unterschiedlichen Pack-Varianten beschreibt.
+Dabei wird das `serie`-Feld aus den tcgdex-Set-Dateien bewusst entfernt, da es für die Pocket-Daten keine Relevanz hat.
 
 Ein minimales Pack-Objekt sieht so aus:
 
