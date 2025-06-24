@@ -52,8 +52,7 @@ npm run export
 ## Umgebungsvariablen
 
 - `TCGDEX_REPO` legt den Pfad zum Klon von `tcgdex/cards-database` fest. Der Pfad
-  muss innerhalb des Projektverzeichnisses liegen und vorhanden sein, sonst bricht
-  das Skript mit einer Fehlermeldung ab.
+  muss innerhalb des Projektverzeichnisses liegen und vorhanden sein. Symbolische Links nach außerhalb werden abgewiesen. Ist der Ordner nicht vorhanden oder zeigt nach außen, beendet sich das Skript mit einer Fehlermeldung.
 - `CONCURRENCY` legt die Anzahl paralleler Ladevorgänge fest (Standard: 10, Maximum: 100).
   Ungültige Eingaben werden ignoriert und auf 10 gesetzt. Werte über 100 werden auf 100 begrenzt.
 - `LOG_LEVEL` kann auf `info`, `warn` oder `error` gesetzt werden und steuert die ausgegebene

@@ -28,3 +28,6 @@ All notable changes to this project will be documented in this file.
 - Repo directory path is now validated on startup and must lie within the project.
 - New `CONCURRENCY` env variable allows adjusting parallel file loading.
 - Extended TypeScript interfaces and improved documentation of JSON format.
+- Temporary files are cleaned up on write failures.
+- Repository path validation rejects symbolic links outside the project.
+- Development dependencies updated (e.g., @types/node).

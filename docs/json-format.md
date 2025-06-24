@@ -8,7 +8,7 @@ Das Skript `src/export.ts` erzeugt zwei Dateien im Verzeichnis `data/`:
 
 Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingelesen werden können. Seit Version 1.1 werden die Quelldateien parallel eingelesen, was die Ausführung beschleunigt. Die Anzahl der gleichzeitigen Ladevorgänge lässt sich über die Umgebungsvariable `CONCURRENCY` steuern (positive Ganzzahl, Standard: 10, Maximum: 100).
 
-Der Schreibvorgang erfolgt atomar, indem die Dateien zunächst als temporäre `.tmp`-Dateien angelegt und erst danach verschoben werden.
+Der Schreibvorgang erfolgt atomar: Die Dateien werden zuerst als temporäre `.tmp`-Dateien geschrieben und anschließend verschoben. Schlägt einer der Schritte fehl, werden die temporären Dateien wieder gelöscht.
 
 ## Karten
 

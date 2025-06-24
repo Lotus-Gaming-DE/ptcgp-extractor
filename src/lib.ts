@@ -92,16 +92,17 @@ export function resolveRepoDir(): string {
   if (/\0|\n|\r/.test(dir)) {
     throw new Error('Invalid characters in TCGDEX_REPO');
   }
-  const relative = path.relative(projectRoot, dir);
+  const realDir = fs.existsSync(dir) ? fs.realpathSync(dir) : dir;
+  const relative = path.relative(projectRoot, realDir);
   if (relative.startsWith('..') || path.isAbsolute(relative)) {
     throw new Error(`TCGDEX_REPO must be inside the project directory: ${dir}`);
   }
-  if (!fs.existsSync(dir)) {
+  if (!fs.existsSync(realDir)) {
     throw new Error(
       `Repo directory '${dir}' not found. Clone tcgdex/cards-database into this folder.`,
     );
   }
-  return dir;
+  return realDir;
 }
 
 export const repoDir = resolveRepoDir();
@@ -217,11 +218,14 @@ export async function writeData(
 
   const cardsTmp = cardsOutPath + '.tmp';
   const setsTmp = setsOutPath + '.tmp';
-
-  await fs.writeJson(cardsTmp, cards, { spaces: 2 });
-  await fs.writeJson(setsTmp, sets, { spaces: 2 });
-  await fs.move(cardsTmp, cardsOutPath, { overwrite: true });
-  await fs.move(setsTmp, setsOutPath, { overwrite: true });
-
-  return { cardsOutPath, setsOutPath };
+  try {
+    await fs.writeJson(cardsTmp, cards, { spaces: 2 });
+    await fs.writeJson(setsTmp, sets, { spaces: 2 });
+    await fs.move(cardsTmp, cardsOutPath, { overwrite: true });
+    await fs.move(setsTmp, setsOutPath, { overwrite: true });
+    return { cardsOutPath, setsOutPath };
+  } catch (e) {
+    await Promise.allSettled([fs.remove(cardsTmp), fs.remove(setsTmp)]);
+    throw e;
+  }
 }
