@@ -78,7 +78,7 @@ nicht.
 ## Logformat
 
 Alle Meldungen werden im JSON-Format `{"level","time","msg"}` auf die Konsole
-und in `logs/app-<Datum>.log` geschrieben. 
+und in `logs/app-<Datum>.log` geschrieben.
 Die Dateien rotieren täglich und werden eine Woche lang aufbewahrt.
 Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
 
