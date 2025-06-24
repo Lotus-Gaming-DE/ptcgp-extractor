@@ -10,15 +10,14 @@ Beide Dateien liegen als Arrays vor, sodass sie unabhängig voneinander eingeles
 
 ## Karten
 
-`cards` enthält die eigentlichen Karteneinträge. Sie besitzen im Wesentlichen die gleichen Felder wie die Originaldaten aus [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) und zusätzlich einige Hilfsfelder. Zur schnellen Zuordnung sind `set_id` und `set_name` direkt auf Kartenebene abgelegt. Ein vollständiges `set`-Objekt wird nicht mehr gespeichert.
+`cards` enthält die eigentlichen Karteneinträge. Sie besitzen im Wesentlichen die gleichen Felder wie die Originaldaten aus [`tcgdex/cards-database`](https://github.com/tcgdex/cards-database) und zusätzlich einige Hilfsfelder. Zur schnellen Zuordnung ist `set_id` direkt auf Kartenebene abgelegt. Ein vollständiges `set`-Objekt wird nicht mehr gespeichert.
 
 Wichtige Felder eines Karteneintrags:
 
 - `set_id`: Die Set-ID als String (entspricht der ID im zugehörigen Set)
-- `set_name`: Der englische Name des Sets
 - `name`: Kartennamen in verschiedenen Sprachen
 - `illustrator`, `rarity`, `category`, `hp`, `types`, `stage`, `suffix` usw.
-- `boosters`: Liste der Booster-IDs, in denen die Karte erscheint
+- `boosters`: Liste der Booster-IDs, in denen die Karte erscheint (optional)
 
 Die genaue Struktur kann je nach Karte variieren, da auch Attacken, Fähigkeiten und andere optionale Felder enthalten sind.
 
@@ -48,7 +47,6 @@ Ein minimales Pack-Objekt sieht so aus:
   "rarity": "Crown",
   "types": ["Colorless"],
   "set_id": "A2a",
-  "set_name": "Triumphant Light",
   "boosters": ["dialga", "palkia"]
 }
 ```
@@ -56,6 +54,6 @@ Ein minimales Pack-Objekt sieht so aus:
 ## Hinweise für Verbraucher
 
 - Die Datei kann sehr groß werden. Wer nur einige Felder benötigt, kann beim Einlesen nicht relevante Eigenschaften ignorieren.
-- Die Felder `set_id` und `set_name` sind rein zur Bequemlichkeit vorhanden und entsprechen exakt den Angaben im zugehörigen Set.
+- Das Feld `set_id` ist rein zur Bequemlichkeit vorhanden und entspricht exakt den Angaben im zugehörigen Set.
 - Über das Feld `boosters` lässt sich ermitteln, in welchem Pack eine Karte erscheint. Die tatsächlichen Namen der Boosterpacks stehen im `sets`-Abschnitt.
 - Bei zukünftigen Änderungen des Skripts kann sich die Struktur anpassen. Anwendungen sollten daher möglichst fehlertolerant parsen.

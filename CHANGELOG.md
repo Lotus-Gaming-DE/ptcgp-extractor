@@ -15,3 +15,4 @@ All notable changes to this project will be documented in this file.
 - Added tests for write failures and sample export.
 - Repo directory path is now validated on startup and must lie within the project.
 - New `CONCURRENCY` env variable allows adjusting parallel file loading.
+- Extended TypeScript interfaces and improved documentation of JSON format.
