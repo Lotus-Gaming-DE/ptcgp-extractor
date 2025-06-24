@@ -21,6 +21,9 @@ npm test
 # Testabdeckung wird automatisch erzeugt und im Ordner `coverage/` abgelegt
 ```
 
+Der CI-Workflow prüft zusätzlich die Abhängigkeiten mit `npx snyk test` und
+stellt die Coverage als Artefakt bereit.
+
 Installiere optional die Git-Hooks mit
 
 ```bash
