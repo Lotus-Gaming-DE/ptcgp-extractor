@@ -81,6 +81,7 @@ Um sicherzustellen, dass dein Beitrag den Stilvorgaben entspricht und alle Tests
 
 ```bash
 npm run lint
+npm run format
 npm test
 ```
 
