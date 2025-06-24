@@ -35,8 +35,28 @@ export interface Card {
   [key: string]: unknown;
 }
 
-// Default directory for the tcgdex repository. Override via TCGDEX_REPO env.
-export const repoDir = path.resolve(process.env.TCGDEX_REPO || 'tcgdex');
+const projectRoot = path.resolve(__dirname, '..');
+
+/**
+ * Resolve the tcgdex repository directory from the environment variable.
+ *
+ * @throws Error when the resolved path is outside the project or does not exist.
+ */
+export function resolveRepoDir(): string {
+  const dir = path.resolve(process.env.TCGDEX_REPO || 'tcgdex');
+  const relative = path.relative(projectRoot, dir);
+  if (relative.startsWith('..') || path.isAbsolute(relative)) {
+    throw new Error(`TCGDEX_REPO must be inside the project directory: ${dir}`);
+  }
+  if (!fs.existsSync(dir)) {
+    throw new Error(
+      `Repo directory '${dir}' not found. Clone tcgdex/cards-database into this folder.`,
+    );
+  }
+  return dir;
+}
+
+export const repoDir = resolveRepoDir();
 
 const SETS_GLOB = path.join(repoDir, 'data', 'Pokémon TCG Pocket', '*.ts');
 const CARDS_GLOB = path.join(
@@ -57,13 +77,16 @@ async function importTSFile(file: string) {
 
 /**
  * Read all set definition files and return them as plain objects.
- * Limits concurrency to avoid exhausting resources when many files exist.
+ *
+ * @param concurrency Maximum number of files loaded in parallel.
  */
-export async function getAllSets(): Promise<SetInfo[]> {
+export async function getAllSets(
+  concurrency = Number(process.env.CONCURRENCY) || 10,
+): Promise<SetInfo[]> {
   try {
     const setFiles = await glob(SETS_GLOB);
 
-    const sets = await mapLimit(setFiles, 10, async (file) => {
+    const sets = await mapLimit(setFiles, concurrency, async (file) => {
       try {
         const set = (await importTSFile(file)).default;
         if (set.serie) {
@@ -87,13 +110,16 @@ export async function getAllSets(): Promise<SetInfo[]> {
 
 /**
  * Load all card files and attach the corresponding set identifier.
- * Concurrency is limited to improve stability.
+ *
+ * @param concurrency Maximum number of files loaded in parallel.
  */
-export async function getAllCards(): Promise<Card[]> {
+export async function getAllCards(
+  concurrency = Number(process.env.CONCURRENCY) || 10,
+): Promise<Card[]> {
   try {
     const files = await glob(CARDS_GLOB);
 
-    const cards = await mapLimit(files, 10, async (file) => {
+    const cards = await mapLimit(files, concurrency, async (file) => {
       try {
         const mod = await importTSFile(file);
         const card = mod.default || mod;

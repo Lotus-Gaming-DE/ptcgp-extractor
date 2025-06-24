@@ -1,7 +1,7 @@
 import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
-import { repoDir, getAllSets, getAllCards, writeData } from './lib';
+import { getAllSets, getAllCards, writeData } from './lib';
 import { logger } from './logger';
 
 export function checkNodeVersion(
@@ -16,19 +16,11 @@ export function checkNodeVersion(
   }
 }
 
-async function ensureRepoDir() {
-  if (!(await fs.pathExists(repoDir))) {
-    throw new Error(
-      `Repo directory '${repoDir}' not found. Clone tcgdex/cards-database into this folder.`,
-    );
-  }
-}
-
 export async function main() {
   checkNodeVersion();
-  await ensureRepoDir();
-  const sets = await getAllSets();
-  const cards = await getAllCards();
+  const concurrency = Number(process.env.CONCURRENCY) || 10;
+  const sets = await getAllSets(concurrency);
+  const cards = await getAllCards(concurrency);
   const { cardsOutPath, setsOutPath } = await writeData(cards, sets);
 
   if (process.env.DEBUG) {
