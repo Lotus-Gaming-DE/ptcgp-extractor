@@ -15,7 +15,9 @@ interface Card {
 }
 
 // Standard-Ordner für das tcgdex-Repo
-const repoDir = path.resolve('tcgdex');
+// Kann über die Umgebungsvariable `TCGDEX_REPO` angepasst werden, um Tests
+// oder alternative Pfade zu ermöglichen.
+export const repoDir = path.resolve(process.env.TCGDEX_REPO || 'tcgdex');
 
 /**
  * Ensure that the current Node.js version meets the minimum requirement.
@@ -40,15 +42,13 @@ export function checkNodeVersion(
 /**
  * Verify that the repository directory containing the tcgdex data exists.
  *
- * The function terminates the process with an error message when the folder is
- * missing so that the export cannot run with incomplete data.
+ * @throws Error when the directory is missing.
  */
 async function ensureRepoDir() {
   if (!(await fs.pathExists(repoDir))) {
-    console.error(
+    throw new Error(
       `Repo directory '${repoDir}' not found. Clone tcgdex/cards-database into this folder.`,
     );
-    process.exit(1);
   }
 }
 
@@ -62,8 +62,11 @@ const CARDS_GLOB = path.join(
 );
 
 async function importTSFile(file: string) {
-  const pathToFile = path.resolve(file);
-  return await import(pathToFile);
+  const resolved = path.resolve(file);
+  if (!resolved.startsWith(repoDir + path.sep)) {
+    throw new Error(`Refusing to import outside of repo directory: ${file}`);
+  }
+  return await import(resolved);
 }
 
 /**
@@ -74,22 +77,32 @@ async function importTSFile(file: string) {
  * modules to be consumed at runtime.
  */
 async function getAllSets(): Promise<SetInfo[]> {
-  const setFiles = await glob(SETS_GLOB);
+  try {
+    const setFiles = await glob(SETS_GLOB);
 
-  const sets = await Promise.all(
-    setFiles.map(async (file) => {
-      const set = (await importTSFile(file)).default;
-      // Entferne das "serie"-Feld!
-      if (set.serie) {
-        delete set.serie;
-      }
-      if (!set.name) {
-        set.name = { en: path.basename(file, '.ts') };
-      }
-      return set;
-    }),
-  );
-  return sets;
+    const sets = await Promise.all(
+      setFiles.map(async (file) => {
+        try {
+          const set = (await importTSFile(file)).default;
+          // Entferne das "serie"-Feld!
+          if (set.serie) {
+            delete set.serie;
+          }
+          if (!set.name) {
+            set.name = { en: path.basename(file, '.ts') };
+          }
+          return set;
+        } catch (e) {
+          throw new Error(
+            `Failed to import set file ${file}: ${(e as Error).message}`,
+          );
+        }
+      }),
+    );
+    return sets;
+  } catch (e) {
+    throw new Error(`Failed to load sets: ${(e as Error).message}`);
+  }
 }
 
 /**
@@ -100,64 +113,79 @@ async function getAllSets(): Promise<SetInfo[]> {
  * to keep the output lean.
  */
 async function getAllCards(): Promise<Card[]> {
-  const files = await glob(CARDS_GLOB);
+  try {
+    const files = await glob(CARDS_GLOB);
 
-  const cards = await Promise.all(
-    files.map(async (file) => {
-      const mod = await importTSFile(file);
-      const card = mod.default || mod;
+    const cards = await Promise.all(
+      files.map(async (file) => {
+        try {
+          const mod = await importTSFile(file);
+          const card = mod.default || mod;
 
-      let setId: string;
-      if (card.set && card.set.id) {
-        setId = card.set.id;
-      } else {
-        setId = path.basename(path.dirname(file));
-      }
-      card.set_id = setId;
+          let setId: string;
+          if (card.set && card.set.id) {
+            setId = card.set.id;
+          } else {
+            setId = path.basename(path.dirname(file));
+          }
+          card.set_id = setId;
 
-      // Entferne das Set-Objekt komplett aus der Karte!
-      delete card.set;
+          // Entferne das Set-Objekt komplett aus der Karte!
+          delete card.set;
 
-      return card;
-    }),
-  );
-  return cards;
+          return card;
+        } catch (e) {
+          throw new Error(
+            `Failed to import card file ${file}: ${(e as Error).message}`,
+          );
+        }
+      }),
+    );
+    return cards;
+  } catch (e) {
+    throw new Error(`Failed to load cards: ${(e as Error).message}`);
+  }
 }
 
 /**
  * Orchestrates the export process from reading the repository files to writing
  * the final JSON output.
  */
-async function main() {
-  checkNodeVersion();
-  await ensureRepoDir();
-  // Schritt 1: Sets einlesen
-  const sets = await getAllSets();
+export async function main() {
+  try {
+    checkNodeVersion();
+    await ensureRepoDir();
+    // Schritt 1: Sets einlesen
+    const sets = await getAllSets();
 
-  // Schritt 2: Karten einlesen
-  const cards = await getAllCards();
+    // Schritt 2: Karten einlesen
+    const cards = await getAllCards();
 
-  // Schritt 3: Schreibe Karten und Sets in getrennte Dateien
-  const dataDir = path.join(__dirname, '..', 'data');
-  await fs.ensureDir(dataDir);
+    // Schritt 3: Schreibe Karten und Sets in getrennte Dateien
+    const dataDir = path.join(__dirname, '..', 'data');
+    await fs.ensureDir(dataDir);
 
-  const cardsOutPath = path.join(dataDir, 'cards.json');
-  const setsOutPath = path.join(dataDir, 'sets.json');
+    const cardsOutPath = path.join(dataDir, 'cards.json');
+    const setsOutPath = path.join(dataDir, 'sets.json');
 
-  await fs.writeJson(cardsOutPath, cards, { spaces: 2 });
-  await fs.writeJson(setsOutPath, sets, { spaces: 2 });
+    await fs.writeJson(cardsOutPath, cards, { spaces: 2 });
+    await fs.writeJson(setsOutPath, sets, { spaces: 2 });
 
-  // Debug-Ausgabe
-  if (process.env.DEBUG) {
-    const outRaw = await fs.readFile(cardsOutPath, 'utf-8');
-    console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
-    const setsRaw = await fs.readFile(setsOutPath, 'utf-8');
-    console.log('Erste 500 Zeichen aus sets.json:\n', setsRaw.slice(0, 500));
+    // Debug-Ausgabe
+    if (process.env.DEBUG) {
+      const outRaw = await fs.readFile(cardsOutPath, 'utf-8');
+      console.log('Erste 500 Zeichen aus cards.json:\n', outRaw.slice(0, 500));
+      const setsRaw = await fs.readFile(setsOutPath, 'utf-8');
+      console.log('Erste 500 Zeichen aus sets.json:\n', setsRaw.slice(0, 500));
+    }
+
+    console.log(
+      `Exported ${cards.length} cards to data/cards.json and ${sets.length} sets to data/sets.json`,
+    );
+  } catch (err) {
+    console.error(err);
+    throw err;
   }
-
-  console.log(
-    `Exported ${cards.length} cards to data/cards.json and ${sets.length} sets to data/sets.json`,
-  );
 }
 
 if (require.main === module) {

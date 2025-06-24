@@ -34,14 +34,22 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    Das Skript erwartet einen Ordner `tcgdex` im Projektverzeichnis. Fehlt er,
    schlägt `npm run export` mit einer Fehlermeldung fehl.
 3. Abhängigkeiten installieren, Build erzeugen und Export starten:
+
    ```bash
    npm install
    npm run build
    npm run export
    ```
+
 4. Das Ergebnis landet in zwei Dateien:
    - `data/cards.json` mit allen Karten
    - `data/sets.json` mit den Set-Informationen
+
+## Sicherheitshinweis
+
+Das Skript importiert TypeScript-Dateien aus dem externen Repository
+`tcgdex/cards-database` und führt deren Code aus. Stelle sicher, dass du diesem
+Repository vertraust oder den Inhalt prüfst, bevor du den Export ausführst.
 
 ## Codequalität prüfen
 
