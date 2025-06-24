@@ -17,4 +17,14 @@ describe('logger with LOG_LEVEL', () => {
     expect(spy).not.toHaveBeenCalled();
     spy.mockRestore();
   });
+
+  it('outputs JSON when enabled', async () => {
+    delete process.env.LOG_LEVEL;
+    jest.resetModules();
+    ({ logger } = await import('../src/logger'));
+    const spy = jest.spyOn(console, 'log').mockImplementation(() => {});
+    logger.info('hello');
+    expect(spy).toHaveBeenCalledWith(expect.stringMatching(/"msg":"hello"/));
+    spy.mockRestore();
+  });
 });

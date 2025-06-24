@@ -83,4 +83,21 @@ describe('export with sample data', () => {
       fs.readJson(path.join('data', 'cards.json')),
     ).resolves.toHaveLength(1);
   });
+
+  it('logs excerpts when DEBUG is set', async () => {
+    jest.resetModules();
+    repo = await createSampleRepo();
+    process.env.TCGDEX_REPO = repo;
+    process.env.DEBUG = '1';
+    const { logger } = await import('../src/logger');
+    const spy = jest.spyOn(logger, 'info').mockImplementation(() => {});
+    const { main } = await import('../src/export');
+    await main();
+    expect(spy).toHaveBeenCalledWith(
+      expect.stringMatching(/Erste 500 Zeichen/),
+      expect.any(String),
+    );
+    spy.mockRestore();
+    delete process.env.DEBUG;
+  });
 });

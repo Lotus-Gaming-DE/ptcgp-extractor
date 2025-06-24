@@ -34,3 +34,7 @@ All notable changes to this project will be documented in this file.
 - Updated @types/node to version 24.0.4.
 - TypeScript config now includes `"lib": ["es2020"]` for newer APIs.
 - Added tests for CLI argument parsing.
+- Logger now outputs structured JSON.
+- `DEBUG` environment variable logs excerpts of exported files.
+- Pre-commit hooks enforce formatting and linting.
+- CI runs `npm audit --production` and pre-commit checks.

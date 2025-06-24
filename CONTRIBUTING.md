@@ -21,7 +21,14 @@ npm test
 # Testabdeckung wird automatisch erzeugt und im Ordner `coverage/` abgelegt
 ```
 
+Installiere optional die Git-Hooks mit
+
+```bash
+pre-commit install
+```
+
+damit Format- und Lint-Prüfungen automatisch vor jedem Commit laufen.
+
 ## Hinweise
 
 - Dateien unter `data/pers/` dürfen nicht ins Repository gelangen.
-
