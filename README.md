@@ -11,6 +11,13 @@ verwendet werden.
 - Vor dem Export muss ein Klon von `tcgdex/cards-database` im Ordner `tcgdex`
   liegen.
 
+### Sicherheitshinweis
+
+Dieses Projekt verarbeitet ausschließlich öffentlich verfügbare Kartendaten.
+Persönliche Daten oder Geheimnisse gehören **nicht** ins Repository. Nutze die
+Datei `.env.example` als Vorlage für deine lokale `.env` und versioniere diese
+nicht.
+
 ## Projektüberblick
 
 - **Quelle:** `tcgdex/data/Pokémon TCG Pocket/`
@@ -21,7 +28,8 @@ verwendet werden.
 
 ## Installation & Nutzung
 
-1. Repository klonen und ins Verzeichnis wechseln.
+1. Repository klonen und ins Verzeichnis wechseln. Kopiere bei Bedarf
+   `.env.example` nach `.env`, um Pfade anzupassen.
 2. Abhängigkeiten installieren und Build erzeugen:
 
    ```bash
@@ -48,8 +56,12 @@ verwendet werden.
    ```
 
    Das Ergebnis landet in `data/cards.json` und `data/sets.json`.
+   Details zum Dateiformat findest du in [docs/json-format.md](docs/json-format.md).
 
 ## Umgebungsvariablen
+
+- Kopiere `.env.example` nach `.env`, um eigene Pfade oder Optionen zu
+  setzen.
 
 - `TCGDEX_REPO` – Pfad zum Klon von `tcgdex/cards-database`.
 - `CONCURRENCY` – Anzahl paralleler Ladevorgänge (Standard: 10, Maximum: 100).
@@ -87,6 +99,12 @@ npm test
 
 Installiere optional die Git-Hooks per `pre-commit install`, um die Format-
 und Lint-Prüfungen automatisch vor jedem Commit auszuführen.
+
+## Continuous Integration
+
+Die GitHub-Actions führen Linting, Tests und einen `npx snyk test`-Scan aus.
+Die generierte Testabdeckung wird als Artefakt bereitgestellt. Nach den Tests
+werden temporäre Verzeichnisse `tmp-repo-*` automatisch entfernt.
 
 ## Lizenz
 

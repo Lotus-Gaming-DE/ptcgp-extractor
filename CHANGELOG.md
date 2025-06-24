@@ -38,3 +38,6 @@ All notable changes to this project will be documented in this file.
 - `DEBUG` environment variable logs excerpts of exported files.
 - Pre-commit hooks enforce formatting and linting.
 - CI runs `npm audit --production` and pre-commit checks.
+- `.nvmrc` added to pin Node version locally.
+- README now links to `docs/json-format.md` and weist auf `.env.example` hin.
+- CI lädt Testabdeckung als Artefakt hoch und führt `npx snyk test` aus.
