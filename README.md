@@ -16,8 +16,10 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Projektüberblick
 
 - **Quelle**: Unter `tcgdex/data/Pokémon TCG Pocket/` befinden sich Set-Dateien und Karten-Dateien (.ts)
-- **Skript**: `src/export.ts` liest die Dateien und erzeugt zwei Dateien: `data/cards.json` und `data/sets.json`.
-  Seit Version 1.1 werden die Dateien parallel importiert, was den Export deutlich beschleunigt.
+- **Skript**: `src/export.ts` dient als CLI und nutzt Funktionen aus `src/lib.ts`,
+  um die Daten zu sammeln und zu schreiben.
+  Die Dateien werden mit begrenzter Parallelität (Standard: 10 gleichzeitig) eingelesen,
+  was eine gute Balance zwischen Geschwindigkeit und Stabilität bietet.
   Das `serie`-Feld aus den tcgdex-Set-Dateien wird dabei nicht in `sets.json`
   übernommen.
 - **Automatisierung**:
@@ -46,6 +48,20 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 4. Das Ergebnis landet in zwei Dateien:
    - `data/cards.json` mit allen Karten
    - `data/sets.json` mit den Set-Informationen
+
+## Programmatic API
+
+Seit Version 1.2 stehen zentrale Funktionen auch als Bibliothek unter
+`src/lib.ts` zur Verfügung. Damit lassen sich Karten und Sets in eigenen
+Skripten verwenden:
+
+```ts
+import { getAllSets, getAllCards, writeData } from './src/lib';
+
+const sets = await getAllSets();
+const cards = await getAllCards();
+await writeData(cards, sets);
+```
 
 ## Sicherheitshinweis
 
