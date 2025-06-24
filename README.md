@@ -42,12 +42,18 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    npm install
    npm run build
    npm test
-   npm run export
-   ```
+ npm run export
+  ```
 
 4. Das Ergebnis landet in zwei Dateien:
    - `data/cards.json` mit allen Karten
    - `data/sets.json` mit den Set-Informationen
+
+## Logausgabe
+
+Das Skript nutzt einen einfachen Logger. Meldungen erscheinen auf der Konsole
+mit einem Praefix wie `[INFO]`, `[WARN]` oder `[ERROR]`. In den Tests werden
+diese Ausgaben abgefangen.
 
 ## Programmatic API
 
