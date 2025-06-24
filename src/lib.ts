@@ -34,13 +34,25 @@ async function mapLimit<T, R>(
 }
 
 /**
- * Parse the CONCURRENCY environment variable.
+ * Parse a concurrency value and enforce sane defaults.
+ * Values above {@link MAX_CONCURRENCY} are capped.
  * Returns the default value when invalid.
  */
-export function parseConcurrency(value: unknown, defaultVal = 10): number {
-  const parsed = typeof value === 'string' ? Number.parseInt(value, 10) : NaN;
+export const MAX_CONCURRENCY = 100;
+
+export function parseConcurrency(
+  value: unknown,
+  defaultVal = 10,
+  max = MAX_CONCURRENCY,
+): number {
+  const parsed =
+    typeof value === 'string'
+      ? Number.parseInt(value, 10)
+      : typeof value === 'number'
+        ? value
+        : NaN;
   if (Number.isFinite(parsed) && parsed > 0) {
-    return parsed;
+    return Math.min(parsed, max);
   }
   return defaultVal;
 }
@@ -77,6 +89,9 @@ const projectRoot = path.resolve(__dirname, '..');
  */
 export function resolveRepoDir(): string {
   const dir = path.resolve(process.env.TCGDEX_REPO || 'tcgdex');
+  if (/\0|\n|\r/.test(dir)) {
+    throw new Error('Invalid characters in TCGDEX_REPO');
+  }
   const relative = path.relative(projectRoot, dir);
   if (relative.startsWith('..') || path.isAbsolute(relative)) {
     throw new Error(`TCGDEX_REPO must be inside the project directory: ${dir}`);

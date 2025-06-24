@@ -36,6 +36,13 @@ describe('parseConcurrency', () => {
     const { parseConcurrency } = await import('../src/lib');
     expect(parseConcurrency('5')).toBe(5);
   });
+
+  it('caps values above MAX_CONCURRENCY', async () => {
+    const { parseConcurrency, MAX_CONCURRENCY } = await import('../src/lib');
+    expect(parseConcurrency(String(MAX_CONCURRENCY + 50))).toBe(
+      MAX_CONCURRENCY,
+    );
+  });
 });
 
 describe('mapLimit validation via getAllSets', () => {
