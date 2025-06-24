@@ -18,6 +18,7 @@ npm install
 npm run build
 npm run lint
 npm test
+# Testabdeckung wird automatisch erzeugt und im Ordner `coverage/` abgelegt
 ```
 
 ## Hinweise

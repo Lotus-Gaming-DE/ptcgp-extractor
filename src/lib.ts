@@ -15,6 +15,10 @@ async function mapLimit<T, R>(
   limit: number,
   fn: (item: T) => Promise<R>,
 ): Promise<R[]> {
+  if (!Number.isFinite(limit) || limit <= 0) {
+    throw new Error(`Invalid concurrency limit: ${limit}`);
+  }
+
   const result: R[] = new Array(items.length);
   let index = 0;
   const workers = new Array(Math.min(limit, items.length))
@@ -27,6 +31,18 @@ async function mapLimit<T, R>(
     });
   await Promise.all(workers);
   return result;
+}
+
+/**
+ * Parse the CONCURRENCY environment variable.
+ * Returns the default value when invalid.
+ */
+export function parseConcurrency(value: unknown, defaultVal = 10): number {
+  const parsed = typeof value === 'string' ? Number.parseInt(value, 10) : NaN;
+  if (Number.isFinite(parsed) && parsed > 0) {
+    return parsed;
+  }
+  return defaultVal;
 }
 
 // Type definitions shared with consumers
@@ -99,7 +115,7 @@ async function importTSFile(file: string) {
  * @returns Array of `SetInfo` objects
  */
 export async function getAllSets(
-  concurrency = Number(process.env.CONCURRENCY) || 10,
+  concurrency = parseConcurrency(process.env.CONCURRENCY),
 ): Promise<SetInfo[]> {
   try {
     const setFiles = await glob(SETS_GLOB);
@@ -133,7 +149,7 @@ export async function getAllSets(
  * @returns Array of `Card` objects
  */
 export async function getAllCards(
-  concurrency = Number(process.env.CONCURRENCY) || 10,
+  concurrency = parseConcurrency(process.env.CONCURRENCY),
 ): Promise<Card[]> {
   try {
     const files = await glob(CARDS_GLOB);
@@ -184,8 +200,13 @@ export async function writeData(
   const cardsOutPath = path.join(dataDir, 'cards.json');
   const setsOutPath = path.join(dataDir, 'sets.json');
 
-  await fs.writeJson(cardsOutPath, cards, { spaces: 2 });
-  await fs.writeJson(setsOutPath, sets, { spaces: 2 });
+  const cardsTmp = cardsOutPath + '.tmp';
+  const setsTmp = setsOutPath + '.tmp';
+
+  await fs.writeJson(cardsTmp, cards, { spaces: 2 });
+  await fs.writeJson(setsTmp, sets, { spaces: 2 });
+  await fs.move(cardsTmp, cardsOutPath, { overwrite: true });
+  await fs.move(setsTmp, setsOutPath, { overwrite: true });
 
   return { cardsOutPath, setsOutPath };
 }
