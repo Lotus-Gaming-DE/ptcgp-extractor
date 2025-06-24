@@ -1,11 +1,12 @@
 import { checkNodeVersion } from '../src/export';
+import { logger } from '../src/logger';
 
 describe('checkNodeVersion', () => {
   it('exits when node major version is below 20', () => {
     const exitSpy = jest.spyOn(process, 'exit').mockImplementation(() => {
       throw new Error('exit');
     });
-    const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+    const errorSpy = jest.spyOn(logger, 'error').mockImplementation(() => {});
 
     expect(() => checkNodeVersion('18.0.0')).toThrow('exit');
     expect(errorSpy).toHaveBeenCalledWith(

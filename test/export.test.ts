@@ -1,6 +1,7 @@
 import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
+import { logger } from '../src/logger';
 
 async function repoExists(repoDir: string): Promise<boolean> {
   return fs.pathExists(repoDir);
@@ -12,7 +13,7 @@ describe('export script', () => {
   it('runs export when repo present', async () => {
     const defaultRepo = path.resolve('tcgdex');
     if (!(await repoExists(defaultRepo))) {
-      console.log('Skipping export test: repo directory not found');
+      logger.info('Skipping export test: repo directory not found');
       return;
     }
     jest.resetModules();
