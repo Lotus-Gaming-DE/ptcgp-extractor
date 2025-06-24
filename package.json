@@ -11,8 +11,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "fs-extra": "^11.2.0",
-    "glob": "^10.3.10",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.3",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {

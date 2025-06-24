@@ -37,6 +37,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Test
+        run: npm test
+
       - name: Run export script
         run: npm run export
         # Hier KEIN working-directory nötig, default ist das Hauptrepo!

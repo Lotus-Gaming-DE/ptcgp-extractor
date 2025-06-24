@@ -27,17 +27,19 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Installation & Nutzung
 
 1. Repository clonen und ins Verzeichnis wechseln.
-2. Das Fremd-Repo klonen:
+2. Stelle sicher, dass **Node.js 20 oder neuer** installiert ist.
+3. Das Fremd-Repo klonen:
    ```bash
    git clone https://github.com/tcgdex/cards-database tcgdex
    ```
    Das Skript erwartet einen Ordner `tcgdex` im Projektverzeichnis. Fehlt er,
    schlägt `npm run export` mit einer Fehlermeldung fehl.
-3. Abhängigkeiten installieren, Build erzeugen und Export starten:
+4. Abhängigkeiten installieren, Build erzeugen, Tests ausführen und Export starten:
 
    ```bash
    npm install
    npm run build
+   npm test
    npm run export
    ```
 
