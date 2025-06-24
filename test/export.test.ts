@@ -32,7 +32,14 @@ describe('export script', () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = '__invalid__';
     const { main } = await import('../src/export');
+    const exitSpy = jest.spyOn(process, 'exit').mockImplementation(() => {
+      throw new Error('exit');
+    });
+
     await expect(main()).rejects.toThrow(/Repo directory/);
+    expect(exitSpy).not.toHaveBeenCalled();
+
+    exitSpy.mockRestore();
     delete process.env.TCGDEX_REPO;
   });
 });

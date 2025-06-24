@@ -5,8 +5,8 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 ## Voraussetzungen
 
 - Benötigt wird **Node.js 20 oder neuer** (siehe GitHub Action)
-- Das Export-Skript prüft die Node.js-Version und bricht bei zu niedrigen
-  Versionen mit einer Fehlermeldung ab.
+- Das Export-Skript prüft die Node.js-Version. Ist sie zu niedrig,
+  wird ein Fehler geworfen und die CLI beendet sich mit Exit-Code 1.
 - Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten
   ändern.
 - Vor dem Export muss ein Klon von `tcgdex/cards-database` im Unterordner
@@ -35,7 +35,7 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    git clone https://github.com/tcgdex/cards-database tcgdex
    ```
    Das Skript erwartet einen Ordner `tcgdex` im Projektverzeichnis. Fehlt er,
-   schlägt `npm run export` mit einer Fehlermeldung fehl.
+   gibt die CLI eine Fehlermeldung aus und beendet sich mit Code 1.
 4. Abhängigkeiten installieren, Build erzeugen, Tests ausführen und Export starten:
 
    ```bash
