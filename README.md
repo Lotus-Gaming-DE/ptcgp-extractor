@@ -54,13 +54,14 @@ npm run export
 - `TCGDEX_REPO` legt den Pfad zum Klon von `tcgdex/cards-database` fest. Der Pfad
   muss innerhalb des Projektverzeichnisses liegen und vorhanden sein, sonst bricht
   das Skript mit einer Fehlermeldung ab.
-- `CONCURRENCY` bestimmt, wie viele Dateien parallel eingelesen werden (Standard: 10).
+- `CONCURRENCY` legt die Anzahl paralleler Ladevorgänge fest (Standard: 10). Der Wert muss eine positive Ganzzahl sein;
+  ungültige Eingaben werden ignoriert und auf 10 gesetzt.
 
 ## Logausgabe
 
-Das Skript nutzt einen einfachen Logger. Meldungen erscheinen auf der Konsole
-mit einem Praefix wie `[INFO]`, `[WARN]` oder `[ERROR]`. In den Tests werden
-diese Ausgaben abgefangen.
+Der Logger schreibt Meldungen mit Zeitstempel und Loglevel auf die Konsole,
+etwa `[INFO 2025-06-24T12:00:00.000Z]`. In den Tests werden diese Ausgaben
+abgefangen.
 
 ## Programmatic API
 

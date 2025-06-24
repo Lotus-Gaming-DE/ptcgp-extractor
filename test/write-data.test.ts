@@ -19,5 +19,7 @@ describe('writeData', () => {
     const error = new Error('disk full');
     (fs.writeJson as jest.Mock).mockRejectedValueOnce(error);
     await expect(writeData([], [])).rejects.toThrow('disk full');
+    const tmpExists = await fs.pathExists('data/cards.json.tmp');
+    expect(tmpExists).toBe(false);
   });
 });

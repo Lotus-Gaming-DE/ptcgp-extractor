@@ -1,7 +1,7 @@
 import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
-import { getAllSets, getAllCards, writeData } from './lib';
+import { getAllSets, getAllCards, writeData, parseConcurrency } from './lib';
 import { logger } from './logger';
 
 export function checkNodeVersion(
@@ -18,7 +18,7 @@ export function checkNodeVersion(
 
 export async function main() {
   checkNodeVersion();
-  const concurrency = Number(process.env.CONCURRENCY) || 10;
+  const concurrency = parseConcurrency(process.env.CONCURRENCY);
   const sets = await getAllSets(concurrency);
   const cards = await getAllCards(concurrency);
   const { cardsOutPath, setsOutPath } = await writeData(cards, sets);

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Added validation for the `CONCURRENCY` environment variable; values must be positive integers.
+- `mapLimit` now throws an error when the concurrency limit is zero or negative.
+- `writeData` writes files atomically via temporary files.
+- Logger outputs now include timestamps.
+- GitHub workflow runs linting and collects test coverage.
+- Documentation updated to describe new behavior and environment variable rules.
+
 - Allow running on Node.js 20 or newer.
 - Updated documentation and tests.
 - Improved path validation and error handling in export script.
