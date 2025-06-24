@@ -3,7 +3,18 @@
  *
  * @module logger
  */
-function log(level: 'info' | 'warn' | 'error', ...args: unknown[]): void {
+const levelOrder = { error: 0, warn: 1, info: 2 } as const;
+type LogLevel = keyof typeof levelOrder;
+
+const currentLevel: number = (() => {
+  const env = (process.env.LOG_LEVEL || 'info').toLowerCase();
+  return levelOrder[env as LogLevel] ?? levelOrder.info;
+})();
+
+function log(level: LogLevel, ...args: unknown[]): void {
+  if (levelOrder[level] > currentLevel) {
+    return;
+  }
   const timestamp = new Date().toISOString();
   const prefix = `[${level.toUpperCase()} ${timestamp}]`;
   if (level === 'error') {

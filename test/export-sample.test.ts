@@ -72,4 +72,15 @@ describe('export with sample data', () => {
     ).resolves.toHaveLength(1);
     delete process.env.CONCURRENCY;
   });
+
+  it('accepts CLI flags', async () => {
+    jest.resetModules();
+    repo = await createSampleRepo();
+    process.env.TCGDEX_REPO = repo;
+    const { main } = await import('../src/export');
+    await main(['--concurrency', '1', '--out', 'data']);
+    await expect(
+      fs.readJson(path.join('data', 'cards.json')),
+    ).resolves.toHaveLength(1);
+  });
 });

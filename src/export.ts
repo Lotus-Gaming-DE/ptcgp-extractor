@@ -4,6 +4,24 @@ import path from 'path';
 import { getAllSets, getAllCards, writeData, parseConcurrency } from './lib';
 import { logger } from './logger';
 
+interface CliOptions {
+  concurrency?: number;
+  out?: string;
+}
+
+function parseArgs(argv: string[]): CliOptions {
+  const opts: CliOptions = {};
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    if ((arg === '--concurrency' || arg === '-c') && argv[i + 1]) {
+      opts.concurrency = Number(argv[++i]);
+    } else if ((arg === '--out' || arg === '-o') && argv[i + 1]) {
+      opts.out = argv[++i];
+    }
+  }
+  return opts;
+}
+
 export function checkNodeVersion(
   version: string = process.versions.node,
   minimumMajor = 20,
@@ -16,12 +34,15 @@ export function checkNodeVersion(
   }
 }
 
-export async function main() {
+export async function main(argv = process.argv.slice(2)) {
   checkNodeVersion();
-  const concurrency = parseConcurrency(process.env.CONCURRENCY);
+  const cli = parseArgs(argv);
+  const concurrency = parseConcurrency(
+    cli.concurrency ?? process.env.CONCURRENCY,
+  );
   const sets = await getAllSets(concurrency);
   const cards = await getAllCards(concurrency);
-  const { cardsOutPath, setsOutPath } = await writeData(cards, sets);
+  const { cardsOutPath, setsOutPath } = await writeData(cards, sets, cli.out);
 
   if (process.env.DEBUG) {
     const outRaw = await fs.readFile(cardsOutPath, 'utf-8');

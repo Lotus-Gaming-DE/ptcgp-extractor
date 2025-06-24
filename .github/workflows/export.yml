@@ -31,7 +31,7 @@ jobs:
           node-version: 20.x
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
       - name: Build

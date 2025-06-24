@@ -54,8 +54,18 @@ npm run export
 - `TCGDEX_REPO` legt den Pfad zum Klon von `tcgdex/cards-database` fest. Der Pfad
   muss innerhalb des Projektverzeichnisses liegen und vorhanden sein, sonst bricht
   das Skript mit einer Fehlermeldung ab.
-- `CONCURRENCY` legt die Anzahl paralleler Ladevorgänge fest (Standard: 10). Der Wert muss eine positive Ganzzahl sein;
-  ungültige Eingaben werden ignoriert und auf 10 gesetzt.
+- `CONCURRENCY` legt die Anzahl paralleler Ladevorgänge fest (Standard: 10, Maximum: 100).
+  Ungültige Eingaben werden ignoriert und auf 10 gesetzt. Werte über 100 werden auf 100 begrenzt.
+- `LOG_LEVEL` kann auf `info`, `warn` oder `error` gesetzt werden und steuert die ausgegebene
+  Protokolltiefe (Standard: `info`).
+
+## CLI-Optionen
+
+Das Skript akzeptiert zusätzlich zwei Flags:
+
+- `--concurrency` oder `-c` setzt die Parallelität direkt auf der Kommandozeile.
+- `--out` oder `-o` legt das Ausgabeverzeichnis der JSON-Dateien fest.
+Umgebungsvariablen haben Vorrang, falls beide Varianten verwendet werden.
 
 ## Logausgabe
 
@@ -81,7 +91,9 @@ await writeData(cards, sets);
 
 Das Skript importiert TypeScript-Dateien aus dem externen Repository
 `tcgdex/cards-database` und führt deren Code aus. Stelle sicher, dass du diesem
-Repository vertraust oder den Inhalt prüfst, bevor du den Export ausführst.
+Repository vertraust oder den Inhalt gründlich prüfst, bevor du den Export ausführst.
+Ein Blick auf die Commits und ein eigener Testlauf ohne Schreibzugriff können
+helfen, ungewollte Änderungen auszuschließen.
 
 ## Codequalität prüfen
 

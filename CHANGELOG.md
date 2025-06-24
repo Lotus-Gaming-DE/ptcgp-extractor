@@ -18,6 +18,11 @@ All notable changes to this project will be documented in this file.
 - Node version check throws an error; CLI logs once and exits with code 1.
 - Added concurrency limit for loading files and split library code into `src/lib.ts`.
 - Added security note in README.
+- Concurrency values above 100 are now capped.
+- CLI supports `--concurrency` and `--out` flags.
+- Logger respects `LOG_LEVEL` environment variable.
+- Path validation rejects control characters in `TCGDEX_REPO`.
+- Updated dev dependencies and added separate CI workflow for lint and tests.
 - Introduced logger utility and replaced direct console output.
 - Added tests for write failures and sample export.
 - Repo directory path is now validated on startup and must lie within the project.
