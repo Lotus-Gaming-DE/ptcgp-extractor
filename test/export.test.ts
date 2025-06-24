@@ -31,15 +31,14 @@ describe('export script', () => {
   it('fails with invalid repo path', async () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = '__invalid__';
-    const { main } = await import('../src/export');
-    const exitSpy = jest.spyOn(process, 'exit').mockImplementation(() => {
-      throw new Error('exit');
-    });
+    await expect(import('../src/export')).rejects.toThrow(/Repo directory/);
+    delete process.env.TCGDEX_REPO;
+  });
 
-    await expect(main()).rejects.toThrow(/Repo directory/);
-    expect(exitSpy).not.toHaveBeenCalled();
-
-    exitSpy.mockRestore();
+  it('rejects repo path outside project', async () => {
+    jest.resetModules();
+    process.env.TCGDEX_REPO = path.resolve('..');
+    await expect(import('../src/export')).rejects.toThrow(/project directory/);
     delete process.env.TCGDEX_REPO;
   });
 });

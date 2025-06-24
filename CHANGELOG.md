@@ -13,3 +13,5 @@ All notable changes to this project will be documented in this file.
 - Added security note in README.
 - Introduced logger utility and replaced direct console output.
 - Added tests for write failures and sample export.
+- Repo directory path is now validated on startup and must lie within the project.
+- New `CONCURRENCY` env variable allows adjusting parallel file loading.

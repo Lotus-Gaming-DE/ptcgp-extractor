@@ -42,12 +42,19 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    npm install
    npm run build
    npm test
- npm run export
+npm run export
   ```
 
 4. Das Ergebnis landet in zwei Dateien:
    - `data/cards.json` mit allen Karten
-   - `data/sets.json` mit den Set-Informationen
+  - `data/sets.json` mit den Set-Informationen
+
+## Umgebungsvariablen
+
+- `TCGDEX_REPO` legt den Pfad zum Klon von `tcgdex/cards-database` fest. Der Pfad
+  muss innerhalb des Projektverzeichnisses liegen und vorhanden sein, sonst bricht
+  das Skript mit einer Fehlermeldung ab.
+- `CONCURRENCY` bestimmt, wie viele Dateien parallel eingelesen werden (Standard: 10).
 
 ## Logausgabe
 
