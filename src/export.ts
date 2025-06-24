@@ -9,7 +9,14 @@ interface CliOptions {
   out?: string;
 }
 
-function parseArgs(argv: string[]): CliOptions {
+/**
+ * Parse command line arguments for the export CLI.
+ *
+ * Supported flags:
+ *   - `--concurrency` or `-c` followed by a number to limit parallel file reads.
+ *   - `--out` or `-o` followed by a directory path for JSON output.
+ */
+export function parseArgs(argv: string[]): CliOptions {
   const opts: CliOptions = {};
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
