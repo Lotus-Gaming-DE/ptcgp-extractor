@@ -31,3 +31,6 @@ All notable changes to this project will be documented in this file.
 - Temporary files are cleaned up on write failures.
 - Repository path validation rejects symbolic links outside the project.
 - Development dependencies updated (e.g., @types/node).
+- Updated @types/node to version 24.0.4.
+- TypeScript config now includes `"lib": ["es2020"]` for newer APIs.
+- Added tests for CLI argument parsing.

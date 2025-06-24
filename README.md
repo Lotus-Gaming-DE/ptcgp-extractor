@@ -7,6 +7,10 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
 - Benötigt wird **Node.js 20 oder neuer** (siehe GitHub Action)
 - Das Export-Skript prüft die Node.js-Version. Ist sie zu niedrig,
   wird ein Fehler geworfen und die CLI beendet sich mit Exit-Code 1.
+- Die `tsconfig.json` nutzt jetzt `"lib": ["es2020"]`, sodass Funktionen wie
+  `Promise.allSettled` korrekt typisiert sind.
+- Die mitgelieferten TypeScript-Definitionen für Node wurden auf Version
+  24.0.4 aktualisiert.
 - Bitte aktualisiere die Dokumentation, wenn sich Funktionen oder Verhalten
   ändern.
 - Vor dem Export muss ein Klon von `tcgdex/cards-database` im Unterordner
