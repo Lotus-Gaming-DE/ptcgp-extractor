@@ -1,44 +1,25 @@
-/**
- * Simple logger with log level prefixes.
- *
- * @module logger
- */
-const levelOrder = { error: 0, warn: 1, info: 2 } as const;
-type LogLevel = keyof typeof levelOrder;
+import pino, { LoggerOptions } from 'pino';
+import path from 'path';
+import fs from 'fs-extra';
+import { createStream } from 'rotating-file-stream';
 
-const currentLevel: number = (() => {
-  const env = (process.env.LOG_LEVEL || 'info').toLowerCase();
-  return levelOrder[env as LogLevel] ?? levelOrder.info;
-})();
+const logDir = path.join(__dirname, '..', 'logs');
+fs.ensureDirSync(logDir);
 
-function log(level: LogLevel, ...args: unknown[]): void {
-  if (levelOrder[level] > currentLevel) {
-    return;
-  }
-  const timestamp = new Date().toISOString();
-  const prefix = `[${level.toUpperCase()} ${timestamp}]`;
-  if (level === 'error') {
-    console.error(prefix, ...args);
-  } else if (level === 'warn') {
-    console.warn(prefix, ...args);
-  } else {
-    console.log(prefix, ...args);
-  }
-}
+const level = (process.env.LOG_LEVEL || 'info').toLowerCase();
 
-export const logger = {
-  /** Log informational message */
-  info: (...args: unknown[]): void => {
-    log('info', ...args);
-  },
+const fileStream = createStream('ptcgp.log', {
+  size: '10M',
+  interval: '1d',
+  path: logDir,
+  maxFiles: 5,
+});
 
-  /** Log warning message */
-  warn: (...args: unknown[]): void => {
-    log('warn', ...args);
-  },
-
-  /** Log error message */
-  error: (...args: unknown[]): void => {
-    log('error', ...args);
-  },
+const options: LoggerOptions = {
+  level,
 };
+
+export const logger = pino(
+  options,
+  pino.multistream([{ stream: process.stdout }, { stream: fileStream }]),
+);

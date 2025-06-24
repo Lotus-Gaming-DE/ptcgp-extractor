@@ -12,9 +12,20 @@ afterEach(() => {
 
 describe('logger with LOG_LEVEL', () => {
   it('suppresses info messages when level is warn', () => {
-    const spy = jest.spyOn(console, 'log').mockImplementation(() => {});
+    const spy = jest
+      .spyOn(process.stdout, 'write')
+      .mockImplementation(() => true);
     logger.info('hello');
     expect(spy).not.toHaveBeenCalled();
+    spy.mockRestore();
+  });
+
+  it('outputs JSON lines', () => {
+    const spy = jest
+      .spyOn(process.stdout, 'write')
+      .mockImplementation(() => true);
+    logger.error('fail');
+    expect(spy).toHaveBeenCalledWith(expect.stringContaining('"msg":"fail"'));
     spy.mockRestore();
   });
 });

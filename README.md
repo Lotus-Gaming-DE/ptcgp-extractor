@@ -46,21 +46,25 @@ Dieses Projekt extrahiert Karten aus dem Bereich **Pokémon TCG Pocket** des Ope
    npm install
    npm run build
    npm test
-npm run export
-  ```
+   ./scripts/export.sh
+   ```
+
+````
 
 4. Das Ergebnis landet in zwei Dateien:
-   - `data/cards.json` mit allen Karten
-  - `data/sets.json` mit den Set-Informationen
+- `data/cards.json` mit allen Karten
+- `data/sets.json` mit den Set-Informationen
 
 ## Umgebungsvariablen
 
+- Kopiere die Datei `.env.example` nach `.env` und passe sie bei Bedarf an.
+
 - `TCGDEX_REPO` legt den Pfad zum Klon von `tcgdex/cards-database` fest. Der Pfad
-  muss innerhalb des Projektverzeichnisses liegen und vorhanden sein. Symbolische Links nach außerhalb werden abgewiesen. Ist der Ordner nicht vorhanden oder zeigt nach außen, beendet sich das Skript mit einer Fehlermeldung.
+muss innerhalb des Projektverzeichnisses liegen und vorhanden sein. Symbolische Links nach außerhalb werden abgewiesen. Ist der Ordner nicht vorhanden oder zeigt nach außen, beendet sich das Skript mit einer Fehlermeldung.
 - `CONCURRENCY` legt die Anzahl paralleler Ladevorgänge fest (Standard: 10, Maximum: 100).
-  Ungültige Eingaben werden ignoriert und auf 10 gesetzt. Werte über 100 werden auf 100 begrenzt.
+Ungültige Eingaben werden ignoriert und auf 10 gesetzt. Werte über 100 werden auf 100 begrenzt.
 - `LOG_LEVEL` kann auf `info`, `warn` oder `error` gesetzt werden und steuert die ausgegebene
-  Protokolltiefe (Standard: `info`).
+Protokolltiefe (Standard: `info`).
 
 ## CLI-Optionen
 
@@ -72,9 +76,9 @@ Umgebungsvariablen haben Vorrang, falls beide Varianten verwendet werden.
 
 ## Logausgabe
 
-Der Logger schreibt Meldungen mit Zeitstempel und Loglevel auf die Konsole,
-etwa `[INFO 2025-06-24T12:00:00.000Z]`. In den Tests werden diese Ausgaben
-abgefangen.
+Der neue Logger gibt strukturierte JSON-Zeilen auf der Konsole aus und legt
+zusätzlich rotierende Dateien unter `logs/ptcgp.log` an. Die Logstufe wird über
+`LOG_LEVEL` gesteuert. In den Tests werden die Ausgaben abgefangen.
 
 ## Programmatic API
 
@@ -88,7 +92,7 @@ import { getAllSets, getAllCards, writeData } from './src/lib';
 const sets = await getAllSets();
 const cards = await getAllCards();
 await writeData(cards, sets);
-```
+````
 
 ## Sicherheitshinweis
 
@@ -106,6 +110,7 @@ Um sicherzustellen, dass dein Beitrag den Stilvorgaben entspricht und alle Tests
 npm run lint
 npm run format
 npm test
+pre-commit run --all-files
 ```
 
 ## GitHub Actions

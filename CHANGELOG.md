@@ -8,6 +8,9 @@ All notable changes to this project will be documented in this file.
 - `mapLimit` now throws an error when the concurrency limit is zero or negative.
 - `writeData` writes files atomically via temporary files.
 - Logger outputs now include timestamps.
+- Logger now uses `pino` with JSON output and rotates files under `logs/`.
+- Added `.env.example` and helper script in `scripts/`.
+- Introduced pre-commit configuration and updated CI to run it and upload coverage.
 - GitHub workflow runs linting and collects test coverage.
 - Documentation updated to describe new behavior and environment variable rules.
 

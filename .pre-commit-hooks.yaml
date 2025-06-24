@@ -1,0 +1,5 @@
+- id: eslint
+  name: eslint
+  entry: npx eslint
+  language: node
+  types: [ts, js]

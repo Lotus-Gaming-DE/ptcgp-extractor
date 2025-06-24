@@ -5,7 +5,9 @@ node_modules/
 dist/
 
 # Logs
-logs
+logs/*
+!logs/.gitkeep
+scripts/*.log
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -25,6 +27,7 @@ data/pers/
 
 # Jest coverage output
 coverage/
+.env
 
 # Local clone of tcgdex/cards-database
 tcgdex/
