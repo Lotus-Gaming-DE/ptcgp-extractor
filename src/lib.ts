@@ -4,6 +4,11 @@ import { glob } from 'glob';
 
 /**
  * Simple async pool to process promises with limited concurrency.
+ *
+ * @param items Array of items to process
+ * @param limit Maximum number of concurrent executions
+ * @param fn    Async function applied to each item
+ * @returns Results in the same order as `items`
  */
 async function mapLimit<T, R>(
   items: T[],
@@ -26,12 +31,24 @@ async function mapLimit<T, R>(
 
 // Type definitions shared with consumers
 export interface SetInfo {
+  /** Unique identifier of the set */
   id: string;
+  /** Set name in multiple languages */
+  name?: Record<string, string>;
+  /** Number of cards in the set */
+  cardCount?: { official: number };
+  /** Mapping of booster IDs to booster info */
+  boosters?: Record<string, { name: Record<string, string> }>;
+  /** Release date as ISO string */
+  releaseDate?: string;
   [key: string]: unknown;
 }
 
 export interface Card {
-  set_id?: string;
+  /** Identifier of the set this card belongs to */
+  set_id: string;
+  /** List of booster IDs this card appears in */
+  boosters?: string[];
   [key: string]: unknown;
 }
 
@@ -78,7 +95,8 @@ async function importTSFile(file: string) {
 /**
  * Read all set definition files and return them as plain objects.
  *
- * @param concurrency Maximum number of files loaded in parallel.
+ * @param concurrency Maximum number of files loaded in parallel
+ * @returns Array of `SetInfo` objects
  */
 export async function getAllSets(
   concurrency = Number(process.env.CONCURRENCY) || 10,
@@ -111,7 +129,8 @@ export async function getAllSets(
 /**
  * Load all card files and attach the corresponding set identifier.
  *
- * @param concurrency Maximum number of files loaded in parallel.
+ * @param concurrency Maximum number of files loaded in parallel
+ * @returns Array of `Card` objects
  */
 export async function getAllCards(
   concurrency = Number(process.env.CONCURRENCY) || 10,
@@ -150,7 +169,10 @@ export async function getAllCards(
 /**
  * Write card and set data into JSON files within the given directory.
  *
- * @returns Paths of the written files for further processing.
+ * @param cards Array of card objects to write
+ * @param sets  Array of set objects to write
+ * @param dataDir Output directory for the JSON files
+ * @returns Paths of the written files for further processing
  */
 export async function writeData(
   cards: Card[],
