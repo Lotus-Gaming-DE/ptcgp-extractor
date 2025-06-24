@@ -10,6 +10,12 @@ All notable changes to this project will be documented in this file.
 - Logger outputs now include timestamps.
 - GitHub workflow runs linting and collects test coverage.
 - Documentation updated to describe new behavior and environment variable rules.
+- Logs are now written to `logs/app-<date>.log` with daily rotation and seven-day retention.
+- New environment variable `LOG_DIR` configures the log directory.
+- Removed runtime dependency on `ts-node`.
+- Moved tests to `tests/` and updated tooling paths.
+- Added `winston` for structured logging and `winston-daily-rotate-file` for log rotation.
+- CI workflow uploads logs as an artifact and cleans the `logs/` directory.
 
 - Allow running on Node.js 20 or newer.
 - Updated documentation and tests.

@@ -1,43 +1,42 @@
-import { format } from 'util';
+import fs from 'fs-extra';
+import { format as fmt } from 'util';
+import { createLogger, transports, format } from 'winston';
+import DailyRotateFile from 'winston-daily-rotate-file';
 
-/**
- * Simple JSON logger with log level filtering.
- */
-const levelOrder = { error: 0, warn: 1, info: 2 } as const;
-export type LogLevel = keyof typeof levelOrder;
+export type LogLevel = 'error' | 'warn' | 'info';
 
-const currentLevel: number = (() => {
-  const env = (process.env.LOG_LEVEL || 'info').toLowerCase();
-  return levelOrder[env as LogLevel] ?? levelOrder.info;
-})();
+const logDir = process.env.LOG_DIR || 'logs';
+fs.ensureDirSync(logDir);
+
+const loggerInstance = createLogger({
+  level: (process.env.LOG_LEVEL || 'info').toLowerCase(),
+  format: format.combine(
+    format.timestamp(),
+    format.printf(({ level, message, timestamp }) => {
+      return JSON.stringify({ level, time: timestamp, msg: message });
+    }),
+  ),
+  transports: [
+    new transports.Console(),
+    new DailyRotateFile({
+      dirname: logDir,
+      filename: 'app-%DATE%.log',
+      datePattern: process.env.LOG_ROTATION_INTERVAL
+        ? 'YYYY-MM-DD-HH-mm-ss'
+        : 'YYYY-MM-DD',
+      maxFiles: '7d',
+      frequency: process.env.LOG_ROTATION_INTERVAL,
+      maxSize: process.env.LOG_MAX_SIZE,
+    }),
+  ],
+});
 
 function log(level: LogLevel, ...args: unknown[]): void {
-  if (levelOrder[level] > currentLevel) {
-    return;
-  }
-  const entry = {
-    level,
-    time: new Date().toISOString(),
-    msg: format(...args),
-  };
-  const line = JSON.stringify(entry);
-  if (level === 'error') {
-    console.error(line);
-  } else if (level === 'warn') {
-    console.warn(line);
-  } else {
-    console.log(line);
-  }
+  loggerInstance.log(level, fmt(...args));
 }
 
 export const logger = {
-  info: (...args: unknown[]): void => {
-    log('info', ...args);
-  },
-  warn: (...args: unknown[]): void => {
-    log('warn', ...args);
-  },
-  error: (...args: unknown[]): void => {
-    log('error', ...args);
-  },
+  info: (...args: unknown[]): void => log('info', ...args),
+  warn: (...args: unknown[]): void => log('warn', ...args),
+  error: (...args: unknown[]): void => log('error', ...args),
 };

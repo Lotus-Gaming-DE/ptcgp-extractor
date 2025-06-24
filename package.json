@@ -6,15 +6,16 @@
   "scripts": {
     "build": "tsc",
     "export": "node dist/export.js",
-    "lint": "eslint src test",
+    "lint": "eslint src tests",
     "pretest": "npm run build",
     "test": "jest",
-    "format": "prettier -w src test"
+    "format": "prettier -w src tests"
   },
   "dependencies": {
     "fs-extra": "^11.3.0",
     "glob": "^11.0.3",
-    "ts-node": "^10.9.2"
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
@@ -29,7 +30,9 @@
     "jest": "^30.0.2",
     "prettier": "^3.6.0",
     "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "@types/winston": "^2.4.4"
   },
   "repository": {
     "type": "git",
