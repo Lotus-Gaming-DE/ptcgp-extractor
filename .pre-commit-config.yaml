@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: prettier
+        name: prettier formatting check
+        entry: npx prettier --check src test
+        language: system
+        types: [ts]
+      - id: eslint
+        name: eslint
+        entry: npx eslint src test
+        language: system
+        types: [ts]
