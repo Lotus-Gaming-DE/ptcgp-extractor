@@ -66,6 +66,7 @@ nicht.
 - `TCGDEX_REPO` – Pfad zum Klon von `tcgdex/cards-database`.
 - `CONCURRENCY` – Anzahl paralleler Ladevorgänge (Standard: 10, Maximum: 100).
 - `LOG_LEVEL` – `info`, `warn` oder `error` (Standard: `info`).
+- `LOG_DIR` – Zielverzeichnis für Logdateien (Standard: `logs/`).
 - `DEBUG` – Wenn gesetzt, werden nach dem Export die ersten 500 Zeichen der
   erzeugten Dateien geloggt.
 
@@ -77,7 +78,9 @@ nicht.
 ## Logformat
 
 Alle Meldungen werden im JSON-Format `{"level","time","msg"}` auf die Konsole
-ausgegeben. Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
+und in `logs/app-<Datum>.log` geschrieben. 
+Die Dateien rotieren täglich und werden eine Woche lang aufbewahrt.
+Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
 
 ## Programmatic API
 

@@ -1,4 +1,3 @@
-import 'ts-node/register';
 import fs from 'fs-extra';
 import path from 'path';
 import { getAllSets, getAllCards, writeData, parseConcurrency } from './lib';

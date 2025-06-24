@@ -28,4 +28,9 @@ jobs:
         with:
           name: coverage
           path: coverage/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: logs/
       - run: rm -rf tmp-repo-* || true
+      - run: rm -rf logs || true

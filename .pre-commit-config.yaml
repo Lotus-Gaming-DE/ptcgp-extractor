@@ -9,11 +9,11 @@ repos:
     hooks:
       - id: prettier
         name: prettier formatting check
-        entry: npx prettier --check src test
+        entry: npx prettier --check src tests
         language: system
         types: [ts]
       - id: eslint
         name: eslint
-        entry: npx eslint src test
+        entry: npx eslint src tests
         language: system
         types: [ts]
