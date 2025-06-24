@@ -17,17 +17,32 @@ interface Card {
 // Standard-Ordner für das tcgdex-Repo
 const repoDir = path.resolve('tcgdex');
 
+/**
+ * Ensure that the current Node.js version meets the minimum requirement.
+ *
+ * @param version - Version string to validate. Defaults to `process.versions.node`.
+ * @param minimumMajor - Minimum supported major Node.js version. Defaults to `20`.
+ *
+ * The function prints an error and exits the process with code `1` when the
+ * detected major version is lower than the required version.
+ */
 export function checkNodeVersion(
   version: string = process.versions.node,
-  requiredMajor = 20,
+  minimumMajor = 20,
 ) {
   const major = parseInt(version.split('.')[0], 10);
-  if (major !== requiredMajor) {
-    console.error(`Node.js ${requiredMajor} is required. Detected ${version}.`);
+  if (major < minimumMajor) {
+    console.error(`Node.js ${minimumMajor}+ is required. Detected ${version}.`);
     process.exit(1);
   }
 }
 
+/**
+ * Verify that the repository directory containing the tcgdex data exists.
+ *
+ * The function terminates the process with an error message when the folder is
+ * missing so that the export cannot run with incomplete data.
+ */
 async function ensureRepoDir() {
   if (!(await fs.pathExists(repoDir))) {
     console.error(
@@ -51,6 +66,13 @@ async function importTSFile(file: string) {
   return await import(pathToFile);
 }
 
+/**
+ * Read all set definition files and return them as plain objects.
+ *
+ * The function strips the optional `serie` field and ensures each set has a
+ * name. Files are imported dynamically using `import()` which allows TypeScript
+ * modules to be consumed at runtime.
+ */
 async function getAllSets(): Promise<SetInfo[]> {
   const setFiles = await glob(SETS_GLOB);
 
@@ -70,6 +92,13 @@ async function getAllSets(): Promise<SetInfo[]> {
   return sets;
 }
 
+/**
+ * Load all card files and attach the corresponding set identifier.
+ *
+ * Each card is imported as a module. The function deduces the `set_id` from the
+ * card data or the parent directory name and removes the original `set` object
+ * to keep the output lean.
+ */
 async function getAllCards(): Promise<Card[]> {
   const files = await glob(CARDS_GLOB);
 
@@ -95,6 +124,10 @@ async function getAllCards(): Promise<Card[]> {
   return cards;
 }
 
+/**
+ * Orchestrates the export process from reading the repository files to writing
+ * the final JSON output.
+ */
 async function main() {
   checkNodeVersion();
   await ensureRepoDir();
