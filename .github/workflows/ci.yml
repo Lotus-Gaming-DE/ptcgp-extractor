@@ -28,7 +28,7 @@ jobs:
       - run: npm audit --production
       - run: npm run build
       - run: npm run lint
-      - uses: pre-commit/action@v3.0.0
+      - uses: pre-commit/action@v3.0.1
       - run: npm test
       - run: |
           npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > latest_railway.log &
