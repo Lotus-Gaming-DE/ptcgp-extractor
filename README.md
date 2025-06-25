@@ -112,14 +112,16 @@ npm test
 ```
 
 Installiere optional die Git-Hooks per `pre-commit install`, um die
-Format- und Lint-Prüfungen (Prettier/ESLint sowie Black, Flake8 und Ruff für
-Python-Dateien) automatisch vor jedem Commit auszuführen.
+Format- und Lint-Prüfungen (Prettier/ESLint) automatisch vor jedem Commit
+auszuführen. Python-Linter sind nicht mehr enthalten;
+die Hooks prüfen lediglich Formatierung und TypeScript-Codestil.
 
 ## Continuous Integration
 
-Die GitHub-Actions führen Linting, Pre-commit-Prüfungen, Tests und einen
-`npx snyk test`-Scan aus. Abhängigkeiten und Pre-commit-Umgebungen werden über
-`actions/cache` zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
+Die GitHub-Actions führen Linting, Pre-commit-Prüfungen (nur
+Prettier/ESLint), Tests und einen `npx snyk test`-Scan aus.
+Abhängigkeiten und Pre-commit-Umgebungen werden über `actions/cache`
+zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
 ausgeführt und als `latest_railway.log` hochgeladen. Zusätzlich wird die
 Testabdeckung als Artefakt bereitgestellt und temporäre Verzeichnisse
 (`tmp-repo-*`) werden automatisch entfernt.

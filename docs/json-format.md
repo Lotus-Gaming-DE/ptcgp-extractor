@@ -1,4 +1,3 @@
-
 # Format der JSON-Dateien
 
 Das Skript `src/export.ts` erzeugt zwei Dateien im Verzeichnis `data/`:
@@ -42,6 +41,7 @@ Ein minimales Pack-Objekt sieht so aus:
 ```
 
 ## Beispiel
+
 ```json
 {
   "name": { "en": "Arceus ex", "de": "Arceus-ex" },
