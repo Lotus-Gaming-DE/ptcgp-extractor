@@ -18,6 +18,9 @@ All notable changes to this project will be documented in this file.
 - CI workflow uploads logs as an artifact and cleans the `logs/` directory.
 
 - Allow running on Node.js 20 or newer.
+
+- Added Python test suite using pytest with async support and timeouts.
+- CI now runs `pytest --cov=.` and displays coverage in logs.
 - Added Python-based linting hooks (Black, Flake8, Ruff) and `pip-audit`
   via Pre-commit.
 - Updated documentation and tests.
