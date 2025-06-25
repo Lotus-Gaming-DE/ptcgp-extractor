@@ -16,12 +16,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: ${{ runner.os }}-precommit-${{ hashFiles('.pre-commit-config.yaml') }}
+      - uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
       - run: npm ci
       - run: npm audit --production
       - run: npm run build
       - run: npm run lint
       - uses: pre-commit/action@v3.0.0
       - run: npm test
+      - run: |
+          npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > latest_railway.log &
+          sleep 5
+          kill $!
+        env:
+          RAILWAY_SERVICE: ${{ secrets.RAILWAY_SERVICE || '' }}
+          RAILWAY_ENV: ${{ secrets.RAILWAY_ENV || '' }}
       - run: npx snyk test
         continue-on-error: true
       - uses: actions/upload-artifact@v4
@@ -32,5 +47,9 @@ jobs:
         with:
           name: logs
           path: logs/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: railway-logs
+          path: latest_railway.log
       - run: rm -rf tmp-repo-* || true
       - run: rm -rf logs || true

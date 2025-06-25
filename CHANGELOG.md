@@ -47,3 +47,10 @@ All notable changes to this project will be documented in this file.
 - `.nvmrc` added to pin Node version locally.
 - README now links to `docs/json-format.md` and weist auf `.env.example` hin.
 - CI lädt Testabdeckung als Artefakt hoch und führt `npx snyk test` aus.
+- Added Python tooling (Black, Flake8, Ruff) to pre-commit configuration.
+- CI caches npm and pre-commit directories and uploads Railway logs as artifact.
+- Added `LOG_ROTATION_INTERVAL` and `LOG_MAX_SIZE` environment variables with
+  matching documentation and `.env.example` entries.
+- Introduced `scripts/run-export.sh` convenience script for running the export
+  with environment variables.
+- Updated dev dependencies and removed unused `ts-node`.

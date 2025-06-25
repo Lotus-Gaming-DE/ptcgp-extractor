@@ -55,6 +55,13 @@ nicht.
    npm run export
    ```
 
+   Alternativ kannst du `scripts/run-export.sh` verwenden, um Variablen aus einer
+   `.env`-Datei automatisch zu laden:
+
+   ```bash
+   ./scripts/run-export.sh --concurrency 5
+   ```
+
    Das Ergebnis landet in `data/cards.json` und `data/sets.json`.
    Details zum Dateiformat findest du in [docs/json-format.md](docs/json-format.md).
 
@@ -69,6 +76,8 @@ nicht.
 - `LOG_DIR` – Zielverzeichnis für Logdateien (Standard: `logs/`).
 - `DEBUG` – Wenn gesetzt, werden nach dem Export die ersten 500 Zeichen der
   erzeugten Dateien geloggt.
+- `LOG_ROTATION_INTERVAL` – Intervall für die Logrotation (z.B. `1d`).
+- `LOG_MAX_SIZE` – Maximale Größe pro Logdatei (z.B. `1m`).
 
 ## CLI-Optionen
 
@@ -81,6 +90,8 @@ Alle Meldungen werden im JSON-Format `{"level","time","msg"}` auf die Konsole
 und in `logs/app-<Datum>.log` geschrieben.
 Die Dateien rotieren täglich und werden eine Woche lang aufbewahrt.
 Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
+Das Intervall und die maximale Größe lassen sich über `LOG_ROTATION_INTERVAL`
+und `LOG_MAX_SIZE` konfigurieren.
 
 ## Programmatic API
 
@@ -100,14 +111,18 @@ npm run format
 npm test
 ```
 
-Installiere optional die Git-Hooks per `pre-commit install`, um die Format-
-und Lint-Prüfungen automatisch vor jedem Commit auszuführen.
+Installiere optional die Git-Hooks per `pre-commit install`, um die
+Format- und Lint-Prüfungen (Prettier/ESLint sowie Black, Flake8 und Ruff für
+Python-Dateien) automatisch vor jedem Commit auszuführen.
 
 ## Continuous Integration
 
-Die GitHub-Actions führen Linting, Tests und einen `npx snyk test`-Scan aus.
-Die generierte Testabdeckung wird als Artefakt bereitgestellt. Nach den Tests
-werden temporäre Verzeichnisse `tmp-repo-*` automatisch entfernt.
+Die GitHub-Actions führen Linting, Pre-commit-Prüfungen, Tests und einen
+`npx snyk test`-Scan aus. Abhängigkeiten und Pre-commit-Umgebungen werden über
+`actions/cache` zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
+ausgeführt und als `latest_railway.log` hochgeladen. Zusätzlich wird die
+Testabdeckung als Artefakt bereitgestellt und temporäre Verzeichnisse
+(`tmp-repo-*`) werden automatisch entfernt.
 
 ## Lizenz
 
