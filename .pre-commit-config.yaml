@@ -11,6 +11,7 @@ repos:
         name: prettier formatting check
         entry: npx prettier --check
         language: system
+        files: "\\.(ts|js|json|yml|yaml|md)$"
       - id: eslint
         name: eslint
         entry: npx eslint src tests
