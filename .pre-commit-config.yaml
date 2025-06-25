@@ -5,26 +5,13 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/psf/black
-    rev: 24.4.2
-    hooks:
-      - id: black
-        args: ["--check"]
-  - repo: https://github.com/pycqa/flake8
-    rev: 7.0.0
-    hooks:
-      - id: flake8
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.4.5
-    hooks:
-      - id: ruff
   - repo: local
     hooks:
       - id: prettier
         name: prettier formatting check
-        entry: npx prettier --check src tests
+        entry: npx prettier --check
         language: system
-        types: [ts]
+        files: \.(ts|js|json|md|yml)$
       - id: eslint
         name: eslint
         entry: npx eslint src tests
