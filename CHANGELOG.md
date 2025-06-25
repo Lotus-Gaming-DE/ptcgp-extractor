@@ -48,6 +48,8 @@ All notable changes to this project will be documented in this file.
 - README now links to `docs/json-format.md` and weist auf `.env.example` hin.
 - CI lädt Testabdeckung als Artefakt hoch und führt `npx snyk test` aus.
 - Added Python tooling (Black, Flake8, Ruff) to pre-commit configuration.
+- Dependabot prüft nun npm-Abhängigkeiten und GitHub-Actions-Workflows;
+  zugehörige Pull Requests laufen durch die CI.
 - CI caches npm and pre-commit directories and uploads Railway logs as artifact.
 - Added `LOG_ROTATION_INTERVAL` and `LOG_MAX_SIZE` environment variables with
   matching documentation and `.env.example` entries.

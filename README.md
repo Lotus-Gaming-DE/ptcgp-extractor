@@ -124,6 +124,12 @@ ausgeführt und als `latest_railway.log` hochgeladen. Zusätzlich wird die
 Testabdeckung als Artefakt bereitgestellt und temporäre Verzeichnisse
 (`tmp-repo-*`) werden automatisch entfernt.
 
+## Automatische Updates
+
+Dependabot überprüft wöchentlich die npm-Abhängigkeiten und GitHub-Actions-
+Workflows. Sicherheitsupdates und Warnungen werden direkt über GitHub
+bereitgestellt, Pull Requests laufen automatisch durch die CI-Pipeline.
+
 ## Lizenz
 
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE). Es verwendet Daten aus
