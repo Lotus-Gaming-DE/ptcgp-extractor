@@ -111,9 +111,10 @@ npm run format
 npm test
 ```
 
-Installiere optional die Git-Hooks per `pre-commit install`, um die
-Format- und Lint-Prüfungen (Prettier/ESLint sowie Black, Flake8 und Ruff für
-Python-Dateien) automatisch vor jedem Commit auszuführen.
+Installiere optional die Git-Hooks per `pre-commit install`, um
+Prettier- und ESLint-Prüfungen automatisch vor jedem Commit auszuführen.
+Die Konfiguration beinhaltet keine Python-Checks mehr und ist dadurch
+schlanker.
 
 ## Continuous Integration
 
