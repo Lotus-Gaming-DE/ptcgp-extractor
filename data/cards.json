@@ -1,16 +1,54 @@
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Metal"],
-        "cost": ["Metal", "Metal", "Colorless"],
-    "types": ["Fighting"],
-        "cost": ["Fighting"],
-        "cost": ["Fighting", "Fighting", "Colorless"]
-    "types": ["Water"],
-        "cost": ["Water", "Water", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless", "Colorless"]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
     "types": ["Colorless"],
         "cost": ["Colorless", "Colorless", "Colorless"],
     "types": ["Metal"],
@@ -486,29 +524,87 @@
     "boosters": ["palkia"],
     "types": ["Water"],
         "cost": ["Water", "Water", "Colorless", "Colorless"]
-    "boosters": ["dialga"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless"]
-    "boosters": ["dialga"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Grass", "Colorless"],
-    "boosters": ["palkia"],
-    "types": ["Grass"],
-        "cost": ["Colorless"],
-    "boosters": ["dialga"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Grass", "Grass", "Colorless"],
-    "boosters": ["dialga"],
-    "boosters": ["palkia"],
-    "boosters": ["dialga"],
-    "boosters": ["dialga"],
-    "boosters": ["palkia"],
-    "boosters": ["dialga"],
-    "boosters": ["palkia"],
-    "boosters": ["palkia"],
-    "boosters": ["palkia"],
-    "boosters": ["dialga"],
-    "boosters": ["dialga"],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
     "boosters": ["palkia"],
     "boosters": ["dialga"],
     "types": ["Colorless"],
@@ -1272,201 +1368,675 @@
     "types": ["Water"],
         "cost": ["Water", "Colorless", "Colorless"]
     "types": ["Water"],
-        "cost": ["Water", "Water", "Water", "Colorless"],
-    "types": ["Water"],
-        "cost": ["Water"],
-    "types": ["Fire"],
-        "cost": ["Fire"],
-    "types": ["Fire"],
-        "cost": ["Colorless"],
-    "types": ["Fire"],
-        "cost": ["Fire", "Fire", "Colorless"],
-    "types": ["Fire"],
-        "cost": ["Fire", "Colorless"]
-    "types": ["Fire"],
-        "cost": ["Fire", "Fire"],
-    "types": ["Fire"],
-        "cost": ["Fire", "Colorless"],
-    "types": ["Fire"],
-        "cost": ["Fire"],
-    "types": ["Grass"],
-        "cost": ["Grass"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Grass"],
-    "types": ["Grass"],
-        "cost": ["Grass"]
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless", "Colorless", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless", "Colorless", "Colorless"],
-    "types": ["Grass"],
-        "cost": ["Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Darkness", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Colorless"]
-    "types": ["Fire"],
-        "cost": ["Fire", "Fire", "Colorless"],
-    "types": ["Grass"],
-        "cost": ["Grass", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless"]
-    "types": ["Psychic"],
-        "cost": ["Psychic", "Colorless"],
-    "types": ["Water"],
-        "cost": ["Water", "Colorless"]
-    "types": ["Water"],
-        "cost": ["Colorless"]
-    "types": ["Water"],
-        "cost": ["Colorless"]
-    "types": ["Fire"],
-        "cost": ["Fire", "Fire", "Colorless"],
-    "types": ["Fire"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Colorless", "Colorless"]
-        "cost": ["Grass", "Grass", "Colorless"],
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Colorless", "Colorless"],
-        "cost": ["Darkness", "Darkness", "Darkness", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Fighting", "Colorless"],
-    "types": ["Lightning"],
-        "cost": ["Lightning"],
-        "cost": ["Lightning", "Lightning", "Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Colorless", "Colorless"],
-        "cost": ["Darkness", "Darkness", "Darkness", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Fighting", "Colorless"],
-    "types": ["Lightning"],
-        "cost": ["Lightning"],
-        "cost": ["Lightning", "Lightning", "Colorless"]
-    "types": ["Grass"],
-        "cost": ["Colorless", "Colorless"]
-        "cost": ["Grass", "Grass", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Darkness"],
-    "types": ["Fire"],
-        "cost": ["Fire", "Fire", "Colorless"],
-    "types": ["Grass"],
-        "cost": ["Grass"],
-    "types": ["Grass"],
-        "cost": ["Grass"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless", "Colorless"],
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless"]
-    "types": ["Colorless"],
-        "cost": ["Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"],
-    "types": ["Metal"],
-        "cost": ["Metal", "Metal", "Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Metal", "Colorless", "Colorless"],
-    "types": ["Metal"],
-        "cost": ["Metal", "Metal", "Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"]
-    "types": ["Metal"],
-        "cost": ["Metal", "Colorless"],
-    "types": ["Metal"],
-        "cost": ["Metal"],
-    "types": ["Darkness"],
-        "cost": ["Darkness"],
-    "types": ["Darkness"],
-        "cost": ["Darkness"],
-    "types": ["Darkness"],
-        "cost": ["Colorless", "Colorless"],
-        "cost": ["Darkness", "Darkness", "Darkness", "Colorless"]
-    "types": ["Darkness"],
-        "cost": ["Darkness", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Darkness", "Darkness", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Darkness", "Colorless"]
-    "types": ["Darkness"],
-        "cost": ["Darkness"]
-    "types": ["Darkness"],
-        "cost": ["Darkness", "Colorless"],
-    "types": ["Darkness"],
-        "cost": ["Darkness"],
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Colorless", "Colorless", "Colorless"],
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Fighting"],
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Fighting", "Colorless"],
-    "types": ["Fighting"],
-        "cost": ["Fighting", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Colorless", "Colorless", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Fighting"],
-        "cost": ["Fighting"]
-    "types": ["Fighting"],
-        "cost": ["Fighting"],
-    "types": ["Psychic"],
-        "cost": ["Colorless", "Colorless"]
-    "types": ["Psychic"],
-        "cost": ["Psychic"]
-    "types": ["Psychic"],
-        "cost": ["Psychic", "Colorless", "Colorless"]
-    "types": ["Psychic"],
-        "cost": ["Psychic", "Colorless"]
-    "types": ["Psychic"],
-        "cost": ["Psychic", "Colorless"]
-    "types": ["Psychic"],
-        "cost": ["Colorless"]
-    "types": ["Lightning"],
-        "cost": ["Lightning", "Lightning"]
-    "types": ["Lightning"],
-        "cost": ["Lightning", "Colorless", "Colorless"],
-    "types": ["Lightning"],
-        "cost": ["Lightning"],
-        "cost": ["Lightning", "Lightning", "Colorless"]
-    "types": ["Lightning"],
-        "cost": ["Lightning"]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Grass",
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol8"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "vol8"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "vol8"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "vol8"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol8"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol7"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol7"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "vol7"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "vol7"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "vol7"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol6"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "vol6"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "vol6"
+    ],
+    "types": [
+      "Lightning"
+    ],
     "types": ["Lightning"],
         "cost": ["Lightning", "Lightning"]
     "types": ["Lightning"],
@@ -3018,3 +3588,9595 @@
     "types": ["Grass"],
         "cost": ["Grass", "Colorless"]
     "boosters": ["lunala"],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "boosters": [
+      "vol6"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "vol6"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "vol5"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "vol5"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol5"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "vol5"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "boosters": [
+      "vol5"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "vol4"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "vol4"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "vol4"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "vol4"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "vol4"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol3"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "vol3"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol3"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol3"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "vol3"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "vol2"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "vol2"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "vol2"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol2"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol2"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "vol1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "vol1"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "vol1"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol1"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "vol1"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Fighting"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "boosters": [
+      "palkia"
+    ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Fighting"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Fighting"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Metal"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "dialga"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "dialga",
+      "palkia"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Fire",
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ]
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Colorless"
+        ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ]
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "boosters": [
+      "charizard"
+    ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Lightning",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Water",
+          "Lightning"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal",
+          "Metal",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+    "boosters": [
+      "charizard",
+      "mewtwo",
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "charizard"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "pikachu"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "mewtwo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "boosters": [
+      "lunala"
+    ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Colorless"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Lightning",
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Lightning",
+          "Fighting"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Dragon"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal",
+          "Metal"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Metal"
+    ],
+        "cost": [
+          "Metal"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Darkness"
+    ],
+        "cost": [
+          "Darkness"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Fighting"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fighting"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Psychic"
+    ],
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Lightning"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Water"
+    ],
+        "cost": [
+          "Water"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Fire"
+    ],
+        "cost": [
+          "Fire",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Grass"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "cost": [
+          "Grass",
+          "Grass"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "solgaleo"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass"
+        ]
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Colorless"
+        ],
+    "boosters": [
+      "solgaleo",
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless"
+        ],
+    "boosters": [
+      "lunala"
+    ],
+    "types": [
+      "Grass"
+    ],
+        "cost": [
+          "Grass",
+          "Colorless"
+        ]
+    "boosters": [
+      "lunala"
+    ],

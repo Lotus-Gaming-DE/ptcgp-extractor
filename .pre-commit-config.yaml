@@ -12,6 +12,7 @@ repos:
         entry: npx prettier --check
         language: system
         files: "\\.(ts|js|json|yml|yaml|md)$"
+        exclude: ^data/cards\.json$
       - id: eslint
         name: eslint
         entry: npx eslint src tests

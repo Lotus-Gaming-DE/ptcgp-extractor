@@ -114,7 +114,8 @@ npm test
 Installiere optional die Git-Hooks per `pre-commit install`, um
 Prettier- und ESLint-Prüfungen automatisch vor jedem Commit auszuführen.
 Die Konfiguration beinhaltet keine Python-Checks mehr und ist dadurch
-schlanker.
+schlanker. Generierte Dateien wie `data/cards.json` werden dabei
+ausgenommen.
 
 ## Continuous Integration
 
