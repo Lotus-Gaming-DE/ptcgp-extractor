@@ -133,9 +133,10 @@ Verzeichnisse (`tmp-repo-*`) werden automatisch entfernt.
 
 ## Automatische Updates
 
-Dependabot überprüft wöchentlich die npm-Abhängigkeiten und GitHub-Actions-
-Workflows. Sicherheitsupdates und Warnungen werden direkt über GitHub
-bereitgestellt, Pull Requests laufen automatisch durch die CI-Pipeline.
+Dependabot überwacht wöchentlich die npm-Abhängigkeiten und GitHub-Actions-
+Workflows und prüft die Python-Abhängigkeiten täglich. Alle automatisch
+erzeugten Pull Requests laufen durch die komplette CI mit Linting,
+Tests und `pip-audit`.
 
 ## Lizenz
 

@@ -52,6 +52,9 @@ All notable changes to this project will be documented in this file.
 - Added Python tooling (Black, Flake8, Ruff) to pre-commit configuration.
 - Dependabot prüft nun npm-Abhängigkeiten und GitHub-Actions-Workflows;
   zugehörige Pull Requests laufen durch die CI.
+- Dependabot überwacht jetzt zusätzlich die Python-Abhängigkeiten täglich;
+  entsprechende Pull Requests durchlaufen die komplette CI mit Tests,
+  Linting und `pip-audit`.
 - CI caches npm and pre-commit directories and uploads Railway logs as artifact.
 - Added `LOG_ROTATION_INTERVAL` and `LOG_MAX_SIZE` environment variables with
   matching documentation and `.env.example` entries.
