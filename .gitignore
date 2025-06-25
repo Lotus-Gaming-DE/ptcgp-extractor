@@ -28,3 +28,10 @@ coverage/
 
 # Local clone of tcgdex/cards-database
 tcgdex/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env

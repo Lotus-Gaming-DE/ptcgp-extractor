@@ -18,6 +18,8 @@ All notable changes to this project will be documented in this file.
 - CI workflow uploads logs as an artifact and cleans the `logs/` directory.
 
 - Allow running on Node.js 20 or newer.
+- Added Python-based linting hooks (Black, Flake8, Ruff) and `pip-audit`
+  via Pre-commit.
 - Updated documentation and tests.
 - Improved path validation and error handling in export script.
 - Export script now throws errors instead of exiting directly.

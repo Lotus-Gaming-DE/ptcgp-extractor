@@ -115,15 +115,16 @@ Die Testabdeckung muss global mindestens 80 % betragen (Statements,
 Branches, Functions und Lines). Unterschreitet ein Pull Request diesen
 Wert, bricht die CI-Pipeline ab.
 
-Installiere optional die Git-Hooks per `pre-commit install`, um die
-Format- und Lint-Prüfungen (Prettier/ESLint) automatisch vor jedem Commit
-auszuführen. Python-Linter sind nicht mehr enthalten;
-die Hooks prüfen lediglich Formatierung und TypeScript-Codestil.
+Installiere optional die Git-Hooks per `pre-commit install`, um Format-
+und Lint-Prüfungen automatisch vor jedem Commit auszuführen. Neben
+Prettier und ESLint laufen dabei auch die Python-Linter **Black**,
+**Flake8** und **Ruff** sowie `pip-audit`.
 
 ## Continuous Integration
 
-Die GitHub-Actions führen Linting, Pre-commit-Prüfungen (nur
-Prettier/ESLint), Tests und einen `npx snyk test`-Scan aus.
+Die GitHub-Actions führen Linting, Pre-commit-Prüfungen (Prettier,
+ESLint, Black, Flake8, Ruff und `pip-audit`), Tests und einen
+`npx snyk test`-Scan aus.
 Abhängigkeiten und Pre-commit-Umgebungen werden über `actions/cache`
 zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
 ausgeführt und als `logs/latest_railway.log` hochgeladen. Zusätzlich wird die
