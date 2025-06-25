@@ -28,7 +28,7 @@ jobs:
       - uses: pre-commit/action@v3.0.1
         with:
           extra_args: --all-files
-      - run: npm test
+      - run: npm test -- --coverage
       - run: |
           mkdir -p logs
           npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > logs/latest_railway.log &
