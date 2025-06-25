@@ -32,10 +32,13 @@ jobs:
       - run: npm audit --production
       - run: npm run build
       - run: npm run lint
+      - name: Install Python dependencies
+        run: pip install -r requirements-dev.txt
       - uses: pre-commit/action@v3.0.1
         with:
           extra_args: --all-files
       - run: npm test -- --coverage
+      - run: PYTHONPATH=. pytest --cov=. --cov-report=term-missing --color=yes
       - run: |
           mkdir -p logs
           npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > logs/latest_railway.log &

@@ -40,7 +40,8 @@ nicht.
 3. Tests ausführen:
 
    ```bash
-   npm test
+   npm test     # Jest-Tests
+   PYTHONPATH=. pytest --cov=.  # Python-Tests
    ```
 
 4. Fremd-Repository klonen (falls noch nicht geschehen):
@@ -109,9 +110,10 @@ await writeData(cards, sets);
 npm run lint
 npm run format
 npm test
+PYTHONPATH=. pytest --cov=.
 ```
 
-Die Testabdeckung muss global mindestens 80 % betragen (Statements,
+Die Testabdeckung aus Jest und Pytest muss global mindestens 80 % betragen (Statements,
 Branches, Functions und Lines). Unterschreitet ein Pull Request diesen
 Wert, bricht die CI-Pipeline ab.
 
