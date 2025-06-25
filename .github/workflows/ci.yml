@@ -30,7 +30,8 @@ jobs:
           extra_args: --all-files
       - run: npm test
       - run: |
-          npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > latest_railway.log &
+          mkdir -p logs
+          npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > logs/latest_railway.log &
           sleep 5
           kill $!
         env:
@@ -49,6 +50,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: railway-logs
-          path: latest_railway.log
+          path: logs/latest_railway.log
       - run: rm -rf tmp-repo-* || true
       - run: rm -rf logs || true

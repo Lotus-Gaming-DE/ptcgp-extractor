@@ -122,7 +122,7 @@ Die GitHub-Actions führen Linting, Pre-commit-Prüfungen (nur
 Prettier/ESLint), Tests und einen `npx snyk test`-Scan aus.
 Abhängigkeiten und Pre-commit-Umgebungen werden über `actions/cache`
 zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
-ausgeführt und als `latest_railway.log` hochgeladen. Zusätzlich wird die
+ausgeführt und als `logs/latest_railway.log` hochgeladen. Zusätzlich wird die
 Testabdeckung als Artefakt bereitgestellt und temporäre Verzeichnisse
 (`tmp-repo-*`) werden automatisch entfernt.
 
