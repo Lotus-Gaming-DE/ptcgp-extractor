@@ -69,3 +69,4 @@ All notable changes to this project will be documented in this file.
 - Updated dev dependencies and removed unused `ts-node`.
 - CI installs Python runtime requirements so structlog is available.
 - README lists `pip install -r requirements.txt` during setup.
+- CI: Skip Snyk test in forked PRs to prevent missing-secret auth errors.
