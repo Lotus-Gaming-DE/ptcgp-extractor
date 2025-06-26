@@ -129,9 +129,9 @@ Prettier und ESLint laufen dabei auch die Python-Linter **Black**,
 Die GitHub-Actions führen Linting, Pre-commit-Prüfungen (Prettier,
 ESLint, Black, Flake8, Ruff und `pip-audit`), Tests und einen
 `npx snyk test`-Scan aus. Da Secrets in Pull Requests von Forks nicht
-verfügbar sind, läuft dieser Schritt nur, wenn das `SNYK_TOKEN`-Secret
-gesetzt ist und der PR aus demselben Repository stammt. So verhindern
-wir Authentifizierungsfehler.
+verfügbar sind, wird das Token über eine Umgebungsvariable gesetzt und
+der Schritt nur ausgeführt, wenn der PR aus demselben Repository stammt
+und das Token vorhanden ist. So verhindern wir Authentifizierungsfehler.
 Abhängigkeiten und Pre-commit-Umgebungen werden über `actions/cache`
 zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
 ausgeführt und als `logs/latest_railway.log` hochgeladen. Zusätzlich wird die

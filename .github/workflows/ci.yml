@@ -48,10 +48,10 @@ jobs:
           RAILWAY_SERVICE: ${{ secrets.RAILWAY_SERVICE || '' }}
           RAILWAY_ENV: ${{ secrets.RAILWAY_ENV || '' }}
       - name: Snyk Test
-        if: ${{ secrets.SNYK_TOKEN != '' && github.event.pull_request.head.repo.full_name == github.repository }}
-        run: snyk test
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        if: github.event.pull_request.head.repo.full_name == github.repository && env.SNYK_TOKEN != ''
+        run: snyk test
       - uses: actions/upload-artifact@v4
         with:
           name: coverage

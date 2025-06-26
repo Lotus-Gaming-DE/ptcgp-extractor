@@ -70,3 +70,4 @@ All notable changes to this project will be documented in this file.
 - CI installs Python runtime requirements so structlog is available.
 - README lists `pip install -r requirements.txt` during setup.
 - CI: Skip Snyk test in forked PRs to prevent missing-secret auth errors.
+- CI: Guard Snyk steps with env variable to handle missing secrets gracefully.
