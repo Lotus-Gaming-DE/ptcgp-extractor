@@ -5,7 +5,9 @@ describe('resolveRepoDir validation', () => {
   it('rejects newline characters', async () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = 'bad\npath';
-    await expect(import('../src/lib')).rejects.toThrow('Ung\xC3\xBCltige Zeichen');
+    await expect(import('../src/lib')).rejects.toThrow(
+      'Ung\xC3\xBCltige Zeichen',
+    );
     delete process.env.TCGDEX_REPO;
   });
 
