@@ -30,14 +30,14 @@ describe('export script', () => {
   it('fails with invalid repo path', async () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = '__invalid__';
-    await expect(import('../src/export')).rejects.toThrow(/Repo directory/);
+    await expect(import('../src/export')).rejects.toThrow(/Ordner/);
     delete process.env.TCGDEX_REPO;
   });
 
   it('rejects repo path outside project', async () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = path.resolve('..');
-    await expect(import('../src/export')).rejects.toThrow(/project directory/);
+    await expect(import('../src/export')).rejects.toThrow(/Projektordner/);
     delete process.env.TCGDEX_REPO;
   });
 });

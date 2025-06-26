@@ -34,7 +34,7 @@ export function checkNodeVersion(
 ) {
   const major = parseInt(version.split('.')[0], 10);
   if (major < minimumMajor) {
-    const message = `Node.js ${minimumMajor}+ is required. Detected ${version}.`;
+    const message = `Node.js ${minimumMajor}+ wird ben\xC3\xB6tigt. Gefundene Version ${version}.`;
     logger.error(message);
     throw new Error(message);
   }
@@ -58,7 +58,7 @@ export async function main(argv = process.argv.slice(2)) {
   }
 
   logger.info(
-    `Exported ${cards.length} cards to ${path.relative(process.cwd(), cardsOutPath)} and ${sets.length} sets to ${path.relative(process.cwd(), setsOutPath)}`,
+    `Exportierte ${cards.length} Karten nach ${path.relative(process.cwd(), cardsOutPath)} und ${sets.length} Sets nach ${path.relative(process.cwd(), setsOutPath)}`,
   );
 }
 

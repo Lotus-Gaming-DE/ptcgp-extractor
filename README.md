@@ -34,6 +34,7 @@ nicht.
 
    ```bash
    npm install
+   pip install -r requirements.txt
    npm run build
    ```
 
@@ -93,6 +94,7 @@ Die Dateien rotieren täglich und werden eine Woche lang aufbewahrt.
 Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
 Das Intervall und die maximale Größe lassen sich über `LOG_ROTATION_INTERVAL`
 und `LOG_MAX_SIZE` konfigurieren.
+Python-Module loggen über `structlog` ebenfalls JSON in dasselbe Verzeichnis.
 
 ## Programmatic API
 

@@ -55,7 +55,7 @@ describe('export with sample data', () => {
       fs.readJson(path.join('data', 'sets.json')),
     ).resolves.toHaveLength(1);
     expect(logSpy).toHaveBeenCalledWith(
-      expect.stringContaining('Exported 1 cards'),
+      expect.stringContaining('Exportierte 1 Karten'),
     );
     logSpy.mockRestore();
   });

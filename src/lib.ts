@@ -90,16 +90,16 @@ const projectRoot = path.resolve(__dirname, '..');
 export function resolveRepoDir(): string {
   const dir = path.resolve(process.env.TCGDEX_REPO || 'tcgdex');
   if (/\0|\n|\r/.test(dir)) {
-    throw new Error('Invalid characters in TCGDEX_REPO');
+    throw new Error('Ung\xC3\xBCltige Zeichen in TCGDEX_REPO');
   }
   const realDir = fs.existsSync(dir) ? fs.realpathSync(dir) : dir;
   const relative = path.relative(projectRoot, realDir);
   if (relative.startsWith('..') || path.isAbsolute(relative)) {
-    throw new Error(`TCGDEX_REPO must be inside the project directory: ${dir}`);
+    throw new Error(`TCGDEX_REPO muss im Projektordner liegen: ${dir}`);
   }
   if (!fs.existsSync(realDir)) {
     throw new Error(
-      `Repo directory '${dir}' not found. Clone tcgdex/cards-database into this folder.`,
+      `Ordner '${dir}' nicht gefunden. Bitte tcgdex/cards-database hier klonen.`,
     );
   }
   return realDir;
