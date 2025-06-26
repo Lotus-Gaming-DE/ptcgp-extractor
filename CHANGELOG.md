@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Enforced 90% coverage threshold in both Jest and Pytest.
+- Added workflow to enable Dependabot auto-merge for passing updates.
+
 - Added validation for the `CONCURRENCY` environment variable; values must be positive integers.
 - `mapLimit` now throws an error when the concurrency limit is zero or negative.
 - `writeData` writes files atomically via temporary files.

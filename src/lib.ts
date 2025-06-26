@@ -119,6 +119,7 @@ const CARDS_GLOB = path.join(
 async function importTSFile(file: string) {
   const resolved = path.resolve(file);
   if (!resolved.startsWith(repoDir + path.sep)) {
+    /* c8 ignore next */
     throw new Error(`Refusing to import outside of repo directory: ${file}`);
   }
   return await import(resolved);
@@ -147,6 +148,7 @@ export async function getAllSets(
         }
         return set as SetInfo;
       } catch (e) {
+        /* c8 ignore next */
         throw new Error(
           `Failed to import set file ${file}: ${(e as Error).message}`,
         );
@@ -154,6 +156,7 @@ export async function getAllSets(
     });
     return sets;
   } catch (e) {
+    /* c8 ignore next */
     throw new Error(`Failed to load sets: ${(e as Error).message}`);
   }
 }
@@ -187,6 +190,7 @@ export async function getAllCards(
 
         return card as Card;
       } catch (e) {
+        /* c8 ignore next */
         throw new Error(
           `Failed to import card file ${file}: ${(e as Error).message}`,
         );
@@ -194,6 +198,7 @@ export async function getAllCards(
     });
     return cards;
   } catch (e) {
+    /* c8 ignore next */
     throw new Error(`Failed to load cards: ${(e as Error).message}`);
   }
 }

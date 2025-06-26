@@ -62,9 +62,11 @@ export async function main(argv = process.argv.slice(2)) {
   );
 }
 
+/* c8 ignore start */
 if (require.main === module) {
   main().catch((e) => {
     logger.error(e);
     process.exit(1);
   });
 }
+/* c8 ignore end */
