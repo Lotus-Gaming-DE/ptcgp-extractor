@@ -33,7 +33,7 @@ jobs:
       - run: npm run build
       - run: npm run lint
       - name: Install Python dependencies
-        run: pip install -r requirements-dev.txt
+        run: pip install -r requirements.txt -r requirements-dev.txt
       - uses: pre-commit/action@v3.0.1
         with:
           extra_args: --all-files

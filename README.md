@@ -34,6 +34,7 @@ nicht.
 
    ```bash
    npm install
+   pip install -r requirements.txt
    npm run build
    ```
 
