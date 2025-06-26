@@ -14,7 +14,7 @@ describe('checkNodeVersion', () => {
     const errorSpy = jest.spyOn(logger, 'error').mockImplementation(() => {});
 
     expect(() => checkNodeVersion('18.0.0')).toThrow(
-      /Node.js 20\+ is required/,
+      /Node.js 20\+ wird ben\xC3\xB6tigt/,
     );
     expect(errorSpy).toHaveBeenCalledWith(
       expect.stringContaining('Node.js 20+'),

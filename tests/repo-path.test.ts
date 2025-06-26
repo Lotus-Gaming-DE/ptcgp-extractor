@@ -5,7 +5,7 @@ describe('resolveRepoDir validation', () => {
   it('rejects newline characters', async () => {
     jest.resetModules();
     process.env.TCGDEX_REPO = 'bad\npath';
-    await expect(import('../src/lib')).rejects.toThrow('Invalid characters');
+    await expect(import('../src/lib')).rejects.toThrow('Ung\xC3\xBCltige Zeichen');
     delete process.env.TCGDEX_REPO;
   });
 
@@ -15,7 +15,7 @@ describe('resolveRepoDir validation', () => {
     const linkPath = tmpDir + '/link';
     await fs.symlink(path.join('..', '..'), linkPath);
     process.env.TCGDEX_REPO = linkPath;
-    await expect(import('../src/lib')).rejects.toThrow(/project directory/);
+    await expect(import('../src/lib')).rejects.toThrow(/Projektordner/);
     await fs.remove(tmpDir);
     delete process.env.TCGDEX_REPO;
   });

@@ -23,6 +23,9 @@ All notable changes to this project will be documented in this file.
 - CI now runs `pytest --cov=.` and displays coverage in logs.
 - Added Python-based linting hooks (Black, Flake8, Ruff) and `pip-audit`
   via Pre-commit.
+- Python utilities now use `structlog` for JSON logging.
+- User-facing messages are in German, internal logs in English.
+- Added tests for the Python logger.
 - Updated documentation and tests.
 - Improved path validation and error handling in export script.
 - Export script now throws errors instead of exiting directly.
