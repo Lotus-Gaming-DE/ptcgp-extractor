@@ -121,10 +121,10 @@ await writeData(cards, sets);
 npm run lint
 npm run format
 npm test
-PYTHONPATH=. pytest --cov=.
+PYTHONPATH=. pytest
 ```
 
-Die Testabdeckung aus Jest und Pytest muss global mindestens 80 % betragen (Statements,
+Die Testabdeckung aus Jest und Pytest muss global mindestens 90 % betragen (Statements,
 Branches, Functions und Lines). Unterschreitet ein Pull Request diesen
 Wert, bricht die CI-Pipeline ab.
 
@@ -145,7 +145,7 @@ Authentifizierungsfehler.
 Abhängigkeiten und Pre-commit-Umgebungen werden über `actions/cache`
 zwischengespeichert. Nach dem Lauf wird `railway logs --follow`
 ausgeführt und als `logs/latest_railway.log` hochgeladen. Zusätzlich wird die
-Testabdeckung (mindestens 80 %) als Artefakt bereitgestellt und temporäre
+Testabdeckung (mindestens 90 %) als Artefakt bereitgestellt und temporäre
 Verzeichnisse (`tmp-repo-*`) werden automatisch entfernt.
 
 ## Automatische Updates
