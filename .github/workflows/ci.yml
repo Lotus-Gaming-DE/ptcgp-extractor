@@ -39,6 +39,12 @@ jobs:
           extra_args: --all-files
       - run: npm test -- --coverage
       - run: PYTHONPATH=. pytest --cov=. --cov-report=term-missing --color=yes
+      - name: Install CycloneDX Python SBOM Tool
+        run: |
+          python -m pip install cyclonedx-bom
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Generate SBOM
+        run: cyclonedx-py requirements -i requirements.txt -o sbom.xml
       - run: |
           mkdir -p logs
           npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > logs/latest_railway.log &
@@ -58,6 +64,10 @@ jobs:
         with:
           name: coverage
           path: coverage/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.*
       - uses: actions/upload-artifact@v4
         with:
           name: logs

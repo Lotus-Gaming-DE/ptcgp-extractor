@@ -57,15 +57,20 @@ nicht.
    npm run export
    ```
 
-   Alternativ kannst du `scripts/run-export.sh` verwenden, um Variablen aus einer
-   `.env`-Datei automatisch zu laden:
+   Alternativ kannst du `python scripts/run_export.py` verwenden, um Variablen
+   aus einer `.env`-Datei automatisch zu laden:
 
    ```bash
-   ./scripts/run-export.sh --concurrency 5
+    python scripts/run_export.py -- --concurrency 5
    ```
 
    Das Ergebnis landet in `data/cards.json` und `data/sets.json`.
    Details zum Dateiformat findest du in [docs/json-format.md](docs/json-format.md).
+
+## Utility Scripts
+
+- `scripts/run_export.py` – l\xE4dt optional Variablen aus `.env` und startet
+  das Node.js-Exportskript. Aufrufbar via `python scripts/run_export.py`.
 
 ## Umgebungsvariablen
 
@@ -80,6 +85,10 @@ nicht.
   erzeugten Dateien geloggt.
 - `LOG_ROTATION_INTERVAL` – Intervall für die Logrotation (z.B. `1d`).
 - `LOG_MAX_SIZE` – Maximale Größe pro Logdatei (z.B. `1m`).
+- `SNYK_TOKEN` – API-Token für Sicherheitsscans.
+- `RAILWAY_TOKEN` – Authentifizierung für Railway CLI.
+- `RAILWAY_SERVICE` – Service-ID für Logabruf.
+- `RAILWAY_ENV` – Environment-ID für Logabruf.
 
 ## CLI-Optionen
 

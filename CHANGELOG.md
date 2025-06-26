@@ -18,6 +18,10 @@ All notable changes to this project will be documented in this file.
 - CI workflow uploads logs as an artifact and cleans the `logs/` directory.
 
 - Allow running on Node.js 20 or newer.
+- Data directory no longer tracked; `.gitignore` excludes `data/`.
+- Shell helper script replaced with `scripts/run_export.py` using argparse.
+- Added SBOM generation step in CI and new `railway_logs.yml` workflow.
+- Tests updated to work without prepopulated data files.
 
 - Added Python test suite using pytest with async support and timeouts.
 - CI now runs `pytest --cov=.` and displays coverage in logs.
