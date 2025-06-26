@@ -54,7 +54,7 @@ All notable changes to this project will be documented in this file.
 - CI runs `npm audit --production` and pre-commit checks.
 - `.nvmrc` added to pin Node version locally.
 - README now links to `docs/json-format.md` and weist auf `.env.example` hin.
-- CI lädt Testabdeckung als Artefakt hoch und führt `npx snyk test` aus.
+- CI lädt Testabdeckung als Artefakt hoch und führt `snyk test` aus.
 - Added Python tooling (Black, Flake8, Ruff) to pre-commit configuration.
 - Dependabot prüft nun npm-Abhängigkeiten und GitHub-Actions-Workflows;
   zugehörige Pull Requests laufen durch die CI.
