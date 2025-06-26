@@ -21,12 +21,17 @@ async function createSampleRepo(): Promise<string> {
 
 describe('export with sample data', () => {
   let repo: string;
-  let cardsBackup: Buffer;
-  let setsBackup: Buffer;
+  let cardsBackup: Buffer | null;
+  let setsBackup: Buffer | null;
 
-  beforeAll(() => {
-    cardsBackup = fs.readFileSync(path.join('data', 'cards.json'));
-    setsBackup = fs.readFileSync(path.join('data', 'sets.json'));
+  beforeAll(async () => {
+    await fs.ensureDir('data');
+    cardsBackup = (await fs.pathExists(path.join('data', 'cards.json')))
+      ? fs.readFileSync(path.join('data', 'cards.json'))
+      : null;
+    setsBackup = (await fs.pathExists(path.join('data', 'sets.json')))
+      ? fs.readFileSync(path.join('data', 'sets.json'))
+      : null;
   });
 
   afterEach(async () => {
@@ -36,8 +41,18 @@ describe('export with sample data', () => {
   });
 
   afterAll(() => {
-    fs.writeFileSync(path.join('data', 'cards.json'), cardsBackup);
-    fs.writeFileSync(path.join('data', 'sets.json'), setsBackup);
+    if (cardsBackup) {
+      fs.ensureDirSync('data');
+      fs.writeFileSync(path.join('data', 'cards.json'), cardsBackup);
+    } else {
+      fs.removeSync(path.join('data', 'cards.json'));
+    }
+    if (setsBackup) {
+      fs.ensureDirSync('data');
+      fs.writeFileSync(path.join('data', 'sets.json'), setsBackup);
+    } else {
+      fs.removeSync(path.join('data', 'sets.json'));
+    }
   });
 
   it('exports tiny dataset', async () => {

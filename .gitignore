@@ -20,8 +20,8 @@ pnpm-debug.log*
 *.swo
 .DS_Store
 
-# Personal data should not be committed
-data/pers/
+# Ignore generated data files
+data/
 
 # Jest coverage output
 coverage/
