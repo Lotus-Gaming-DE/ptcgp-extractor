@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Added validation for the `CONCURRENCY` environment variable; values must be positive integers.
 - `mapLimit` now throws an error when the concurrency limit is zero or negative.
 - `writeData` writes files atomically via temporary files.
+- Updated Railway log commands to use `npx railway` with project ID.
 - Logger outputs now include timestamps.
 - GitHub workflow runs linting and collects test coverage.
 - Documentation updated to describe new behavior and environment variable rules.

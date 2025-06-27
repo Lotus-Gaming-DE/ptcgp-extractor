@@ -47,12 +47,12 @@ jobs:
         run: cyclonedx-py requirements -i requirements.txt -o sbom.xml
       - run: |
           mkdir -p logs
-          npx railway logs --service "$RAILWAY_SERVICE" --environment "$RAILWAY_ENV" --follow > logs/latest_railway.log &
+          npx railway logs --service "$RAILWAY_SERVICE" --project "$RAILWAY_PROJECT" --env production --json --follow > logs/latest_railway.log &
           sleep 5
           kill $!
         env:
           RAILWAY_SERVICE: ${{ secrets.RAILWAY_SERVICE || '' }}
-          RAILWAY_ENV: ${{ secrets.RAILWAY_ENV || '' }}
+          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT || '' }}
       - name: Install Snyk CLI
         run: npm install -g snyk
       - name: Snyk Test
