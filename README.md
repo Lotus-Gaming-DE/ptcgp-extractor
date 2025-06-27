@@ -88,7 +88,7 @@ nicht.
 - `SNYK_TOKEN` – API-Token für Sicherheitsscans.
 - `RAILWAY_TOKEN` – Authentifizierung für Railway CLI.
 - `RAILWAY_SERVICE` – Service-ID für Logabruf.
-- `RAILWAY_ENV` – Environment-ID für Logabruf.
+- `RAILWAY_PROJECT` – Projekt-ID für Logabruf.
 
 ## CLI-Optionen
 
@@ -98,8 +98,8 @@ nicht.
 ## Logformat
 
 Alle Meldungen werden im JSON-Format `{"level","time","msg"}` auf die Konsole
-und in `logs/app-<Datum>.log` geschrieben.
-Die Dateien rotieren täglich und werden eine Woche lang aufbewahrt.
+und in `logs/runtime-<YYYY-MM-DD-HH>.json` geschrieben.
+Die Dateien rotieren stündlich und werden bis zu zwei Wochen aufbewahrt.
 Benutzertexte erscheinen auf Deutsch, interne Texte auf Englisch.
 Das Intervall und die maximale Größe lassen sich über `LOG_ROTATION_INTERVAL`
 und `LOG_MAX_SIZE` konfigurieren.

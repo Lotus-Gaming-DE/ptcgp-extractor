@@ -20,12 +20,10 @@ const loggerInstance = createLogger({
     new transports.Console(),
     new DailyRotateFile({
       dirname: logDir,
-      filename: 'app-%DATE%.log',
-      datePattern: process.env.LOG_ROTATION_INTERVAL
-        ? 'YYYY-MM-DD-HH-mm-ss'
-        : 'YYYY-MM-DD',
-      maxFiles: '7d',
-      frequency: process.env.LOG_ROTATION_INTERVAL,
+      filename: 'runtime-%DATE%.json',
+      datePattern: 'YYYY-MM-DD-HH',
+      maxFiles: '14d',
+      frequency: process.env.LOG_ROTATION_INTERVAL || '1h',
       maxSize: process.env.LOG_MAX_SIZE,
     }),
   ],
