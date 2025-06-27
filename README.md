@@ -88,7 +88,7 @@ nicht.
 - `SNYK_TOKEN` – API-Token für Sicherheitsscans.
 - `RAILWAY_TOKEN` – Authentifizierung für Railway CLI.
 - `RAILWAY_SERVICE` – Service-ID für Logabruf.
-- `RAILWAY_ENV` – Environment-ID für Logabruf.
+- `RAILWAY_PROJECT` – Projekt-ID für Logabruf.
 
 ## CLI-Optionen
 
