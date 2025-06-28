@@ -69,8 +69,9 @@ nicht.
 
 ## Utility Scripts
 
-- `scripts/run_export.py` – l\xE4dt optional Variablen aus `.env` und startet
+- `scripts/run_export.py` – lädt optional Variablen aus `.env` und startet
   das Node.js-Exportskript. Aufrufbar via `python scripts/run_export.py`.
+- `scripts/fetch_data.py` – führt den eigentlichen Export aus und erzeugt die Dateien in `data/export/`.
 
 ## Umgebungsvariablen
 
