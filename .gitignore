@@ -20,9 +20,6 @@ pnpm-debug.log*
 *.swo
 .DS_Store
 
-# Ignore generated data files
-data/
-
 # Jest coverage output
 coverage/
 
@@ -36,3 +33,9 @@ __pycache__/
 # Environment files
 .env
 .coverage
+
+# Data handling
+data/*
+!data/export/
+!data/export/cards.json
+!data/export/sets.json
