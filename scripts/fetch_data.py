@@ -14,6 +14,7 @@ except ImportError:  # pragma: no cover - fallback for CLI usage
 
     sys.path.append(str(Path(__file__).resolve().parent))
     from run_export import load_env
+from scripts.run_export import load_env
 
 
 def main(argv: List[str] | None = None) -> None:
