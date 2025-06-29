@@ -14,6 +14,7 @@ except ImportError:  # pragma: no cover - fallback for CLI usage
 
     sys.path.append(str(Path(__file__).resolve().parent))
     import run_export
+from scripts.run_export import load_env
 
 
 def main(argv: List[str] | None = None) -> None:
@@ -24,6 +25,7 @@ def main(argv: List[str] | None = None) -> None:
     parser.parse_args(argv)
 
     run_export.load_env()
+    load_env()
     subprocess.run(["node", "dist/export.js"], check=True)
 
 
