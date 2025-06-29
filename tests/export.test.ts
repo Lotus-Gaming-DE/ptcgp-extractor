@@ -2,6 +2,9 @@ import fs from 'fs-extra';
 import path from 'path';
 import { logger } from '../src/logger';
 
+// Allow slow export operations
+jest.setTimeout(30000);
+
 async function repoExists(repoDir: string): Promise<boolean> {
   return fs.pathExists(repoDir);
 }

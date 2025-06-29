@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Added workflows to update and publish exported data to the API repository.
+
 - Enforced 90% coverage threshold in both Jest and Pytest.
 - Added workflow to enable Dependabot auto-merge for passing updates.
 

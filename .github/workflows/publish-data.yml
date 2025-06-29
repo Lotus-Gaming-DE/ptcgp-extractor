@@ -1,0 +1,56 @@
+name: Publish Data
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate token
+        env:
+          TOKEN: ${{ secrets.API_REPO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo 'API_REPO_TOKEN is not set'
+            exit 1
+          fi
+
+      - name: Validate JSON files
+        run: |
+          test -s data/export/cards.json || { echo 'cards.json missing or empty'; exit 1; }
+          test -s data/export/sets.json || { echo 'sets.json missing or empty'; exit 1; }
+          python -m json.tool data/export/cards.json > /dev/null
+          python -m json.tool data/export/sets.json > /dev/null
+
+      - name: Clone API repository
+        env:
+          TOKEN: ${{ secrets.API_REPO_TOKEN }}
+        run: git clone --depth=1 --branch=main https://$TOKEN@github.com/Lotus-Gaming-DE/ptcgp-api.git api-repo
+
+      - name: Copy data files
+        run: |
+          cp data/export/cards.json api-repo/data/cards.json
+          cp data/export/sets.json api-repo/data/sets.json
+
+      - name: Commit and push
+        run: |
+          cd api-repo
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add -f data/cards.json data/sets.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update API data"
+          git push origin main
+        env:
+          TOKEN: ${{ secrets.API_REPO_TOKEN }}
