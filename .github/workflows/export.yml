@@ -48,7 +48,7 @@ jobs:
         # Hier KEIN working-directory nötig, default ist das Hauptrepo!
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Automated data extraction'
           file_pattern: 'data/cards.json data/sets.json'
